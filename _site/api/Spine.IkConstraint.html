@@ -1,0 +1,729 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IkConstraint
+   | Example Unity documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IkConstraint
+   | Example Unity documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Spine.IkConstraint">
+  
+  
+  <h1 id="Spine_IkConstraint" data-uid="Spine.IkConstraint" class="text-break">Class IkConstraint
+  </h1>
+  <div class="markdown level0 summary"><p>
+Stores the current pose for an IK constraint. An IK constraint adjusts the rotation of 1 or 2 constrained bones so the tip of
+the last bone is as close to the target bone as possible.</p>
+<p>
+See <a href="http://esotericsoftware.com/spine-ik-constraints">IK constraints</a> in the Spine User Guide.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">IkConstraint</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Spine.IUpdatable.html">IUpdatable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Spine.html">Spine</a></h6>
+  <h6><strong>Assembly</strong>: spine-unity.dll</h6>
+  <h5 id="Spine_IkConstraint_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class IkConstraint : IUpdatable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_IkConstraint__ctor_Spine_IkConstraint_Spine_Skeleton_.md&amp;value=---%0Auid%3A%20Spine.IkConstraint.%23ctor(Spine.IkConstraint%2CSpine.Skeleton)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/IkConstraint.cs/#L67">View Source</a>
+  </span>
+  <a id="Spine_IkConstraint__ctor_" data-uid="Spine.IkConstraint.#ctor*"></a>
+  <h4 id="Spine_IkConstraint__ctor_Spine_IkConstraint_Spine_Skeleton_" data-uid="Spine.IkConstraint.#ctor(Spine.IkConstraint,Spine.Skeleton)">IkConstraint(IkConstraint, Skeleton)</h4>
+  <div class="markdown level1 summary"><p>Copy constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IkConstraint(IkConstraint constraint, Skeleton skeleton)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.IkConstraint.html">IkConstraint</a></td>
+        <td><span class="parametername">constraint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Spine.Skeleton.html">Skeleton</a></td>
+        <td><span class="parametername">skeleton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_IkConstraint__ctor_Spine_IkConstraintData_Spine_Skeleton_.md&amp;value=---%0Auid%3A%20Spine.IkConstraint.%23ctor(Spine.IkConstraintData%2CSpine.Skeleton)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/IkConstraint.cs/#L50">View Source</a>
+  </span>
+  <a id="Spine_IkConstraint__ctor_" data-uid="Spine.IkConstraint.#ctor*"></a>
+  <h4 id="Spine_IkConstraint__ctor_Spine_IkConstraintData_Spine_Skeleton_" data-uid="Spine.IkConstraint.#ctor(Spine.IkConstraintData,Spine.Skeleton)">IkConstraint(IkConstraintData, Skeleton)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IkConstraint(IkConstraintData data, Skeleton skeleton)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.IkConstraintData.html">IkConstraintData</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Spine.Skeleton.html">Skeleton</a></td>
+        <td><span class="parametername">skeleton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_IkConstraint_Active.md&amp;value=---%0Auid%3A%20Spine.IkConstraint.Active%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/IkConstraint.cs/#L144">View Source</a>
+  </span>
+  <a id="Spine_IkConstraint_Active_" data-uid="Spine.IkConstraint.Active*"></a>
+  <h4 id="Spine_IkConstraint_Active" data-uid="Spine.IkConstraint.Active">Active</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Active { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_IkConstraint_BendDirection.md&amp;value=---%0Auid%3A%20Spine.IkConstraint.BendDirection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/IkConstraint.cs/#L124">View Source</a>
+  </span>
+  <a id="Spine_IkConstraint_BendDirection_" data-uid="Spine.IkConstraint.BendDirection*"></a>
+  <h4 id="Spine_IkConstraint_BendDirection" data-uid="Spine.IkConstraint.BendDirection">BendDirection</h4>
+  <div class="markdown level1 summary"><p>Controls the bend direction of the IK bones, either 1 or -1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BendDirection { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_IkConstraint_Bones.md&amp;value=---%0Auid%3A%20Spine.IkConstraint.Bones%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/IkConstraint.cs/#L101">View Source</a>
+  </span>
+  <a id="Spine_IkConstraint_Bones_" data-uid="Spine.IkConstraint.Bones*"></a>
+  <h4 id="Spine_IkConstraint_Bones" data-uid="Spine.IkConstraint.Bones">Bones</h4>
+  <div class="markdown level1 summary"><p>The bones that will be modified by this IK constraint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExposedList&lt;Bone&gt; Bones { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.ExposedList-1.html">ExposedList</a>&lt;<a class="xref" href="Spine.Bone.html">Bone</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_IkConstraint_Compress.md&amp;value=---%0Auid%3A%20Spine.IkConstraint.Compress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/IkConstraint.cs/#L131">View Source</a>
+  </span>
+  <a id="Spine_IkConstraint_Compress_" data-uid="Spine.IkConstraint.Compress*"></a>
+  <h4 id="Spine_IkConstraint_Compress" data-uid="Spine.IkConstraint.Compress">Compress</h4>
+  <div class="markdown level1 summary"><p>When true and only a single bone is being constrained, if the target is too close, the bone is scaled to reach it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Compress { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_IkConstraint_Data.md&amp;value=---%0Auid%3A%20Spine.IkConstraint.Data%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/IkConstraint.cs/#L149">View Source</a>
+  </span>
+  <a id="Spine_IkConstraint_Data_" data-uid="Spine.IkConstraint.Data*"></a>
+  <h4 id="Spine_IkConstraint_Data" data-uid="Spine.IkConstraint.Data">Data</h4>
+  <div class="markdown level1 summary"><p>The IK constraint&apos;s setup pose data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IkConstraintData Data { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.IkConstraintData.html">IkConstraintData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_IkConstraint_Mix.md&amp;value=---%0Auid%3A%20Spine.IkConstraint.Mix%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/IkConstraint.cs/#L112">View Source</a>
+  </span>
+  <a id="Spine_IkConstraint_Mix_" data-uid="Spine.IkConstraint.Mix*"></a>
+  <h4 id="Spine_IkConstraint_Mix" data-uid="Spine.IkConstraint.Mix">Mix</h4>
+  <div class="markdown level1 summary"><p>A percentage (0-1) that controls the mix between the constrained and unconstrained rotations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Mix { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_IkConstraint_Softness.md&amp;value=---%0Auid%3A%20Spine.IkConstraint.Softness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/IkConstraint.cs/#L118">View Source</a>
+  </span>
+  <a id="Spine_IkConstraint_Softness_" data-uid="Spine.IkConstraint.Softness*"></a>
+  <h4 id="Spine_IkConstraint_Softness" data-uid="Spine.IkConstraint.Softness">Softness</h4>
+  <div class="markdown level1 summary"><p>For two bone IK, the distance from the maximum reach of the bones that rotation will slow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Softness { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_IkConstraint_Stretch.md&amp;value=---%0Auid%3A%20Spine.IkConstraint.Stretch%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/IkConstraint.cs/#L139">View Source</a>
+  </span>
+  <a id="Spine_IkConstraint_Stretch_" data-uid="Spine.IkConstraint.Stretch*"></a>
+  <h4 id="Spine_IkConstraint_Stretch" data-uid="Spine.IkConstraint.Stretch">Stretch</h4>
+  <div class="markdown level1 summary"><p>When true, if the target is out of range, the parent bone is scaled to reach it. If more than one bone is being constrained
+and the parent bone has local nonuniform scale, stretch is not applied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Stretch { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_IkConstraint_Target.md&amp;value=---%0Auid%3A%20Spine.IkConstraint.Target%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/IkConstraint.cs/#L106">View Source</a>
+  </span>
+  <a id="Spine_IkConstraint_Target_" data-uid="Spine.IkConstraint.Target*"></a>
+  <h4 id="Spine_IkConstraint_Target" data-uid="Spine.IkConstraint.Target">Target</h4>
+  <div class="markdown level1 summary"><p>The bone that is the IK target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bone Target { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Bone.html">Bone</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_IkConstraint_Apply.md&amp;value=---%0Auid%3A%20Spine.IkConstraint.Apply%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/IkConstraint.cs/#L83">View Source</a>
+  </span>
+  <a id="Spine_IkConstraint_Apply_" data-uid="Spine.IkConstraint.Apply*"></a>
+  <h4 id="Spine_IkConstraint_Apply" data-uid="Spine.IkConstraint.Apply">Apply()</h4>
+  <div class="markdown level1 summary"><p>Applies the constraint to the constrained bones.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Apply()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_IkConstraint_Apply_Spine_Bone_Spine_Bone_System_Single_System_Single_System_Int32_System_Boolean_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20Spine.IkConstraint.Apply(Spine.Bone%2CSpine.Bone%2CSystem.Single%2CSystem.Single%2CSystem.Int32%2CSystem.Boolean%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/IkConstraint.cs/#L185">View Source</a>
+  </span>
+  <a id="Spine_IkConstraint_Apply_" data-uid="Spine.IkConstraint.Apply*"></a>
+  <h4 id="Spine_IkConstraint_Apply_Spine_Bone_Spine_Bone_System_Single_System_Single_System_Int32_System_Boolean_System_Single_System_Single_" data-uid="Spine.IkConstraint.Apply(Spine.Bone,Spine.Bone,System.Single,System.Single,System.Int32,System.Boolean,System.Single,System.Single)">Apply(Bone, Bone, Single, Single, Int32, Boolean, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Applies 2 bone IK. The target is specified in the world coordinate system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Apply(Bone parent, Bone child, float targetX, float targetY, int bendDir, bool stretch, float softness, float alpha)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Bone.html">Bone</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Spine.Bone.html">Bone</a></td>
+        <td><span class="parametername">child</span></td>
+        <td><p>A direct descendant of the parent bone.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">targetX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">targetY</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">bendDir</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">stretch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">softness</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">alpha</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_IkConstraint_Apply_Spine_Bone_System_Single_System_Single_System_Boolean_System_Boolean_System_Boolean_System_Single_.md&amp;value=---%0Auid%3A%20Spine.IkConstraint.Apply(Spine.Bone%2CSystem.Single%2CSystem.Single%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/IkConstraint.cs/#L158">View Source</a>
+  </span>
+  <a id="Spine_IkConstraint_Apply_" data-uid="Spine.IkConstraint.Apply*"></a>
+  <h4 id="Spine_IkConstraint_Apply_Spine_Bone_System_Single_System_Single_System_Boolean_System_Boolean_System_Boolean_System_Single_" data-uid="Spine.IkConstraint.Apply(Spine.Bone,System.Single,System.Single,System.Boolean,System.Boolean,System.Boolean,System.Single)">Apply(Bone, Single, Single, Boolean, Boolean, Boolean, Single)</h4>
+  <div class="markdown level1 summary"><p>Applies 1 bone IK. The target is specified in the world coordinate system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Apply(Bone bone, float targetX, float targetY, bool compress, bool stretch, bool uniform, float alpha)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Bone.html">Bone</a></td>
+        <td><span class="parametername">bone</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">targetX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">targetY</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">compress</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">stretch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">uniform</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">alpha</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_IkConstraint_ToString.md&amp;value=---%0Auid%3A%20Spine.IkConstraint.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/IkConstraint.cs/#L153">View Source</a>
+  </span>
+  <a id="Spine_IkConstraint_ToString_" data-uid="Spine.IkConstraint.ToString*"></a>
+  <h4 id="Spine_IkConstraint_ToString" data-uid="Spine.IkConstraint.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_IkConstraint_Update.md&amp;value=---%0Auid%3A%20Spine.IkConstraint.Update%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/IkConstraint.cs/#L87">View Source</a>
+  </span>
+  <a id="Spine_IkConstraint_Update_" data-uid="Spine.IkConstraint.Update*"></a>
+  <h4 id="Spine_IkConstraint_Update" data-uid="Spine.IkConstraint.Update">Update()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Spine.IUpdatable.html">IUpdatable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_IkConstraint.md&amp;value=---%0Auid%3A%20Spine.IkConstraint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/IkConstraint.cs/#L40" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Example Unity documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

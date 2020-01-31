@@ -1,0 +1,1775 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Contour
+   | Example Unity documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Contour
+   | Example Unity documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FerrPoly2Tri.Contour">
+  
+  
+  <h1 id="FerrPoly2Tri_Contour" data-uid="FerrPoly2Tri.Contour" class="text-break">Class Contour
+  </h1>
+  <div class="markdown level0 summary"><p>This is basically a light-weight version of the Polygon class, but with limited functionality and
+used for different purposes.   Nonetheless, for all intents and purposes, this should actually be
+a polygon (though not a Polygon..)</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="FerrPoly2Tri.Point2DList.html">Point2DList</a></div>
+    <div class="level2"><span class="xref">Contour</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a>&gt;</div>
+    <div><a class="xref" href="FerrPoly2Tri.ITriangulatable.html">ITriangulatable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_kMaxPolygonVertices">Point2DList.kMaxPolygonVertices</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_kLinearSlop">Point2DList.kLinearSlop</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_kAngularSlop">Point2DList.kAngularSlop</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_mPoints">Point2DList.mPoints</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_mBoundingBox">Point2DList.mBoundingBox</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_mWindingOrder">Point2DList.mWindingOrder</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_mEpsilon">Point2DList.mEpsilon</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_BoundingBox">Point2DList.BoundingBox</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_WindingOrder">Point2DList.WindingOrder</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_Epsilon">Point2DList.Epsilon</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_Count">Point2DList.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_IsReadOnly">Point2DList.IsReadOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_System_Collections_IEnumerable_GetEnumerator">Point2DList.IEnumerable.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_System_Collections_Generic_IEnumerable_FerrPoly2Tri_Point2D__GetEnumerator">Point2DList.IEnumerable&lt;Point2D&gt;.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_Clear">Point2DList.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_IndexOf_FerrPoly2Tri_Point2D_">Point2DList.IndexOf(Point2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_Add_FerrPoly2Tri_Point2D_">Point2DList.Add(Point2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_AddRange_FerrPoly2Tri_Point2DList_">Point2DList.AddRange(Point2DList)</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_Insert_System_Int32_FerrPoly2Tri_Point2D_">Point2DList.Insert(Int32, Point2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_Remove_FerrPoly2Tri_Point2D_">Point2DList.Remove(Point2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_RemoveAt_System_Int32_">Point2DList.RemoveAt(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_RemoveRange_System_Int32_System_Int32_">Point2DList.RemoveRange(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_Contains_FerrPoly2Tri_Point2D_">Point2DList.Contains(Point2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_CopyTo_FerrPoly2Tri_Point2D___System_Int32_">Point2DList.CopyTo(Point2D[], Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_CalculateBounds">Point2DList.CalculateBounds()</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_CalculateEpsilon">Point2DList.CalculateEpsilon()</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_CalculateWindingOrder">Point2DList.CalculateWindingOrder()</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_NextIndex_System_Int32_">Point2DList.NextIndex(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_PreviousIndex_System_Int32_">Point2DList.PreviousIndex(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_GetSignedArea">Point2DList.GetSignedArea()</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_GetArea">Point2DList.GetArea()</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_GetCentroid">Point2DList.GetCentroid()</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_Translate_FerrPoly2Tri_Point2D_">Point2DList.Translate(Point2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_Scale_FerrPoly2Tri_Point2D_">Point2DList.Scale(Point2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_Rotate_System_Double_">Point2DList.Rotate(Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_IsDegenerate">Point2DList.IsDegenerate()</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_IsConvex">Point2DList.IsConvex()</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_IsSimple">Point2DList.IsSimple()</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_CheckPolygon">Point2DList.CheckPolygon()</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_GetErrorString_FerrPoly2Tri_Point2DList_PolygonError_">Point2DList.GetErrorString(Point2DList.PolygonError)</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_RemoveDuplicateNeighborPoints">Point2DList.RemoveDuplicateNeighborPoints()</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_Simplify">Point2DList.Simplify()</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_Simplify_System_Double_">Point2DList.Simplify(Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_MergeParallelEdges_System_Double_">Point2DList.MergeParallelEdges(Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_ProjectToAxis_FerrPoly2Tri_Point2D_System_Double__System_Double__">Point2DList.ProjectToAxis(Point2D, Double, Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FerrPoly2Tri.html">FerrPoly2Tri</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="FerrPoly2Tri_Contour_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Contour : Point2DList, IList&lt;Point2D&gt;, ICollection&lt;Point2D&gt;, IEnumerable&lt;Point2D&gt;, ITriangulatable, IList&lt;TriangulationPoint&gt;, ICollection&lt;TriangulationPoint&gt;, IEnumerable&lt;TriangulationPoint&gt;, IEnumerable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour__ctor_FerrPoly2Tri_ITriangulatable_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.%23ctor(FerrPoly2Tri.ITriangulatable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L80">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour__ctor_" data-uid="FerrPoly2Tri.Contour.#ctor*"></a>
+  <h4 id="FerrPoly2Tri_Contour__ctor_FerrPoly2Tri_ITriangulatable_" data-uid="FerrPoly2Tri.Contour.#ctor(FerrPoly2Tri.ITriangulatable)">Contour(ITriangulatable)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Contour(ITriangulatable parent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.ITriangulatable.html">ITriangulatable</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour__ctor_FerrPoly2Tri_ITriangulatable_System_Collections_Generic_IList_FerrPoly2Tri_TriangulationPoint__FerrPoly2Tri_Point2DList_WindingOrderType_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.%23ctor(FerrPoly2Tri.ITriangulatable%2CSystem.Collections.Generic.IList%7BFerrPoly2Tri.TriangulationPoint%7D%2CFerrPoly2Tri.Point2DList.WindingOrderType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L86">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour__ctor_" data-uid="FerrPoly2Tri.Contour.#ctor*"></a>
+  <h4 id="FerrPoly2Tri_Contour__ctor_FerrPoly2Tri_ITriangulatable_System_Collections_Generic_IList_FerrPoly2Tri_TriangulationPoint__FerrPoly2Tri_Point2DList_WindingOrderType_" data-uid="FerrPoly2Tri.Contour.#ctor(FerrPoly2Tri.ITriangulatable,System.Collections.Generic.IList{FerrPoly2Tri.TriangulationPoint},FerrPoly2Tri.Point2DList.WindingOrderType)">Contour(ITriangulatable, IList&lt;TriangulationPoint&gt;, Point2DList.WindingOrderType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Contour(ITriangulatable parent, IList&lt;TriangulationPoint&gt; points, Point2DList.WindingOrderType windingOrder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.ITriangulatable.html">ITriangulatable</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a>&gt;</td>
+        <td><span class="parametername">points</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Point2DList.WindingOrderType.html">Point2DList.WindingOrderType</a></td>
+        <td><span class="parametername">windingOrder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_Bounds.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.Bounds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L77">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_Bounds_" data-uid="FerrPoly2Tri.Contour.Bounds*"></a>
+  <h4 id="FerrPoly2Tri_Contour_Bounds" data-uid="FerrPoly2Tri.Contour.Bounds">Bounds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect2D Bounds { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Rect2D.html">Rect2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_DisplayFlipX.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.DisplayFlipX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L69">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_DisplayFlipX_" data-uid="FerrPoly2Tri.Contour.DisplayFlipX*"></a>
+  <h4 id="FerrPoly2Tri_Contour_DisplayFlipX" data-uid="FerrPoly2Tri.Contour.DisplayFlipX">DisplayFlipX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DisplayFlipX { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_DisplayFlipY.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.DisplayFlipY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L70">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_DisplayFlipY_" data-uid="FerrPoly2Tri.Contour.DisplayFlipY*"></a>
+  <h4 id="FerrPoly2Tri_Contour_DisplayFlipY" data-uid="FerrPoly2Tri.Contour.DisplayFlipY">DisplayFlipY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DisplayFlipY { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_DisplayRotate.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.DisplayRotate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L71">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_DisplayRotate_" data-uid="FerrPoly2Tri.Contour.DisplayRotate*"></a>
+  <h4 id="FerrPoly2Tri_Contour_DisplayRotate" data-uid="FerrPoly2Tri.Contour.DisplayRotate">DisplayRotate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DisplayRotate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_FileName.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.FileName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L68">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_FileName_" data-uid="FerrPoly2Tri.Contour.FileName*"></a>
+  <h4 id="FerrPoly2Tri_Contour_FileName" data-uid="FerrPoly2Tri.Contour.FileName">FileName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FileName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_Item_System_Int32_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.Item(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L51">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_Item_" data-uid="FerrPoly2Tri.Contour.Item*"></a>
+  <h4 id="FerrPoly2Tri_Contour_Item_System_Int32_" data-uid="FerrPoly2Tri.Contour.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TriangulationPoint this[int index] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_MaxX.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.MaxX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L74">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_MaxX_" data-uid="FerrPoly2Tri.Contour.MaxX*"></a>
+  <h4 id="FerrPoly2Tri_Contour_MaxX" data-uid="FerrPoly2Tri.Contour.MaxX">MaxX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double MaxX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_MaxY.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.MaxY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L76">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_MaxY_" data-uid="FerrPoly2Tri.Contour.MaxY*"></a>
+  <h4 id="FerrPoly2Tri_Contour_MaxY" data-uid="FerrPoly2Tri.Contour.MaxY">MaxY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double MaxY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_MinX.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.MinX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L73">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_MinX_" data-uid="FerrPoly2Tri.Contour.MinX*"></a>
+  <h4 id="FerrPoly2Tri_Contour_MinX" data-uid="FerrPoly2Tri.Contour.MinX">MinX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double MinX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_MinY.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.MinY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L75">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_MinY_" data-uid="FerrPoly2Tri.Contour.MinY*"></a>
+  <h4 id="FerrPoly2Tri_Contour_MinY" data-uid="FerrPoly2Tri.Contour.MinY">MinY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double MinY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_Name.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L56">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_Name_" data-uid="FerrPoly2Tri.Contour.Name*"></a>
+  <h4 id="FerrPoly2Tri_Contour_Name" data-uid="FerrPoly2Tri.Contour.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_Precision.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.Precision%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L72">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_Precision_" data-uid="FerrPoly2Tri.Contour.Precision*"></a>
+  <h4 id="FerrPoly2Tri_Contour_Precision" data-uid="FerrPoly2Tri.Contour.Precision">Precision</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Precision { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_Triangles.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.Triangles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L59">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_Triangles_" data-uid="FerrPoly2Tri.Contour.Triangles*"></a>
+  <h4 id="FerrPoly2Tri_Contour_Triangles" data-uid="FerrPoly2Tri.Contour.Triangles">Triangles</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;DelaunayTriangle&gt; Triangles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FerrPoly2Tri.DelaunayTriangle.html">DelaunayTriangle</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_TriangulationMode.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.TriangulationMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L67">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_TriangulationMode_" data-uid="FerrPoly2Tri.Contour.TriangulationMode*"></a>
+  <h4 id="FerrPoly2Tri_Contour_TriangulationMode" data-uid="FerrPoly2Tri.Contour.TriangulationMode">TriangulationMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TriangulationMode TriangulationMode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationMode.html">TriangulationMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_Add_FerrPoly2Tri_Point2D_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.Add(FerrPoly2Tri.Point2D%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L118">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_Add_" data-uid="FerrPoly2Tri.Contour.Add*"></a>
+  <h4 id="FerrPoly2Tri_Contour_Add_FerrPoly2Tri_Point2D_System_Int32_System_Boolean_" data-uid="FerrPoly2Tri.Contour.Add(FerrPoly2Tri.Point2D,System.Int32,System.Boolean)">Add(Point2D, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Add(Point2D p, int idx, bool bCalcWindingOrderAndEpsilon)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">idx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">bCalcWindingOrderAndEpsilon</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_Add_FerrPoly2Tri_Point2D_System_Int32_System_Boolean_">Point2DList.Add(Point2D, Int32, Boolean)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_Add_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.Add(FerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L112">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_Add_" data-uid="FerrPoly2Tri.Contour.Add*"></a>
+  <h4 id="FerrPoly2Tri_Contour_Add_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.Contour.Add(FerrPoly2Tri.TriangulationPoint)">Add(TriangulationPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(TriangulationPoint p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_AddHole_FerrPoly2Tri_Contour_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.AddHole(FerrPoly2Tri.Contour)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L257">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_AddHole_" data-uid="FerrPoly2Tri.Contour.AddHole*"></a>
+  <h4 id="FerrPoly2Tri_Contour_AddHole_FerrPoly2Tri_Contour_" data-uid="FerrPoly2Tri.Contour.AddHole(FerrPoly2Tri.Contour)">AddHole(Contour)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddHole(Contour c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Contour.html">Contour</a></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_AddRange_System_Collections_Generic_IEnumerator_FerrPoly2Tri_Point2D__FerrPoly2Tri_Point2DList_WindingOrderType_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.AddRange(System.Collections.Generic.IEnumerator%7BFerrPoly2Tri.Point2D%7D%2CFerrPoly2Tri.Point2DList.WindingOrderType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L149">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_AddRange_" data-uid="FerrPoly2Tri.Contour.AddRange*"></a>
+  <h4 id="FerrPoly2Tri_Contour_AddRange_System_Collections_Generic_IEnumerator_FerrPoly2Tri_Point2D__FerrPoly2Tri_Point2DList_WindingOrderType_" data-uid="FerrPoly2Tri.Contour.AddRange(System.Collections.Generic.IEnumerator{FerrPoly2Tri.Point2D},FerrPoly2Tri.Point2DList.WindingOrderType)">AddRange(IEnumerator&lt;Point2D&gt;, Point2DList.WindingOrderType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AddRange(IEnumerator&lt;Point2D&gt; iter, Point2DList.WindingOrderType windingOrder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a>&gt;</td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Point2DList.WindingOrderType.html">Point2DList.WindingOrderType</a></td>
+        <td><span class="parametername">windingOrder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_AddRange_System_Collections_Generic_IEnumerator_FerrPoly2Tri_Point2D__FerrPoly2Tri_Point2DList_WindingOrderType_">Point2DList.AddRange(IEnumerator&lt;Point2D&gt;, Point2DList.WindingOrderType)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_AddRange_System_Collections_Generic_IList_FerrPoly2Tri_TriangulationPoint__FerrPoly2Tri_Point2DList_WindingOrderType_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.AddRange(System.Collections.Generic.IList%7BFerrPoly2Tri.TriangulationPoint%7D%2CFerrPoly2Tri.Point2DList.WindingOrderType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L198">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_AddRange_" data-uid="FerrPoly2Tri.Contour.AddRange*"></a>
+  <h4 id="FerrPoly2Tri_Contour_AddRange_System_Collections_Generic_IList_FerrPoly2Tri_TriangulationPoint__FerrPoly2Tri_Point2DList_WindingOrderType_" data-uid="FerrPoly2Tri.Contour.AddRange(System.Collections.Generic.IList{FerrPoly2Tri.TriangulationPoint},FerrPoly2Tri.Point2DList.WindingOrderType)">AddRange(IList&lt;TriangulationPoint&gt;, Point2DList.WindingOrderType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddRange(IList&lt;TriangulationPoint&gt; points, Point2DList.WindingOrderType windingOrder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a>&gt;</td>
+        <td><span class="parametername">points</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Point2DList.WindingOrderType.html">Point2DList.WindingOrderType</a></td>
+        <td><span class="parametername">windingOrder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_AddTriangle_FerrPoly2Tri_DelaunayTriangle_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.AddTriangle(FerrPoly2Tri.DelaunayTriangle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L512">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_AddTriangle_" data-uid="FerrPoly2Tri.Contour.AddTriangle*"></a>
+  <h4 id="FerrPoly2Tri_Contour_AddTriangle_FerrPoly2Tri_DelaunayTriangle_" data-uid="FerrPoly2Tri.Contour.AddTriangle(FerrPoly2Tri.DelaunayTriangle)">AddTriangle(DelaunayTriangle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTriangle(DelaunayTriangle t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.DelaunayTriangle.html">DelaunayTriangle</a></td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_AddTriangles_System_Collections_Generic_IEnumerable_FerrPoly2Tri_DelaunayTriangle__.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.AddTriangles(System.Collections.Generic.IEnumerable%7BFerrPoly2Tri.DelaunayTriangle%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L518">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_AddTriangles_" data-uid="FerrPoly2Tri.Contour.AddTriangles*"></a>
+  <h4 id="FerrPoly2Tri_Contour_AddTriangles_System_Collections_Generic_IEnumerable_FerrPoly2Tri_DelaunayTriangle__" data-uid="FerrPoly2Tri.Contour.AddTriangles(System.Collections.Generic.IEnumerable{FerrPoly2Tri.DelaunayTriangle})">AddTriangles(IEnumerable&lt;DelaunayTriangle&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTriangles(IEnumerable&lt;DelaunayTriangle&gt; list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="FerrPoly2Tri.DelaunayTriangle.html">DelaunayTriangle</a>&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_ClearTriangles.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.ClearTriangles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L524">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_ClearTriangles_" data-uid="FerrPoly2Tri.Contour.ClearTriangles*"></a>
+  <h4 id="FerrPoly2Tri_Contour_ClearTriangles" data-uid="FerrPoly2Tri.Contour.ClearTriangles">ClearTriangles()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearTriangles()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_Contains_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.Contains(FerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L241">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_Contains_" data-uid="FerrPoly2Tri.Contour.Contains*"></a>
+  <h4 id="FerrPoly2Tri_Contour_Contains_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.Contour.Contains(FerrPoly2Tri.TriangulationPoint)">Contains(TriangulationPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(TriangulationPoint p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_CopyTo_FerrPoly2Tri_TriangulationPoint___System_Int32_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.CopyTo(FerrPoly2Tri.TriangulationPoint%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L247">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_CopyTo_" data-uid="FerrPoly2Tri.Contour.CopyTo*"></a>
+  <h4 id="FerrPoly2Tri_Contour_CopyTo_FerrPoly2Tri_TriangulationPoint___System_Int32_" data-uid="FerrPoly2Tri.Contour.CopyTo(FerrPoly2Tri.TriangulationPoint[],System.Int32)">CopyTo(TriangulationPoint[], Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(TriangulationPoint[] array, int arrayIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a>[]</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arrayIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_FindPointInContour.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.FindPointInContour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L530">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_FindPointInContour_" data-uid="FerrPoly2Tri.Contour.FindPointInContour*"></a>
+  <h4 id="FerrPoly2Tri_Contour_FindPointInContour" data-uid="FerrPoly2Tri.Contour.FindPointInContour">FindPointInContour()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point2D FindPointInContour()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_GetActualHoles_System_Boolean_System_Collections_Generic_List_FerrPoly2Tri_Contour___.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.GetActualHoles(System.Boolean%2CSystem.Collections.Generic.List%7BFerrPoly2Tri.Contour%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L307">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_GetActualHoles_" data-uid="FerrPoly2Tri.Contour.GetActualHoles*"></a>
+  <h4 id="FerrPoly2Tri_Contour_GetActualHoles_System_Boolean_System_Collections_Generic_List_FerrPoly2Tri_Contour___" data-uid="FerrPoly2Tri.Contour.GetActualHoles(System.Boolean,System.Collections.Generic.List{FerrPoly2Tri.Contour}@)">GetActualHoles(Boolean, ref List&lt;Contour&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetActualHoles(bool parentIsHole, ref List&lt;Contour&gt; holes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">parentIsHole</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FerrPoly2Tri.Contour.html">Contour</a>&gt;</td>
+        <td><span class="parametername">holes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_GetHole_System_Int32_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.GetHole(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L296">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_GetHole_" data-uid="FerrPoly2Tri.Contour.GetHole*"></a>
+  <h4 id="FerrPoly2Tri_Contour_GetHole_System_Int32_" data-uid="FerrPoly2Tri.Contour.GetHole(System.Int32)">GetHole(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Contour GetHole(int idx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">idx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Contour.html">Contour</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_GetHoleEnumerator.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.GetHoleEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L321">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_GetHoleEnumerator_" data-uid="FerrPoly2Tri.Contour.GetHoleEnumerator*"></a>
+  <h4 id="FerrPoly2Tri_Contour_GetHoleEnumerator" data-uid="FerrPoly2Tri.Contour.GetHoleEnumerator">GetHoleEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Contour&gt;.Enumerator GetHoleEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.enumerator">List.Enumerator</a>&lt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_GetNumHoles.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.GetNumHoles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L290">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_GetNumHoles_" data-uid="FerrPoly2Tri.Contour.GetNumHoles*"></a>
+  <h4 id="FerrPoly2Tri_Contour_GetNumHoles" data-uid="FerrPoly2Tri.Contour.GetNumHoles">GetNumHoles()</h4>
+  <div class="markdown level1 summary"><p>returns the basic number of child holes of THIS contour, not including any children of children, etc nor
+examining whether any children are actual holes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumHoles()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_GetNumHoles_System_Boolean_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.GetNumHoles(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L273">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_GetNumHoles_" data-uid="FerrPoly2Tri.Contour.GetNumHoles*"></a>
+  <h4 id="FerrPoly2Tri_Contour_GetNumHoles_System_Boolean_" data-uid="FerrPoly2Tri.Contour.GetNumHoles(System.Boolean)">GetNumHoles(Boolean)</h4>
+  <div class="markdown level1 summary"><p>returns number of holes that are actually holes, including all children of children, etc.   Does NOT
+include holes that are not actually holes.   For example, if the parent is not a hole and this contour has
+a hole that contains a hole, then the number of holes returned would be 2 - one for the current hole (because
+the parent is NOT a hole and thus this hole IS a hole), and 1 for the child of the child.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumHoles(bool parentIsHole)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">parentIsHole</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_IndexOf_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.IndexOf(FerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L106">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_IndexOf_" data-uid="FerrPoly2Tri.Contour.IndexOf*"></a>
+  <h4 id="FerrPoly2Tri_Contour_IndexOf_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.Contour.IndexOf(FerrPoly2Tri.TriangulationPoint)">IndexOf(TriangulationPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(TriangulationPoint p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_InitializeHoles_FerrPoly2Tri_ConstrainedPointSet_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.InitializeHoles(FerrPoly2Tri.ConstrainedPointSet)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L327">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_InitializeHoles_" data-uid="FerrPoly2Tri.Contour.InitializeHoles*"></a>
+  <h4 id="FerrPoly2Tri_Contour_InitializeHoles_FerrPoly2Tri_ConstrainedPointSet_" data-uid="FerrPoly2Tri.Contour.InitializeHoles(FerrPoly2Tri.ConstrainedPointSet)">InitializeHoles(ConstrainedPointSet)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeHoles(ConstrainedPointSet cps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.ConstrainedPointSet.html">ConstrainedPointSet</a></td>
+        <td><span class="parametername">cps</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_InitializeHoles_System_Collections_Generic_List_FerrPoly2Tri_Contour__FerrPoly2Tri_ITriangulatable_FerrPoly2Tri_ConstrainedPointSet_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.InitializeHoles(System.Collections.Generic.List%7BFerrPoly2Tri.Contour%7D%2CFerrPoly2Tri.ITriangulatable%2CFerrPoly2Tri.ConstrainedPointSet)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L337">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_InitializeHoles_" data-uid="FerrPoly2Tri.Contour.InitializeHoles*"></a>
+  <h4 id="FerrPoly2Tri_Contour_InitializeHoles_System_Collections_Generic_List_FerrPoly2Tri_Contour__FerrPoly2Tri_ITriangulatable_FerrPoly2Tri_ConstrainedPointSet_" data-uid="FerrPoly2Tri.Contour.InitializeHoles(System.Collections.Generic.List{FerrPoly2Tri.Contour},FerrPoly2Tri.ITriangulatable,FerrPoly2Tri.ConstrainedPointSet)">InitializeHoles(List&lt;Contour&gt;, ITriangulatable, ConstrainedPointSet)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InitializeHoles(List&lt;Contour&gt; holes, ITriangulatable parent, ConstrainedPointSet cps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FerrPoly2Tri.Contour.html">Contour</a>&gt;</td>
+        <td><span class="parametername">holes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.ITriangulatable.html">ITriangulatable</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.ConstrainedPointSet.html">ConstrainedPointSet</a></td>
+        <td><span class="parametername">cps</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_Insert_System_Int32_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.Insert(System.Int32%2CFerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L229">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_Insert_" data-uid="FerrPoly2Tri.Contour.Insert*"></a>
+  <h4 id="FerrPoly2Tri_Contour_Insert_System_Int32_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.Contour.Insert(System.Int32,FerrPoly2Tri.TriangulationPoint)">Insert(Int32, TriangulationPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int idx, TriangulationPoint p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">idx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_IsPointInsideContour_FerrPoly2Tri_Point2D_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.IsPointInsideContour(FerrPoly2Tri.Point2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L558">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_IsPointInsideContour_" data-uid="FerrPoly2Tri.Contour.IsPointInsideContour*"></a>
+  <h4 id="FerrPoly2Tri_Contour_IsPointInsideContour_FerrPoly2Tri_Point2D_" data-uid="FerrPoly2Tri.Contour.IsPointInsideContour(FerrPoly2Tri.Point2D)">IsPointInsideContour(Point2D)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPointInsideContour(Point2D p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_Prepare_FerrPoly2Tri_TriangulationContext_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.Prepare(FerrPoly2Tri.TriangulationContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L506">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_Prepare_" data-uid="FerrPoly2Tri.Contour.Prepare*"></a>
+  <h4 id="FerrPoly2Tri_Contour_Prepare_FerrPoly2Tri_TriangulationContext_" data-uid="FerrPoly2Tri.Contour.Prepare(FerrPoly2Tri.TriangulationContext)">Prepare(TriangulationContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Prepare(TriangulationContext tcx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationContext.html">TriangulationContext</a></td>
+        <td><span class="parametername">tcx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_Remove_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.Remove(FerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L235">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_Remove_" data-uid="FerrPoly2Tri.Contour.Remove*"></a>
+  <h4 id="FerrPoly2Tri_Contour_Remove_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.Contour.Remove(FerrPoly2Tri.TriangulationPoint)">Remove(TriangulationPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(TriangulationPoint p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_ToString.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L94">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_ToString_" data-uid="FerrPoly2Tri.Contour.ToString*"></a>
+  <h4 id="FerrPoly2Tri_Contour_ToString" data-uid="FerrPoly2Tri.Contour.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FerrPoly2Tri.Point2DList.html#FerrPoly2Tri_Point2DList_ToString">Point2DList.ToString()</a></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour_System_Collections_Generic_IEnumerable_FerrPoly2Tri_TriangulationPoint__GetEnumerator.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour.System%23Collections%23Generic%23IEnumerable%7BFerrPoly2Tri%23TriangulationPoint%7D%23GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L100">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_Contour_System_Collections_Generic_IEnumerable_FerrPoly2Tri_TriangulationPoint__GetEnumerator_" data-uid="FerrPoly2Tri.Contour.System#Collections#Generic#IEnumerable{FerrPoly2Tri#TriangulationPoint}#GetEnumerator*"></a>
+  <h4 id="FerrPoly2Tri_Contour_System_Collections_Generic_IEnumerable_FerrPoly2Tri_TriangulationPoint__GetEnumerator" data-uid="FerrPoly2Tri.Contour.System#Collections#Generic#IEnumerable{FerrPoly2Tri#TriangulationPoint}#GetEnumerator">IEnumerable&lt;TriangulationPoint&gt;.GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator&lt;TriangulationPoint&gt; IEnumerable&lt;TriangulationPoint&gt;.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">System.Collections.Generic.IList&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1">System.Collections.Generic.ICollection&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">System.Collections.Generic.IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="FerrPoly2Tri.ITriangulatable.html">ITriangulatable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">System.Collections.Generic.IList&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1">System.Collections.Generic.ICollection&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">System.Collections.Generic.IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">System.Collections.IEnumerable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_Contour.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.Contour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/Contour.cs/#L45" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Example Unity documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

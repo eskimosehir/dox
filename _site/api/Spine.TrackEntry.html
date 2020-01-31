@@ -1,0 +1,1203 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TrackEntry
+   | Example Unity documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TrackEntry
+   | Example Unity documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Spine.TrackEntry">
+  
+  
+  <h1 id="Spine_TrackEntry" data-uid="Spine.TrackEntry" class="text-break">Class TrackEntry
+  </h1>
+  <div class="markdown level0 summary"><p>
+Stores settings and other state for the playback of an animation on an <a class="xref" href="Spine.AnimationState.html">AnimationState</a> track.</p>
+<p>
+References to a track entry must not be kept after the <see cref="!:AnimationStateListener.Dispose(TrackEntry)"></see> event occurs.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">TrackEntry</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Spine.Pool-1.IPoolable.html">Pool.IPoolable</a>&lt;&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Spine.html">Spine</a></h6>
+  <h6><strong>Assembly</strong>: spine-unity.dll</h6>
+  <h5 id="Spine_TrackEntry_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TrackEntry : Pool&lt;TrackEntry&gt;.IPoolable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_Alpha.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.Alpha%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L1026">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_Alpha_" data-uid="Spine.TrackEntry.Alpha*"></a>
+  <h4 id="Spine_TrackEntry_Alpha" data-uid="Spine.TrackEntry.Alpha">Alpha</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Alpha { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_Animation.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.Animation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L922">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_Animation_" data-uid="Spine.TrackEntry.Animation*"></a>
+  <h4 id="Spine_TrackEntry_Animation" data-uid="Spine.TrackEntry.Animation">Animation</h4>
+  <div class="markdown level1 summary"><p>The animation to apply for this track entry.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Animation Animation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Animation.html">Animation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_AnimationEnd.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.AnimationEnd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L971">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_AnimationEnd_" data-uid="Spine.TrackEntry.AnimationEnd*"></a>
+  <h4 id="Spine_TrackEntry_AnimationEnd" data-uid="Spine.TrackEntry.AnimationEnd">AnimationEnd</h4>
+  <div class="markdown level1 summary"><p>Seconds for the last frame of this animation. Non-looping animations won&apos;t play past this time. Looping animations will
+loop back to <a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_AnimationStart">AnimationStart</a> at this time. Defaults to the animation <a class="xref" href="Spine.Animation.html#Spine_Animation_Duration">Duration</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AnimationEnd { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_AnimationLast.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.AnimationLast%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L978">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_AnimationLast_" data-uid="Spine.TrackEntry.AnimationLast*"></a>
+  <h4 id="Spine_TrackEntry_AnimationLast" data-uid="Spine.TrackEntry.AnimationLast">AnimationLast</h4>
+  <div class="markdown level1 summary"><p>The time in seconds this animation was last applied. Some timelines use this for one-time triggers. Eg, when this
+animation is applied, event timelines will fire all events between the <pre><code>AnimationLast</code></pre> time (exclusive) and</p>
+<pre><code>AnimationTime</code></pre> (inclusive). Defaults to -1 to ensure triggers on frame 0 happen the first time this animation
+<p>is applied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AnimationLast { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_AnimationStart.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.AnimationStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L965">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_AnimationStart_" data-uid="Spine.TrackEntry.AnimationStart*"></a>
+  <h4 id="Spine_TrackEntry_AnimationStart" data-uid="Spine.TrackEntry.AnimationStart">AnimationStart</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AnimationStart { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_AnimationTime.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.AnimationTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L991">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_AnimationTime_" data-uid="Spine.TrackEntry.AnimationTime*"></a>
+  <h4 id="Spine_TrackEntry_AnimationTime" data-uid="Spine.TrackEntry.AnimationTime">AnimationTime</h4>
+  <div class="markdown level1 summary"><p>Uses <a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_TrackTime">TrackTime</a> to compute the <pre><code>AnimationTime</code></pre>, which is between <a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_AnimationStart">AnimationStart</a>
+and <a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_AnimationEnd">AnimationEnd</a>. When the <pre><code>TrackTime</code></pre> is 0, the <pre><code>AnimationTime</code></pre> is equal to the</p>
+<pre><code>AnimationStart</code></pre> time.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AnimationTime { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_AttachmentThreshold.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.AttachmentThreshold%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L1040">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_AttachmentThreshold_" data-uid="Spine.TrackEntry.AttachmentThreshold*"></a>
+  <h4 id="Spine_TrackEntry_AttachmentThreshold" data-uid="Spine.TrackEntry.AttachmentThreshold">AttachmentThreshold</h4>
+  <div class="markdown level1 summary"><p>When the mix percentage (<a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_MixTime">MixTime</a> / <a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_MixDuration">MixDuration</a>) is less than the</p>
+<pre><code>AttachmentThreshold</code></pre>, attachment timelines are applied while this animation is being mixed out. Defaults to
+<p>0, so attachment timelines are not applied while this animation is being mixed out.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AttachmentThreshold { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_Delay.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.Delay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L938">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_Delay_" data-uid="Spine.TrackEntry.Delay*"></a>
+  <h4 id="Spine_TrackEntry_Delay" data-uid="Spine.TrackEntry.Delay">Delay</h4>
+  <div class="markdown level1 summary"><p>
+Seconds to postpone playing the animation. When this track entry is the current track entry, <pre><code>Delay</code></pre>
+postpones incrementing the <a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_TrackTime">TrackTime</a>. When this track entry is queued, <pre><code>Delay</code></pre> is the time from
+the start of the previous animation to when this track entry will become the current track entry (ie when the previous
+track entry <a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_TrackTime">TrackTime</a> &gt;= this track entry&apos;s <pre><code>Delay</code></pre>).</p>
+<p>
+<a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_TimeScale">TimeScale</a> affects the delay.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Delay { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_DrawOrderThreshold.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.DrawOrderThreshold%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L1047">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_DrawOrderThreshold_" data-uid="Spine.TrackEntry.DrawOrderThreshold*"></a>
+  <h4 id="Spine_TrackEntry_DrawOrderThreshold" data-uid="Spine.TrackEntry.DrawOrderThreshold">DrawOrderThreshold</h4>
+  <div class="markdown level1 summary"><p>When the mix percentage (<a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_MixTime">MixTime</a> / <a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_MixDuration">MixDuration</a>) is less than the</p>
+<pre><code>DrawOrderThreshold</code></pre>, draw order timelines are applied while this animation is being mixed out. Defaults to 0,
+<p>so draw order timelines are not applied while this animation is being mixed out.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DrawOrderThreshold { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_EventThreshold.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.EventThreshold%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L1033">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_EventThreshold_" data-uid="Spine.TrackEntry.EventThreshold*"></a>
+  <h4 id="Spine_TrackEntry_EventThreshold" data-uid="Spine.TrackEntry.EventThreshold">EventThreshold</h4>
+  <div class="markdown level1 summary"><p>When the mix percentage (<a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_MixTime">MixTime</a> / <a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_MixDuration">MixDuration</a>) is less than the</p>
+<pre><code>EventThreshold</code></pre>, event timelines are applied while this animation is being mixed out. Defaults to 0, so event
+<p>timelines are not applied while this animation is being mixed out.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float EventThreshold { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_HoldPrevious.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.HoldPrevious%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L1115">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_HoldPrevious_" data-uid="Spine.TrackEntry.HoldPrevious*"></a>
+  <h4 id="Spine_TrackEntry_HoldPrevious" data-uid="Spine.TrackEntry.HoldPrevious">HoldPrevious</h4>
+  <div class="markdown level1 summary"><p>
+If true, when mixing from the previous animation to this animation, the previous animation is applied as normal instead
+of being mixed out.</p>
+<p>
+When mixing between animations that key the same property, if a lower track also keys that property then the value will
+briefly dip toward the lower track value during the mix. This happens because the first animation mixes from 100% to 0%
+while the second animation mixes from 0% to 100%. Setting <pre><code>HoldPrevious</code></pre> to true applies the first animation
+at 100% during the mix so the lower track value is overwritten. Such dipping does not occur on the lowest track which
+keys the property, only when a higher track also keys the property.</p>
+<p>
+Snapping will occur if <pre><code>HoldPrevious</code></pre> is true and this animation does not key all the same properties as the
+previous animation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HoldPrevious { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_IsComplete.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.IsComplete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L1056">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_IsComplete_" data-uid="Spine.TrackEntry.IsComplete*"></a>
+  <h4 id="Spine_TrackEntry_IsComplete" data-uid="Spine.TrackEntry.IsComplete">IsComplete</h4>
+  <div class="markdown level1 summary"><p>Returns true if at least one loop has been completed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsComplete { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Spine_TrackEntry_IsComplete_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_Complete">Complete</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_Loop.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.Loop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L927">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_Loop_" data-uid="Spine.TrackEntry.Loop*"></a>
+  <h4 id="Spine_TrackEntry_Loop" data-uid="Spine.TrackEntry.Loop">Loop</h4>
+  <div class="markdown level1 summary"><p>If true, the animation will repeat. If false it will not, instead its last frame is applied if played beyond its
+duration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Loop { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_MixBlend.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.MixBlend%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L1089">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_MixBlend_" data-uid="Spine.TrackEntry.MixBlend*"></a>
+  <h4 id="Spine_TrackEntry_MixBlend" data-uid="Spine.TrackEntry.MixBlend">MixBlend</h4>
+  <div class="markdown level1 summary"><p>
+Controls how properties keyed in the animation are mixed with lower tracks. Defaults to <a class="xref" href="Spine.MixBlend.html#Spine_MixBlend_Replace">Replace</a>, which
+replaces the values from the lower tracks with the animation values. <a class="xref" href="Spine.MixBlend.html#Spine_MixBlend_Add">Add</a> adds the animation values to
+the values from the lower tracks.</p>
+<p>
+ The <pre><code>MixBlend</code></pre> can be set for a new track entry only before <a class="xref" href="Spine.AnimationState.html#Spine_AnimationState_Apply_Spine_Skeleton_">Apply(Skeleton)</a> is first
+ called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MixBlend MixBlend { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.MixBlend.html">MixBlend</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_MixDuration.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.MixDuration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L1078">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_MixDuration_" data-uid="Spine.TrackEntry.MixDuration*"></a>
+  <h4 id="Spine_TrackEntry_MixDuration" data-uid="Spine.TrackEntry.MixDuration">MixDuration</h4>
+  <div class="markdown level1 summary"><p>
+Seconds for mixing from the previous animation to this animation. Defaults to the value provided by AnimationStateData
+<a class="xref" href="Spine.AnimationStateData.html#Spine_AnimationStateData_GetMix_Spine_Animation_Spine_Animation_">GetMix(Animation, Animation)</a> based on the animation before this animation (if any).</p>
+<p>
+The <pre><code>MixDuration</code></pre> can be set manually rather than use the value from
+<a class="xref" href="Spine.AnimationStateData.html#Spine_AnimationStateData_GetMix_Spine_Animation_Spine_Animation_">GetMix(Animation, Animation)</a>. In that case, the <pre><code>MixDuration</code></pre> can be set for a new
+ track entry only before <a class="xref" href="Spine.AnimationState.html#Spine_AnimationState_Update_System_Single_">Update(Single)</a> is first called.</p>
+<p>
+When using <a class="xref" href="Spine.AnimationState.html#Spine_AnimationState_AddAnimation_System_Int32_Spine_Animation_System_Boolean_System_Single_">AddAnimation(Int32, Animation, Boolean, Single)</a> with a <pre><code>Delay</code></pre> &lt;= 0, note the
+<a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_Delay">Delay</a> is set using the mix duration from the <a class="xref" href="Spine.AnimationStateData.html">AnimationStateData</a>, not a mix duration set
+afterward.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MixDuration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_MixingFrom.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.MixingFrom%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L1094">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_MixingFrom_" data-uid="Spine.TrackEntry.MixingFrom*"></a>
+  <h4 id="Spine_TrackEntry_MixingFrom" data-uid="Spine.TrackEntry.MixingFrom">MixingFrom</h4>
+  <div class="markdown level1 summary"><p>The track entry for the previous animation when mixing from the previous animation to this animation, or null if no
+mixing is currently occuring. When mixing from multiple animations, <pre><code>MixingFrom</code></pre> makes up a linked list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TrackEntry MixingFrom { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.TrackEntry.html">TrackEntry</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_MixingTo.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.MixingTo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L1099">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_MixingTo_" data-uid="Spine.TrackEntry.MixingTo*"></a>
+  <h4 id="Spine_TrackEntry_MixingTo" data-uid="Spine.TrackEntry.MixingTo">MixingTo</h4>
+  <div class="markdown level1 summary"><p>The track entry for the next animation when mixing from this animation to the next animation, or null if no mixing is
+currently occuring. When mixing to multiple animations, <pre><code>MixingTo</code></pre> makes up a linked list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TrackEntry MixingTo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.TrackEntry.html">TrackEntry</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_MixTime.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.MixTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L1063">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_MixTime_" data-uid="Spine.TrackEntry.MixTime*"></a>
+  <h4 id="Spine_TrackEntry_MixTime" data-uid="Spine.TrackEntry.MixTime">MixTime</h4>
+  <div class="markdown level1 summary"><p>Seconds from 0 to the <a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_MixDuration">MixDuration</a> when mixing from the previous animation to this animation. May be
+slightly more than <pre><code>MixDuration</code></pre> when the mix is complete.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MixTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_Next.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.Next%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L1051">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_Next_" data-uid="Spine.TrackEntry.Next*"></a>
+  <h4 id="Spine_TrackEntry_Next" data-uid="Spine.TrackEntry.Next">Next</h4>
+  <div class="markdown level1 summary"><p>The animation queued to start after this animation, or null. <pre><code>Next</code></pre> makes up a linked list. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TrackEntry Next { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.TrackEntry.html">TrackEntry</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_TimeScale.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.TimeScale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L1016">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_TimeScale_" data-uid="Spine.TrackEntry.TimeScale*"></a>
+  <h4 id="Spine_TrackEntry_TimeScale" data-uid="Spine.TrackEntry.TimeScale">TimeScale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TimeScale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_TrackEnd.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.TrackEnd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L956">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_TrackEnd_" data-uid="Spine.TrackEntry.TrackEnd*"></a>
+  <h4 id="Spine_TrackEntry_TrackEnd" data-uid="Spine.TrackEntry.TrackEnd">TrackEnd</h4>
+  <div class="markdown level1 summary"><p>
+The track time in seconds when this animation will be removed from the track. Defaults to the highest possible float
+value, meaning the animation will be applied until a new animation is set or the track is cleared. If the track end time
+is reached, no other animations are queued for playback, and mixing from any previous animations is complete, then the
+properties keyed by the animation are set to the setup pose and the track is cleared.</p>
+<p>
+It may be desired to use <a class="xref" href="Spine.AnimationState.html#Spine_AnimationState_AddEmptyAnimation_System_Int32_System_Single_System_Single_">AddEmptyAnimation(Int32, Single, Single)</a>  rather than have the animation
+abruptly cease being applied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TrackEnd { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_TrackIndex.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.TrackIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L919">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_TrackIndex_" data-uid="Spine.TrackEntry.TrackIndex*"></a>
+  <h4 id="Spine_TrackEntry_TrackIndex" data-uid="Spine.TrackEntry.TrackIndex">TrackIndex</h4>
+  <div class="markdown level1 summary"><p>The index of the track where this entry is either current or queued.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TrackIndex { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Spine_TrackEntry_TrackIndex_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Spine.AnimationState.html#Spine_AnimationState_GetCurrent_System_Int32_">GetCurrent(Int32)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_TrackTime.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.TrackTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L944">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_TrackTime_" data-uid="Spine.TrackEntry.TrackTime*"></a>
+  <h4 id="Spine_TrackEntry_TrackTime" data-uid="Spine.TrackEntry.TrackTime">TrackTime</h4>
+  <div class="markdown level1 summary"><p>Current time in seconds this track entry has been the current track entry. The track time determines
+<a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_AnimationTime">AnimationTime</a>. The track time can be set to start the animation at a time other than 0, without affecting
+looping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TrackTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_Reset.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L900">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_Reset_" data-uid="Spine.TrackEntry.Reset*"></a>
+  <h4 id="Spine_TrackEntry_Reset" data-uid="Spine.TrackEntry.Reset">Reset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_ResetRotationDirections.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.ResetRotationDirections%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L1127">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_ResetRotationDirections_" data-uid="Spine.TrackEntry.ResetRotationDirections*"></a>
+  <h4 id="Spine_TrackEntry_ResetRotationDirections" data-uid="Spine.TrackEntry.ResetRotationDirections">ResetRotationDirections()</h4>
+  <div class="markdown level1 summary"><p>
+Resets the rotation directions for mixing this entry&apos;s rotate timelines. This can be useful to avoid bones rotating the
+long way around when using <span class="xref">Spine.TrackEntry.alpha</span> and starting animations on other tracks.</p>
+<p>
+Mixing with <a class="xref" href="Spine.MixBlend.html#Spine_MixBlend_Replace">Replace</a> involves finding a rotation between two others, which has two possible solutions:
+the short way or the long way around. The two rotations likely change over time, so which direction is the short or long
+way also changes. If the short way was always chosen, bones would flip to the other side when that direction became the
+long way. TrackEntry chooses the short way the first time it is applied and remembers that direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetRotationDirections()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_ToString.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L1131">View Source</a>
+  </span>
+  <a id="Spine_TrackEntry_ToString_" data-uid="Spine.TrackEntry.ToString*"></a>
+  <h4 id="Spine_TrackEntry_ToString" data-uid="Spine.TrackEntry.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_Complete.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.Complete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L878">View Source</a>
+  </span>
+  <h4 id="Spine_TrackEntry_Complete" data-uid="Spine.TrackEntry.Complete">Complete</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AnimationState.TrackEntryDelegate Complete</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.AnimationState.TrackEntryDelegate.html">AnimationState.TrackEntryDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_Dispose.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L878">View Source</a>
+  </span>
+  <h4 id="Spine_TrackEntry_Dispose" data-uid="Spine.TrackEntry.Dispose">Dispose</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AnimationState.TrackEntryDelegate Dispose</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.AnimationState.TrackEntryDelegate.html">AnimationState.TrackEntryDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_End.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.End%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L878">View Source</a>
+  </span>
+  <h4 id="Spine_TrackEntry_End" data-uid="Spine.TrackEntry.End">End</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AnimationState.TrackEntryDelegate End</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.AnimationState.TrackEntryDelegate.html">AnimationState.TrackEntryDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_Event.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.Event%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L879">View Source</a>
+  </span>
+  <h4 id="Spine_TrackEntry_Event" data-uid="Spine.TrackEntry.Event">Event</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AnimationState.TrackEntryEventDelegate Event</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.AnimationState.TrackEntryEventDelegate.html">AnimationState.TrackEntryEventDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_Interrupt.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.Interrupt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L878">View Source</a>
+  </span>
+  <h4 id="Spine_TrackEntry_Interrupt" data-uid="Spine.TrackEntry.Interrupt">Interrupt</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AnimationState.TrackEntryDelegate Interrupt</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.AnimationState.TrackEntryDelegate.html">AnimationState.TrackEntryDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry_Start.md&amp;value=---%0Auid%3A%20Spine.TrackEntry.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L878">View Source</a>
+  </span>
+  <h4 id="Spine_TrackEntry_Start" data-uid="Spine.TrackEntry.Start">Start</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AnimationState.TrackEntryDelegate Start</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.AnimationState.TrackEntryDelegate.html">AnimationState.TrackEntryDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Spine.Pool-1.IPoolable.html">Pool&lt;T&gt;.IPoolable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Spine.SkeletonExtensions.html#Spine_SkeletonExtensions_AllowImmediateQueue_Spine_TrackEntry_">SkeletonExtensions.AllowImmediateQueue(TrackEntry)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_TrackEntry.md&amp;value=---%0Auid%3A%20Spine.TrackEntry%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/AnimationState.cs/#L873" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Example Unity documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

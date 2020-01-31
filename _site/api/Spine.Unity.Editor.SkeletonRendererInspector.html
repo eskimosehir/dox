@@ -1,0 +1,1948 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SkeletonRendererInspector
+   | Example Unity documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SkeletonRendererInspector
+   | Example Unity documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Spine.Unity.Editor.SkeletonRendererInspector">
+  
+  
+  <h1 id="Spine_Unity_Editor_SkeletonRendererInspector" data-uid="Spine.Unity.Editor.SkeletonRendererInspector" class="text-break">Class SkeletonRendererInspector
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.ScriptableObject</span></div>
+    <div class="level3"><span class="xref">UnityEditor.Editor</span></div>
+    <div class="level4"><span class="xref">SkeletonRendererInspector</span></div>
+      <div class="level5"><a class="xref" href="Spine.Unity.Editor.SkeletonAnimationInspector.html">SkeletonAnimationInspector</a></div>
+      <div class="level5"><a class="xref" href="Spine.Unity.Editor.SkeletonMecanimInspector.html">SkeletonMecanimInspector</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">UnityEditor.Editor.CreateEditorWithContext(UnityEngine.Object[], UnityEngine.Object, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.CreateEditorWithContext(UnityEngine.Object[], UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.CreateCachedEditorWithContext(UnityEngine.Object, UnityEngine.Object, System.Type, UnityEditor.Editor)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.CreateCachedEditorWithContext(UnityEngine.Object[], UnityEngine.Object, System.Type, UnityEditor.Editor)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.CreateCachedEditor(UnityEngine.Object, System.Type, UnityEditor.Editor)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.CreateCachedEditor(UnityEngine.Object[], System.Type, UnityEditor.Editor)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.CreateEditor(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.CreateEditor(UnityEngine.Object, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.CreateEditor(UnityEngine.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.CreateEditor(UnityEngine.Object[], System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.DrawPropertiesExcluding(UnityEditor.SerializedObject, System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.DrawDefaultInspector()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.Repaint()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.CreateInspectorGUI()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.RequiresConstantRepaint()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.DrawHeader()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.OnHeaderGUI()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.ShouldHideOpenButton()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.DrawFoldoutInspector(UnityEngine.Object, UnityEditor.Editor)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.HasPreviewGUI()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.GetPreviewTitle()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.RenderStaticPreview(System.String, UnityEngine.Object[], System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.OnPreviewGUI(UnityEngine.Rect, UnityEngine.GUIStyle)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.OnInteractivePreviewGUI(UnityEngine.Rect, UnityEngine.GUIStyle)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.OnPreviewSettings()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.GetInfoString()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.DrawPreview(UnityEngine.Rect)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.ReloadPreviewInstances()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.UseDefaultMargins()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.Initialize(UnityEngine.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.MoveNextTarget()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.ResetTarget()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.target</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.targets</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.serializedObject</span>
+    </div>
+    <div>
+      <span class="xref">UnityEditor.Editor.finishedDefaultHeaderGUI</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.SetDirty()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.CreateInstance(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.CreateInstance(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.CreateInstance&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindSceneObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeAll(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.name</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.hideFlags</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Spine.Unity.Editor.html">Spine.Unity.Editor</a></h6>
+  <h6><strong>Assembly</strong>: spine-unity-editor.dll</h6>
+  <h5 id="Spine_Unity_Editor_SkeletonRendererInspector_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CustomEditor(typeof(SkeletonRenderer))]
+[CanEditMultipleObjects]
+public class SkeletonRendererInspector : Editor, IPreviewable, IToolModeOwner</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_advancedFoldout.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.advancedFoldout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L52">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_advancedFoldout" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.advancedFoldout">advancedFoldout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool advancedFoldout</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_ClearMaterialButtonLabel.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.ClearMaterialButtonLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L76">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_ClearMaterialButtonLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.ClearMaterialButtonLabel">ClearMaterialButtonLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent ClearMaterialButtonLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIContent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_clearStateOnDisable.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.clearStateOnDisable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L58">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_clearStateOnDisable" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.clearStateOnDisable">clearStateOnDisable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty clearStateOnDisable</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_ClearStateOnDisableLabel.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.ClearStateOnDisableLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L73">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_ClearStateOnDisableLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.ClearStateOnDisableLabel">ClearStateOnDisableLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent ClearStateOnDisableLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIContent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_deleteInsideMaskMaterialsQueued.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.deleteInsideMaskMaterialsQueued%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L69">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_deleteInsideMaskMaterialsQueued" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.deleteInsideMaskMaterialsQueued">deleteInsideMaskMaterialsQueued</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool deleteInsideMaskMaterialsQueued</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_DeleteMaterialButtonLabel.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.DeleteMaterialButtonLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L76">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_DeleteMaterialButtonLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.DeleteMaterialButtonLabel">DeleteMaterialButtonLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent DeleteMaterialButtonLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIContent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_deleteOutsideMaskMaterialsQueued.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.deleteOutsideMaskMaterialsQueued%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L70">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_deleteOutsideMaskMaterialsQueued" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.deleteOutsideMaskMaterialsQueued">deleteOutsideMaskMaterialsQueued</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool deleteOutsideMaskMaterialsQueued</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_forceReloadQueued.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.forceReloadQueued%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L65">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_forceReloadQueued" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.forceReloadQueued">forceReloadQueued</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool forceReloadQueued</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_ImmubleTrianglesLabel.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.ImmubleTrianglesLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L73">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_ImmubleTrianglesLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.ImmubleTrianglesLabel">ImmubleTrianglesLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent ImmubleTrianglesLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIContent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_immutableTriangles.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.immutableTriangles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L58">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_immutableTriangles" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.immutableTriangles">immutableTriangles</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty immutableTriangles</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_initialFlipX.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.initialFlipX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L57">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_initialFlipX" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.initialFlipX">initialFlipX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty initialFlipX</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_initialFlipY.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.initialFlipY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L57">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_initialFlipY" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.initialFlipY">initialFlipY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty initialFlipY</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_initialSkinName.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.initialSkinName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L56">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_initialSkinName" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.initialSkinName">initialSkinName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty initialSkinName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_isInspectingPrefab.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.isInspectingPrefab%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L64">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_isInspectingPrefab" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.isInspectingPrefab">isInspectingPrefab</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool isInspectingPrefab</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_maskInteraction.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.maskInteraction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L60">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_maskInteraction" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.maskInteraction">maskInteraction</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty maskInteraction</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_MaskInteractionLabel.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.MaskInteractionLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L74">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_MaskInteractionLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.MaskInteractionLabel">MaskInteractionLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent MaskInteractionLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIContent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_MaskMaterialsHeadingLabel.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.MaskMaterialsHeadingLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L75">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_MaskMaterialsHeadingLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.MaskMaterialsHeadingLabel">MaskMaterialsHeadingLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent MaskMaterialsHeadingLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIContent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_maskMaterialsInside.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.maskMaterialsInside%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L61">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_maskMaterialsInside" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.maskMaterialsInside">maskMaterialsInside</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty maskMaterialsInside</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_MaskMaterialsInsideLabel.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.MaskMaterialsInsideLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L75">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_MaskMaterialsInsideLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.MaskMaterialsInsideLabel">MaskMaterialsInsideLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent MaskMaterialsInsideLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIContent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_maskMaterialsNone.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.maskMaterialsNone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L61">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_maskMaterialsNone" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.maskMaterialsNone">maskMaterialsNone</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty maskMaterialsNone</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_MaskMaterialsNoneLabel.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.MaskMaterialsNoneLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L75">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_MaskMaterialsNoneLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.MaskMaterialsNoneLabel">MaskMaterialsNoneLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent MaskMaterialsNoneLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIContent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_maskMaterialsOutside.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.maskMaterialsOutside%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L61">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_maskMaterialsOutside" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.maskMaterialsOutside">maskMaterialsOutside</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty maskMaterialsOutside</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_MaskMaterialsOutsideLabel.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.MaskMaterialsOutsideLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L75">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_MaskMaterialsOutsideLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.MaskMaterialsOutsideLabel">MaskMaterialsOutsideLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent MaskMaterialsOutsideLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIContent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_normals.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.normals%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L59">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_normals" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.normals">normals</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty normals</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_NormalsLabel.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.NormalsLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L74">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_NormalsLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.NormalsLabel">NormalsLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent NormalsLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIContent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_pmaVertexColors.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.pmaVertexColors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L59">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_pmaVertexColors" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.pmaVertexColors">pmaVertexColors</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty pmaVertexColors</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_PMAVertexColorsLabel.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.PMAVertexColorsLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L73">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_PMAVertexColorsLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.PMAVertexColorsLabel">PMAVertexColorsLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent PMAVertexColorsLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIContent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_separatorSlotNames.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.separatorSlotNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L58">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_separatorSlotNames" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.separatorSlotNames">separatorSlotNames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty separatorSlotNames</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_setInsideMaskMaterialsQueued.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.setInsideMaskMaterialsQueued%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L67">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_setInsideMaskMaterialsQueued" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.setInsideMaskMaterialsQueued">setInsideMaskMaterialsQueued</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool setInsideMaskMaterialsQueued</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_setMaskNoneMaterialsQueued.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.setMaskNoneMaterialsQueued%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L66">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_setMaskNoneMaterialsQueued" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.setMaskNoneMaterialsQueued">setMaskNoneMaterialsQueued</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool setMaskNoneMaterialsQueued</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_SetMaterialButtonLabel.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.SetMaterialButtonLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L76">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_SetMaterialButtonLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.SetMaterialButtonLabel">SetMaterialButtonLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent SetMaterialButtonLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIContent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_setOutsideMaskMaterialsQueued.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.setOutsideMaskMaterialsQueued%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L68">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_setOutsideMaskMaterialsQueued" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.setOutsideMaskMaterialsQueued">setOutsideMaskMaterialsQueued</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool setOutsideMaskMaterialsQueued</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_singleSubmesh.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.singleSubmesh%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L58">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_singleSubmesh" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.singleSubmesh">singleSubmesh</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty singleSubmesh</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_SingleSubmeshLabel.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.SingleSubmeshLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L73">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_SingleSubmeshLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.SingleSubmeshLabel">SingleSubmeshLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent SingleSubmeshLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIContent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_skeletonDataAsset.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.skeletonDataAsset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L56">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_skeletonDataAsset" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.skeletonDataAsset">skeletonDataAsset</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty skeletonDataAsset</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_SkeletonDataAssetLabel.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.SkeletonDataAssetLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L72">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_SkeletonDataAssetLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.SkeletonDataAssetLabel">SkeletonDataAssetLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent SkeletonDataAssetLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIContent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_SkeletonUtilityButtonContent.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.SkeletonUtilityButtonContent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L72">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_SkeletonUtilityButtonContent" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.SkeletonUtilityButtonContent">SkeletonUtilityButtonContent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent SkeletonUtilityButtonContent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIContent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_sortingProperties.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.sortingProperties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L62">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_sortingProperties" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.sortingProperties">sortingProperties</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SpineInspectorUtility.SerializedSortingProperties sortingProperties</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Unity.Editor.SpineInspectorUtility.SerializedSortingProperties.html">SpineInspectorUtility.SerializedSortingProperties</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_tangents.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.tangents%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L59">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_tangents" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.tangents">tangents</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty tangents</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_TangentsLabel.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.TangentsLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L74">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_TangentsLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.TangentsLabel">TangentsLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent TangentsLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIContent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_tintBlack.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.tintBlack%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L59">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_tintBlack" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.tintBlack">tintBlack</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty tintBlack</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_TintBlackLabel.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.TintBlackLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L73">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_TintBlackLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.TintBlackLabel">TintBlackLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent TintBlackLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIContent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_zSpacing.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.zSpacing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L59">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_zSpacing" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.zSpacing">zSpacing</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty zSpacing</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_ZSpacingLabel.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.ZSpacingLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L73">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_ZSpacingLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.ZSpacingLabel">ZSpacingLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent ZSpacingLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIContent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_TargetIsValid.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.TargetIsValid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L83">View Source</a>
+  </span>
+  <a id="Spine_Unity_Editor_SkeletonRendererInspector_TargetIsValid_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.TargetIsValid*"></a>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_TargetIsValid" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.TargetIsValid">TargetIsValid</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool TargetIsValid { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_DrawInspectorGUI_System_Boolean_.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.DrawInspectorGUI(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L180">View Source</a>
+  </span>
+  <a id="Spine_Unity_Editor_SkeletonRendererInspector_DrawInspectorGUI_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.DrawInspectorGUI*"></a>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_DrawInspectorGUI_System_Boolean_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.DrawInspectorGUI(System.Boolean)">DrawInspectorGUI(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DrawInspectorGUI(bool multi)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">multi</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_GetSeparatorSlotNames_Spine_Unity_SkeletonRenderer_.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.GetSeparatorSlotNames(Spine.Unity.SkeletonRenderer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L413">View Source</a>
+  </span>
+  <a id="Spine_Unity_Editor_SkeletonRendererInspector_GetSeparatorSlotNames_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.GetSeparatorSlotNames*"></a>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_GetSeparatorSlotNames_Spine_Unity_SkeletonRenderer_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.GetSeparatorSlotNames(Spine.Unity.SkeletonRenderer)">GetSeparatorSlotNames(SkeletonRenderer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetSeparatorSlotNames(SkeletonRenderer skeletonRenderer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Unity.SkeletonRenderer.html">SkeletonRenderer</a></td>
+        <td><span class="parametername">skeletonRenderer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_MaskMaterialsEditingField_System_Boolean__System_Boolean__UnityEditor_SerializedProperty_UnityEngine_GUIContent_System_Boolean_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.MaskMaterialsEditingField(System.Boolean%40%2CSystem.Boolean%40%2CUnityEditor.SerializedProperty%2CUnityEngine.GUIContent%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L455">View Source</a>
+  </span>
+  <a id="Spine_Unity_Editor_SkeletonRendererInspector_MaskMaterialsEditingField_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.MaskMaterialsEditingField*"></a>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_MaskMaterialsEditingField_System_Boolean__System_Boolean__UnityEditor_SerializedProperty_UnityEngine_GUIContent_System_Boolean_System_Boolean_System_Boolean_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.MaskMaterialsEditingField(System.Boolean@,System.Boolean@,UnityEditor.SerializedProperty,UnityEngine.GUIContent,System.Boolean,System.Boolean,System.Boolean)">MaskMaterialsEditingField(ref Boolean, ref Boolean, SerializedProperty, GUIContent, Boolean, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MaskMaterialsEditingField(ref bool wasSetRequested, ref bool wasDeleteRequested, SerializedProperty maskMaterials, GUIContent label, bool differentMaskModesSelected, bool allowDelete, bool isActiveMaterial)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">wasSetRequested</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">wasDeleteRequested</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td><span class="parametername">maskMaterials</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIContent</span></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">differentMaskModesSelected</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">allowDelete</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isActiveMaterial</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_OnEnable.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.OnEnable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L99">View Source</a>
+  </span>
+  <a id="Spine_Unity_Editor_SkeletonRendererInspector_OnEnable_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.OnEnable*"></a>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_OnEnable" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.OnEnable">OnEnable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnEnable()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_OnInspectorGUI.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.OnInspectorGUI%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L163">View Source</a>
+  </span>
+  <a id="Spine_Unity_Editor_SkeletonRendererInspector_OnInspectorGUI_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.OnInspectorGUI*"></a>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_OnInspectorGUI" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.OnInspectorGUI">OnInspectorGUI()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnInspectorGUI()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">UnityEditor.Editor.OnInspectorGUI()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_OnSceneGUI.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.OnSceneGUI%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L154">View Source</a>
+  </span>
+  <a id="Spine_Unity_Editor_SkeletonRendererInspector_OnSceneGUI_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.OnSceneGUI*"></a>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_OnSceneGUI" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.OnSceneGUI">OnSceneGUI()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnSceneGUI()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_SeparatorsField_UnityEditor_SerializedProperty_.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.SeparatorsField(UnityEditor.SerializedProperty)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L418">View Source</a>
+  </span>
+  <a id="Spine_Unity_Editor_SkeletonRendererInspector_SeparatorsField_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.SeparatorsField*"></a>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_SeparatorsField_UnityEditor_SerializedProperty_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.SeparatorsField(UnityEditor.SerializedProperty)">SeparatorsField(SerializedProperty)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SeparatorsField(SerializedProperty separatorSlotNames)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td><span class="parametername">separatorSlotNames</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector_SetSeparatorSlotNames_Spine_Unity_SkeletonRenderer_System_String___.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector.SetSeparatorSlotNames(Spine.Unity.SkeletonRenderer%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L408">View Source</a>
+  </span>
+  <a id="Spine_Unity_Editor_SkeletonRendererInspector_SetSeparatorSlotNames_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.SetSeparatorSlotNames*"></a>
+  <h4 id="Spine_Unity_Editor_SkeletonRendererInspector_SetSeparatorSlotNames_Spine_Unity_SkeletonRenderer_System_String___" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.SetSeparatorSlotNames(Spine.Unity.SkeletonRenderer,System.String[])">SetSeparatorSlotNames(SkeletonRenderer, String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetSeparatorSlotNames(SkeletonRenderer skeletonRenderer, string[] newSlotNames)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Unity.SkeletonRenderer.html">SkeletonRenderer</a></td>
+        <td><span class="parametername">skeletonRenderer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>[]</td>
+        <td><span class="parametername">newSlotNames</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Mobge.UnityExtensions.html#Mobge_UnityExtensions_DestroyObj_UnityEngine_Object_UnityEngine_Object_">UnityExtensions.DestroyObj(Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mobge.UnityExtensions.html#Mobge_UnityExtensions_DestroySelf_UnityEngine_Object_">UnityExtensions.DestroySelf(Object)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_Editor_SkeletonRendererInspector.md&amp;value=---%0Auid%3A%20Spine.Unity.Editor.SkeletonRendererInspector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Editor/spine-unity/Editor/Components/SkeletonRendererInspector.cs/#L49" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Example Unity documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,674 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Skin
+   | Example Unity documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Skin
+   | Example Unity documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Spine.Skin">
+  
+  
+  <h1 id="Spine_Skin" data-uid="Spine.Skin" class="text-break">Class Skin
+  </h1>
+  <div class="markdown level0 summary"><p>Stores attachments by slot index and attachment name.
+<p>See SkeletonData <a class="xref" href="Spine.SkeletonData.html#Spine_SkeletonData_DefaultSkin">DefaultSkin</a>, Skeleton <a class="xref" href="Spine.Skeleton.html#Spine_Skeleton_Skin">Skin</a>, and
+<a href="http://esotericsoftware.com/spine-runtime-skins">Runtime skins</a> in the Spine Runtimes Guide.</p></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">Skin</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Spine.html">Spine</a></h6>
+  <h6><strong>Assembly</strong>: spine-unity.dll</h6>
+  <h5 id="Spine_Skin_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Skin</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Skin__ctor_System_String_.md&amp;value=---%0Auid%3A%20Spine.Skin.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/Skin.cs/#L51">View Source</a>
+  </span>
+  <a id="Spine_Skin__ctor_" data-uid="Spine.Skin.#ctor*"></a>
+  <h4 id="Spine_Skin__ctor_System_String_" data-uid="Spine.Skin.#ctor(System.String)">Skin(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Skin(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Skin_Attachments.md&amp;value=---%0Auid%3A%20Spine.Skin.Attachments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/Skin.cs/#L47">View Source</a>
+  </span>
+  <a id="Spine_Skin_Attachments_" data-uid="Spine.Skin.Attachments*"></a>
+  <h4 id="Spine_Skin_Attachments" data-uid="Spine.Skin.Attachments">Attachments</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OrderedDictionary&lt;Skin.SkinEntry, Attachment&gt; Attachments { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Collections.OrderedDictionary-2.html">OrderedDictionary</a>&lt;<a class="xref" href="Spine.Skin.SkinEntry.html">Skin.SkinEntry</a>, <a class="xref" href="Spine.Attachment.html">Attachment</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Skin_Bones.md&amp;value=---%0Auid%3A%20Spine.Skin.Bones%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/Skin.cs/#L48">View Source</a>
+  </span>
+  <a id="Spine_Skin_Bones_" data-uid="Spine.Skin.Bones*"></a>
+  <h4 id="Spine_Skin_Bones" data-uid="Spine.Skin.Bones">Bones</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExposedList&lt;BoneData&gt; Bones { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.ExposedList-1.html">ExposedList</a>&lt;<a class="xref" href="Spine.BoneData.html">BoneData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Skin_Constraints.md&amp;value=---%0Auid%3A%20Spine.Skin.Constraints%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/Skin.cs/#L49">View Source</a>
+  </span>
+  <a id="Spine_Skin_Constraints_" data-uid="Spine.Skin.Constraints*"></a>
+  <h4 id="Spine_Skin_Constraints" data-uid="Spine.Skin.Constraints">Constraints</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExposedList&lt;ConstraintData&gt; Constraints { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.ExposedList-1.html">ExposedList</a>&lt;<a class="xref" href="Spine.ConstraintData.html">ConstraintData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Skin_Name.md&amp;value=---%0Auid%3A%20Spine.Skin.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/Skin.cs/#L46">View Source</a>
+  </span>
+  <a id="Spine_Skin_Name_" data-uid="Spine.Skin.Name*"></a>
+  <h4 id="Spine_Skin_Name" data-uid="Spine.Skin.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Skin_AddSkin_Spine_Skin_.md&amp;value=---%0Auid%3A%20Spine.Skin.AddSkin(Spine.Skin)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/Skin.cs/#L65">View Source</a>
+  </span>
+  <a id="Spine_Skin_AddSkin_" data-uid="Spine.Skin.AddSkin*"></a>
+  <h4 id="Spine_Skin_AddSkin_Spine_Skin_" data-uid="Spine.Skin.AddSkin(Spine.Skin)">AddSkin(Skin)</h4>
+  <div class="markdown level1 summary"><p>Adds all attachments, bones, and constraints from the specified skin to this skin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSkin(Skin skin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Skin.html">Skin</a></td>
+        <td><span class="parametername">skin</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Skin_Clear.md&amp;value=---%0Auid%3A%20Spine.Skin.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/Skin.cs/#L122">View Source</a>
+  </span>
+  <a id="Spine_Skin_Clear_" data-uid="Spine.Skin.Clear*"></a>
+  <h4 id="Spine_Skin_Clear" data-uid="Spine.Skin.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Clears all attachments, bones, and constraints.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Skin_CopySkin_Spine_Skin_.md&amp;value=---%0Auid%3A%20Spine.Skin.CopySkin(Spine.Skin)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/Skin.cs/#L77">View Source</a>
+  </span>
+  <a id="Spine_Skin_CopySkin_" data-uid="Spine.Skin.CopySkin*"></a>
+  <h4 id="Spine_Skin_CopySkin_Spine_Skin_" data-uid="Spine.Skin.CopySkin(Spine.Skin)">CopySkin(Skin)</h4>
+  <div class="markdown level1 summary"><p>Adds all attachments from the specified skin to this skin. Attachments are deep copied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopySkin(Skin skin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Skin.html">Skin</a></td>
+        <td><span class="parametername">skin</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Skin_GetAttachment_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Spine.Skin.GetAttachment(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/Skin.cs/#L95">View Source</a>
+  </span>
+  <a id="Spine_Skin_GetAttachment_" data-uid="Spine.Skin.GetAttachment*"></a>
+  <h4 id="Spine_Skin_GetAttachment_System_Int32_System_String_" data-uid="Spine.Skin.GetAttachment(System.Int32,System.String)">GetAttachment(Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Returns the attachment for the specified slot index and name, or null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Attachment GetAttachment(int slotIndex, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">slotIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Attachment.html">Attachment</a></td>
+        <td><p>May be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Skin_GetAttachments.md&amp;value=---%0Auid%3A%20Spine.Skin.GetAttachments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/Skin.cs/#L110">View Source</a>
+  </span>
+  <a id="Spine_Skin_GetAttachments_" data-uid="Spine.Skin.GetAttachments*"></a>
+  <h4 id="Spine_Skin_GetAttachments" data-uid="Spine.Skin.GetAttachments">GetAttachments()</h4>
+  <div class="markdown level1 summary"><p>Returns all attachments contained in this skin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;Skin.SkinEntry&gt; GetAttachments()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="Spine.Skin.SkinEntry.html">Skin.SkinEntry</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Skin_GetAttachments_System_Int32_System_Collections_Generic_List_Spine_Skin_SkinEntry__.md&amp;value=---%0Auid%3A%20Spine.Skin.GetAttachments(System.Int32%2CSystem.Collections.Generic.List%7BSpine.Skin.SkinEntry%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/Skin.cs/#L116">View Source</a>
+  </span>
+  <a id="Spine_Skin_GetAttachments_" data-uid="Spine.Skin.GetAttachments*"></a>
+  <h4 id="Spine_Skin_GetAttachments_System_Int32_System_Collections_Generic_List_Spine_Skin_SkinEntry__" data-uid="Spine.Skin.GetAttachments(System.Int32,System.Collections.Generic.List{Spine.Skin.SkinEntry})">GetAttachments(Int32, List&lt;Skin.SkinEntry&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetAttachments(int slotIndex, List&lt;Skin.SkinEntry&gt; attachments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">slotIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Spine.Skin.SkinEntry.html">Skin.SkinEntry</a>&gt;</td>
+        <td><span class="parametername">attachments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Skin_RemoveAttachment_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Spine.Skin.RemoveAttachment(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/Skin.cs/#L103">View Source</a>
+  </span>
+  <a id="Spine_Skin_RemoveAttachment_" data-uid="Spine.Skin.RemoveAttachment*"></a>
+  <h4 id="Spine_Skin_RemoveAttachment_System_Int32_System_String_" data-uid="Spine.Skin.RemoveAttachment(System.Int32,System.String)">RemoveAttachment(Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Removes the attachment in the skin for the specified slot index and name, if any.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAttachment(int slotIndex, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">slotIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Skin_SetAttachment_System_Int32_System_String_Spine_Attachment_.md&amp;value=---%0Auid%3A%20Spine.Skin.SetAttachment(System.Int32%2CSystem.String%2CSpine.Attachment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/Skin.cs/#L58">View Source</a>
+  </span>
+  <a id="Spine_Skin_SetAttachment_" data-uid="Spine.Skin.SetAttachment*"></a>
+  <h4 id="Spine_Skin_SetAttachment_System_Int32_System_String_Spine_Attachment_" data-uid="Spine.Skin.SetAttachment(System.Int32,System.String,Spine.Attachment)">SetAttachment(Int32, String, Attachment)</h4>
+  <div class="markdown level1 summary"><p>Adds an attachment to the skin for the specified slot index and name.
+If the name already exists for the slot, the previous value is replaced.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAttachment(int slotIndex, string name, Attachment attachment)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">slotIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Spine.Attachment.html">Attachment</a></td>
+        <td><span class="parametername">attachment</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Skin_ToString.md&amp;value=---%0Auid%3A%20Spine.Skin.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/Skin.cs/#L128">View Source</a>
+  </span>
+  <a id="Spine_Skin_ToString_" data-uid="Spine.Skin.ToString*"></a>
+  <h4 id="Spine_Skin_ToString" data-uid="Spine.Skin.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Spine.Unity.AttachmentTools.AtlasUtilities.html#Spine_Unity_AttachmentTools_AtlasUtilities_GetRepackedSkin_Spine_Skin_System_String_UnityEngine_Material_UnityEngine_Material__UnityEngine_Texture2D__System_Int32_System_Int32_UnityEngine_TextureFormat_System_Boolean_System_Boolean_">AtlasUtilities.GetRepackedSkin(Skin, String, Material, out Material, out Texture2D, Int32, Int32, TextureFormat, Boolean, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.AttachmentTools.AtlasUtilities.html#Spine_Unity_AttachmentTools_AtlasUtilities_GetRepackedSkin_Spine_Skin_System_String_UnityEngine_Shader_UnityEngine_Material__UnityEngine_Texture2D__System_Int32_System_Int32_UnityEngine_TextureFormat_System_Boolean_UnityEngine_Material_System_Boolean_System_Boolean_">AtlasUtilities.GetRepackedSkin(Skin, String, Shader, out Material, out Texture2D, Int32, Int32, TextureFormat, Boolean, Material, Boolean, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.AttachmentTools.SkinUtilities.html#Spine_Unity_AttachmentTools_SkinUtilities_GetClone_Spine_Skin_">SkinUtilities.GetClone(Skin)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.AttachmentTools.SkinUtilities.html#Spine_Unity_AttachmentTools_SkinUtilities_SetAttachment_Spine_Skin_System_String_System_String_Spine_Attachment_Spine_Skeleton_">SkinUtilities.SetAttachment(Skin, String, String, Attachment, Skeleton)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.AttachmentTools.SkinUtilities.html#Spine_Unity_AttachmentTools_SkinUtilities_AddAttachments_Spine_Skin_Spine_Skin_">SkinUtilities.AddAttachments(Skin, Skin)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.AttachmentTools.SkinUtilities.html#Spine_Unity_AttachmentTools_SkinUtilities_GetAttachment_Spine_Skin_System_String_System_String_Spine_Skeleton_">SkinUtilities.GetAttachment(Skin, String, String, Skeleton)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.AttachmentTools.SkinUtilities.html#Spine_Unity_AttachmentTools_SkinUtilities_SetAttachment_Spine_Skin_System_Int32_System_String_Spine_Attachment_">SkinUtilities.SetAttachment(Skin, Int32, String, Attachment)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.AttachmentTools.SkinUtilities.html#Spine_Unity_AttachmentTools_SkinUtilities_RemoveAttachment_Spine_Skin_System_String_System_String_Spine_SkeletonData_">SkinUtilities.RemoveAttachment(Skin, String, String, SkeletonData)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.AttachmentTools.SkinUtilities.html#Spine_Unity_AttachmentTools_SkinUtilities_Clear_Spine_Skin_">SkinUtilities.Clear(Skin)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.AttachmentTools.SkinUtilities.html#Spine_Unity_AttachmentTools_SkinUtilities_Append_Spine_Skin_Spine_Skin_">SkinUtilities.Append(Skin, Skin)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.AttachmentTools.SkinUtilities.html#Spine_Unity_AttachmentTools_SkinUtilities_CopyTo_Spine_Skin_Spine_Skin_System_Boolean_System_Boolean_System_Boolean_">SkinUtilities.CopyTo(Skin, Skin, Boolean, Boolean, Boolean)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Skin.md&amp;value=---%0Auid%3A%20Spine.Skin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-csharp/Skin.cs/#L40" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Example Unity documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

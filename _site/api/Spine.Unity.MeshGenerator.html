@@ -1,0 +1,850 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MeshGenerator
+   | Example Unity documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MeshGenerator
+   | Example Unity documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Spine.Unity.MeshGenerator">
+  
+  
+  <h1 id="Spine_Unity_MeshGenerator" data-uid="Spine.Unity.MeshGenerator" class="text-break">Class MeshGenerator
+  </h1>
+  <div class="markdown level0 summary"><p>Holds several methods to prepare and generate a UnityEngine mesh based on a skeleton. Contains buffers needed to perform the operation, and serializes settings for mesh generation.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">MeshGenerator</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Spine.Unity.html">Spine.Unity</a></h6>
+  <h6><strong>Assembly</strong>: spine-unity.dll</h6>
+  <h5 id="Spine_Unity_MeshGenerator_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class MeshGenerator</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_MeshGenerator__ctor.md&amp;value=---%0Auid%3A%20Spine.Unity.MeshGenerator.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs/#L131">View Source</a>
+  </span>
+  <a id="Spine_Unity_MeshGenerator__ctor_" data-uid="Spine.Unity.MeshGenerator.#ctor*"></a>
+  <h4 id="Spine_Unity_MeshGenerator__ctor" data-uid="Spine.Unity.MeshGenerator.#ctor">MeshGenerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshGenerator()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_MeshGenerator_settings.md&amp;value=---%0Auid%3A%20Spine.Unity.MeshGenerator.settings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs/#L60">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_MeshGenerator_settings" data-uid="Spine.Unity.MeshGenerator.settings">settings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshGenerator.Settings settings</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Unity.MeshGenerator.Settings.html">MeshGenerator.Settings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_MeshGenerator_Buffers.md&amp;value=---%0Auid%3A%20Spine.Unity.MeshGenerator.Buffers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs/#L119">View Source</a>
+  </span>
+  <a id="Spine_Unity_MeshGenerator_Buffers_" data-uid="Spine.Unity.MeshGenerator.Buffers*"></a>
+  <h4 id="Spine_Unity_MeshGenerator_Buffers" data-uid="Spine.Unity.MeshGenerator.Buffers">Buffers</h4>
+  <div class="markdown level1 summary"><p>A set of mesh arrays whose values are modifiable by the user. Modify these values before they are passed to the UnityEngine mesh object in order to see the effect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshGeneratorBuffers Buffers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Unity.MeshGeneratorBuffers.html">MeshGeneratorBuffers</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_MeshGenerator_VertexCount.md&amp;value=---%0Auid%3A%20Spine.Unity.MeshGenerator.VertexCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs/#L116">View Source</a>
+  </span>
+  <a id="Spine_Unity_MeshGenerator_VertexCount_" data-uid="Spine.Unity.MeshGenerator.VertexCount*"></a>
+  <h4 id="Spine_Unity_MeshGenerator_VertexCount" data-uid="Spine.Unity.MeshGenerator.VertexCount">VertexCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int VertexCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_MeshGenerator_AddSubmesh_Spine_Unity_SubmeshInstruction_System_Boolean_.md&amp;value=---%0Auid%3A%20Spine.Unity.MeshGenerator.AddSubmesh(Spine.Unity.SubmeshInstruction%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs/#L433">View Source</a>
+  </span>
+  <a id="Spine_Unity_MeshGenerator_AddSubmesh_" data-uid="Spine.Unity.MeshGenerator.AddSubmesh*"></a>
+  <h4 id="Spine_Unity_MeshGenerator_AddSubmesh_Spine_Unity_SubmeshInstruction_System_Boolean_" data-uid="Spine.Unity.MeshGenerator.AddSubmesh(Spine.Unity.SubmeshInstruction,System.Boolean)">AddSubmesh(SubmeshInstruction, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSubmesh(SubmeshInstruction instruction, bool updateTriangles = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Unity.SubmeshInstruction.html">SubmeshInstruction</a></td>
+        <td><span class="parametername">instruction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">updateTriangles</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_MeshGenerator_Begin.md&amp;value=---%0Auid%3A%20Spine.Unity.MeshGenerator.Begin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs/#L414">View Source</a>
+  </span>
+  <a id="Spine_Unity_MeshGenerator_Begin_" data-uid="Spine.Unity.MeshGenerator.Begin*"></a>
+  <h4 id="Spine_Unity_MeshGenerator_Begin" data-uid="Spine.Unity.MeshGenerator.Begin">Begin()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Begin()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_MeshGenerator_BuildMesh_Spine_Unity_SkeletonRendererInstruction_System_Boolean_.md&amp;value=---%0Auid%3A%20Spine.Unity.MeshGenerator.BuildMesh(Spine.Unity.SkeletonRendererInstruction%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs/#L640">View Source</a>
+  </span>
+  <a id="Spine_Unity_MeshGenerator_BuildMesh_" data-uid="Spine.Unity.MeshGenerator.BuildMesh*"></a>
+  <h4 id="Spine_Unity_MeshGenerator_BuildMesh_Spine_Unity_SkeletonRendererInstruction_System_Boolean_" data-uid="Spine.Unity.MeshGenerator.BuildMesh(Spine.Unity.SkeletonRendererInstruction,System.Boolean)">BuildMesh(SkeletonRendererInstruction, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BuildMesh(SkeletonRendererInstruction instruction, bool updateTriangles)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Unity.SkeletonRendererInstruction.html">SkeletonRendererInstruction</a></td>
+        <td><span class="parametername">instruction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">updateTriangles</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_MeshGenerator_BuildMeshWithArrays_Spine_Unity_SkeletonRendererInstruction_System_Boolean_.md&amp;value=---%0Auid%3A%20Spine.Unity.MeshGenerator.BuildMeshWithArrays(Spine.Unity.SkeletonRendererInstruction%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs/#L647">View Source</a>
+  </span>
+  <a id="Spine_Unity_MeshGenerator_BuildMeshWithArrays_" data-uid="Spine.Unity.MeshGenerator.BuildMeshWithArrays*"></a>
+  <h4 id="Spine_Unity_MeshGenerator_BuildMeshWithArrays_Spine_Unity_SkeletonRendererInstruction_System_Boolean_" data-uid="Spine.Unity.MeshGenerator.BuildMeshWithArrays(Spine.Unity.SkeletonRendererInstruction,System.Boolean)">BuildMeshWithArrays(SkeletonRendererInstruction, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BuildMeshWithArrays(SkeletonRendererInstruction instruction, bool updateTriangles)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Unity.SkeletonRendererInstruction.html">SkeletonRendererInstruction</a></td>
+        <td><span class="parametername">instruction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">updateTriangles</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_MeshGenerator_EnsureVertexCapacity_System_Int32_System_Boolean_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20Spine.Unity.MeshGenerator.EnsureVertexCapacity(System.Int32%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs/#L1054">View Source</a>
+  </span>
+  <a id="Spine_Unity_MeshGenerator_EnsureVertexCapacity_" data-uid="Spine.Unity.MeshGenerator.EnsureVertexCapacity*"></a>
+  <h4 id="Spine_Unity_MeshGenerator_EnsureVertexCapacity_System_Int32_System_Boolean_System_Boolean_System_Boolean_" data-uid="Spine.Unity.MeshGenerator.EnsureVertexCapacity(System.Int32,System.Boolean,System.Boolean,System.Boolean)">EnsureVertexCapacity(Int32, Boolean, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnsureVertexCapacity(int minimumVertexCount, bool inlcudeTintBlack = false, bool includeTangents = false, bool includeNormals = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">minimumVertexCount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">inlcudeTintBlack</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">includeTangents</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">includeNormals</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_MeshGenerator_FillLateVertexData_UnityEngine_Mesh_.md&amp;value=---%0Auid%3A%20Spine.Unity.MeshGenerator.FillLateVertexData(UnityEngine.Mesh)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs/#L1021">View Source</a>
+  </span>
+  <a id="Spine_Unity_MeshGenerator_FillLateVertexData_" data-uid="Spine.Unity.MeshGenerator.FillLateVertexData*"></a>
+  <h4 id="Spine_Unity_MeshGenerator_FillLateVertexData_UnityEngine_Mesh_" data-uid="Spine.Unity.MeshGenerator.FillLateVertexData(UnityEngine.Mesh)">FillLateVertexData(Mesh)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillLateVertexData(Mesh mesh)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Mesh</span></td>
+        <td><span class="parametername">mesh</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_MeshGenerator_FillMeshLocal_UnityEngine_Mesh_Spine_MeshAttachment_Spine_SkeletonData_.md&amp;value=---%0Auid%3A%20Spine.Unity.MeshGenerator.FillMeshLocal(UnityEngine.Mesh%2CSpine.MeshAttachment%2CSpine.SkeletonData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs/#L1236">View Source</a>
+  </span>
+  <a id="Spine_Unity_MeshGenerator_FillMeshLocal_" data-uid="Spine.Unity.MeshGenerator.FillMeshLocal*"></a>
+  <h4 id="Spine_Unity_MeshGenerator_FillMeshLocal_UnityEngine_Mesh_Spine_MeshAttachment_Spine_SkeletonData_" data-uid="Spine.Unity.MeshGenerator.FillMeshLocal(UnityEngine.Mesh,Spine.MeshAttachment,Spine.SkeletonData)">FillMeshLocal(Mesh, MeshAttachment, SkeletonData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FillMeshLocal(Mesh mesh, MeshAttachment meshAttachment, SkeletonData skeletonData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Mesh</span></td>
+        <td><span class="parametername">mesh</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Spine.MeshAttachment.html">MeshAttachment</a></td>
+        <td><span class="parametername">meshAttachment</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Spine.SkeletonData.html">SkeletonData</a></td>
+        <td><span class="parametername">skeletonData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_MeshGenerator_FillMeshLocal_UnityEngine_Mesh_Spine_RegionAttachment_.md&amp;value=---%0Auid%3A%20Spine.Unity.MeshGenerator.FillMeshLocal(UnityEngine.Mesh%2CSpine.RegionAttachment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs/#L1196">View Source</a>
+  </span>
+  <a id="Spine_Unity_MeshGenerator_FillMeshLocal_" data-uid="Spine.Unity.MeshGenerator.FillMeshLocal*"></a>
+  <h4 id="Spine_Unity_MeshGenerator_FillMeshLocal_UnityEngine_Mesh_Spine_RegionAttachment_" data-uid="Spine.Unity.MeshGenerator.FillMeshLocal(UnityEngine.Mesh,Spine.RegionAttachment)">FillMeshLocal(Mesh, RegionAttachment)</h4>
+  <div class="markdown level1 summary"><p>Fills mesh vertex data to render a RegionAttachment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FillMeshLocal(Mesh mesh, RegionAttachment regionAttachment)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Mesh</span></td>
+        <td><span class="parametername">mesh</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></td>
+        <td><span class="parametername">regionAttachment</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_MeshGenerator_FillTriangles_UnityEngine_Mesh_.md&amp;value=---%0Auid%3A%20Spine.Unity.MeshGenerator.FillTriangles(UnityEngine.Mesh)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs/#L1040">View Source</a>
+  </span>
+  <a id="Spine_Unity_MeshGenerator_FillTriangles_" data-uid="Spine.Unity.MeshGenerator.FillTriangles*"></a>
+  <h4 id="Spine_Unity_MeshGenerator_FillTriangles_UnityEngine_Mesh_" data-uid="Spine.Unity.MeshGenerator.FillTriangles(UnityEngine.Mesh)">FillTriangles(Mesh)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillTriangles(Mesh mesh)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Mesh</span></td>
+        <td><span class="parametername">mesh</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_MeshGenerator_FillTrianglesSingle_UnityEngine_Mesh_.md&amp;value=---%0Auid%3A%20Spine.Unity.MeshGenerator.FillTrianglesSingle(UnityEngine.Mesh)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs/#L1049">View Source</a>
+  </span>
+  <a id="Spine_Unity_MeshGenerator_FillTrianglesSingle_" data-uid="Spine.Unity.MeshGenerator.FillTrianglesSingle*"></a>
+  <h4 id="Spine_Unity_MeshGenerator_FillTrianglesSingle_UnityEngine_Mesh_" data-uid="Spine.Unity.MeshGenerator.FillTrianglesSingle(UnityEngine.Mesh)">FillTrianglesSingle(Mesh)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillTrianglesSingle(Mesh mesh)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Mesh</span></td>
+        <td><span class="parametername">mesh</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_MeshGenerator_FillVertexData_UnityEngine_Mesh_.md&amp;value=---%0Auid%3A%20Spine.Unity.MeshGenerator.FillVertexData(UnityEngine.Mesh)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs/#L956">View Source</a>
+  </span>
+  <a id="Spine_Unity_MeshGenerator_FillVertexData_" data-uid="Spine.Unity.MeshGenerator.FillVertexData*"></a>
+  <h4 id="Spine_Unity_MeshGenerator_FillVertexData_UnityEngine_Mesh_" data-uid="Spine.Unity.MeshGenerator.FillVertexData(UnityEngine.Mesh)">FillVertexData(Mesh)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillVertexData(Mesh mesh)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Mesh</span></td>
+        <td><span class="parametername">mesh</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_MeshGenerator_GenerateSingleSubmeshInstruction_Spine_Unity_SkeletonRendererInstruction_Spine_Skeleton_UnityEngine_Material_.md&amp;value=---%0Auid%3A%20Spine.Unity.MeshGenerator.GenerateSingleSubmeshInstruction(Spine.Unity.SkeletonRendererInstruction%2CSpine.Skeleton%2CUnityEngine.Material)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs/#L144">View Source</a>
+  </span>
+  <a id="Spine_Unity_MeshGenerator_GenerateSingleSubmeshInstruction_" data-uid="Spine.Unity.MeshGenerator.GenerateSingleSubmeshInstruction*"></a>
+  <h4 id="Spine_Unity_MeshGenerator_GenerateSingleSubmeshInstruction_Spine_Unity_SkeletonRendererInstruction_Spine_Skeleton_UnityEngine_Material_" data-uid="Spine.Unity.MeshGenerator.GenerateSingleSubmeshInstruction(Spine.Unity.SkeletonRendererInstruction,Spine.Skeleton,UnityEngine.Material)">GenerateSingleSubmeshInstruction(SkeletonRendererInstruction, Skeleton, Material)</h4>
+  <div class="markdown level1 summary"><p>A specialized variant of <a class="xref" href="Spine.Unity.MeshGenerator.html#Spine_Unity_MeshGenerator_GenerateSkeletonRendererInstruction_Spine_Unity_SkeletonRendererInstruction_Spine_Skeleton_System_Collections_Generic_Dictionary_Spine_Slot_UnityEngine_Material__System_Collections_Generic_List_Spine_Slot__System_Boolean_System_Boolean_">GenerateSkeletonRendererInstruction(SkeletonRendererInstruction, Skeleton, Dictionary&lt;Slot, Material&gt;, List&lt;Slot&gt;, Boolean, Boolean)</a>.
+Generates renderer instructions using a single submesh, using only a single material and texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GenerateSingleSubmeshInstruction(SkeletonRendererInstruction instructionOutput, Skeleton skeleton, Material material)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Unity.SkeletonRendererInstruction.html">SkeletonRendererInstruction</a></td>
+        <td><span class="parametername">instructionOutput</span></td>
+        <td><p>The resulting instructions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Spine.Skeleton.html">Skeleton</a></td>
+        <td><span class="parametername">skeleton</span></td>
+        <td><p>The skeleton to generate renderer instructions for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Material</span></td>
+        <td><span class="parametername">material</span></td>
+        <td><p>Material to be set at the renderer instruction. When null, the last attachment
+in the draw order list is assigned as the instruction&apos;s material.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_MeshGenerator_GenerateSkeletonRendererInstruction_Spine_Unity_SkeletonRendererInstruction_Spine_Skeleton_System_Collections_Generic_Dictionary_Spine_Slot_UnityEngine_Material__System_Collections_Generic_List_Spine_Slot__System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20Spine.Unity.MeshGenerator.GenerateSkeletonRendererInstruction(Spine.Unity.SkeletonRendererInstruction%2CSpine.Skeleton%2CSystem.Collections.Generic.Dictionary%7BSpine.Slot%2CUnityEngine.Material%7D%2CSystem.Collections.Generic.List%7BSpine.Slot%7D%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs/#L224">View Source</a>
+  </span>
+  <a id="Spine_Unity_MeshGenerator_GenerateSkeletonRendererInstruction_" data-uid="Spine.Unity.MeshGenerator.GenerateSkeletonRendererInstruction*"></a>
+  <h4 id="Spine_Unity_MeshGenerator_GenerateSkeletonRendererInstruction_Spine_Unity_SkeletonRendererInstruction_Spine_Skeleton_System_Collections_Generic_Dictionary_Spine_Slot_UnityEngine_Material__System_Collections_Generic_List_Spine_Slot__System_Boolean_System_Boolean_" data-uid="Spine.Unity.MeshGenerator.GenerateSkeletonRendererInstruction(Spine.Unity.SkeletonRendererInstruction,Spine.Skeleton,System.Collections.Generic.Dictionary{Spine.Slot,UnityEngine.Material},System.Collections.Generic.List{Spine.Slot},System.Boolean,System.Boolean)">GenerateSkeletonRendererInstruction(SkeletonRendererInstruction, Skeleton, Dictionary&lt;Slot, Material&gt;, List&lt;Slot&gt;, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GenerateSkeletonRendererInstruction(SkeletonRendererInstruction instructionOutput, Skeleton skeleton, Dictionary&lt;Slot, Material&gt; customSlotMaterials, List&lt;Slot&gt; separatorSlots, bool generateMeshOverride, bool immutableTriangles = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Unity.SkeletonRendererInstruction.html">SkeletonRendererInstruction</a></td>
+        <td><span class="parametername">instructionOutput</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Spine.Skeleton.html">Skeleton</a></td>
+        <td><span class="parametername">skeleton</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="Spine.Slot.html">Slot</a>, <span class="xref">UnityEngine.Material</span>&gt;</td>
+        <td><span class="parametername">customSlotMaterials</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Spine.Slot.html">Slot</a>&gt;</td>
+        <td><span class="parametername">separatorSlots</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">generateMeshOverride</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">immutableTriangles</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_MeshGenerator_ScaleVertexData_System_Single_.md&amp;value=---%0Auid%3A%20Spine.Unity.MeshGenerator.ScaleVertexData(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs/#L917">View Source</a>
+  </span>
+  <a id="Spine_Unity_MeshGenerator_ScaleVertexData_" data-uid="Spine.Unity.MeshGenerator.ScaleVertexData*"></a>
+  <h4 id="Spine_Unity_MeshGenerator_ScaleVertexData_System_Single_" data-uid="Spine.Unity.MeshGenerator.ScaleVertexData(System.Single)">ScaleVertexData(Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScaleVertexData(float scale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_MeshGenerator_TrimExcess.md&amp;value=---%0Auid%3A%20Spine.Unity.MeshGenerator.TrimExcess%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs/#L1087">View Source</a>
+  </span>
+  <a id="Spine_Unity_MeshGenerator_TrimExcess_" data-uid="Spine.Unity.MeshGenerator.TrimExcess*"></a>
+  <h4 id="Spine_Unity_MeshGenerator_TrimExcess" data-uid="Spine.Unity.MeshGenerator.TrimExcess">TrimExcess()</h4>
+  <div class="markdown level1 summary"><p>Trims internal buffers to reduce the resulting mesh data stream size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TrimExcess()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_MeshGenerator_TryReplaceMaterials_Spine_ExposedList_Spine_Unity_SubmeshInstruction__System_Collections_Generic_Dictionary_UnityEngine_Material_UnityEngine_Material__.md&amp;value=---%0Auid%3A%20Spine.Unity.MeshGenerator.TryReplaceMaterials(Spine.ExposedList%7BSpine.Unity.SubmeshInstruction%7D%2CSystem.Collections.Generic.Dictionary%7BUnityEngine.Material%2CUnityEngine.Material%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs/#L399">View Source</a>
+  </span>
+  <a id="Spine_Unity_MeshGenerator_TryReplaceMaterials_" data-uid="Spine.Unity.MeshGenerator.TryReplaceMaterials*"></a>
+  <h4 id="Spine_Unity_MeshGenerator_TryReplaceMaterials_Spine_ExposedList_Spine_Unity_SubmeshInstruction__System_Collections_Generic_Dictionary_UnityEngine_Material_UnityEngine_Material__" data-uid="Spine.Unity.MeshGenerator.TryReplaceMaterials(Spine.ExposedList{Spine.Unity.SubmeshInstruction},System.Collections.Generic.Dictionary{UnityEngine.Material,UnityEngine.Material})">TryReplaceMaterials(ExposedList&lt;SubmeshInstruction&gt;, Dictionary&lt;Material, Material&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TryReplaceMaterials(ExposedList&lt;SubmeshInstruction&gt; workingSubmeshInstructions, Dictionary&lt;Material, Material&gt; customMaterialOverride)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.ExposedList-1.html">ExposedList</a>&lt;<a class="xref" href="Spine.Unity.SubmeshInstruction.html">SubmeshInstruction</a>&gt;</td>
+        <td><span class="parametername">workingSubmeshInstructions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<span class="xref">UnityEngine.Material</span>, <span class="xref">UnityEngine.Material</span>&gt;</td>
+        <td><span class="parametername">customMaterialOverride</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_MeshGenerator.md&amp;value=---%0Auid%3A%20Spine.Unity.MeshGenerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs/#L58" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Example Unity documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

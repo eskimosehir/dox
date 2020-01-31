@@ -1,0 +1,3197 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Character2D
+   | Example Unity documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Character2D
+   | Example Unity documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mobge.Platformer.Character.Character2D">
+  
+  
+  <h1 id="Mobge_Platformer_Character_Character2D" data-uid="Mobge.Platformer.Character.Character2D" class="text-break">Class Character2D
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">Character2D</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Mobge.Animation.IAnimationOwner.html">IAnimationOwner</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.Invoke(System.String, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.InvokeRepeating(System.String, System.Single, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.CancelInvoke(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.IsInvoking(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine_Auto(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(UnityEngine.Coroutine)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.print(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.TryGetComponent(System.Type, UnityEngine.Component)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.TryGetComponent&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Boolean, System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;(System.Boolean, System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents(System.Type, System.Collections.Generic.List&lt;UnityEngine.Component&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents&lt;T&gt;(System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.CompareTag(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindSceneObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeAll(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.name</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.hideFlags</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mobge.Platformer.Character.html">Mobge.Platformer.Character</a></h6>
+  <h6><strong>Assembly</strong>: Mobge.dll</h6>
+  <h5 id="Mobge_Platformer_Character_Character2D_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RequireComponent(typeof(Rigidbody2D))]
+public class Character2D : MonoBehaviour, IAnimationOwner</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_groundFilter.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.groundFilter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L78">View Source</a>
+  </span>
+  <h4 id="Mobge_Platformer_Character_Character2D_groundFilter" data-uid="Mobge.Platformer.Character.Character2D.groundFilter">groundFilter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceFilter groundFilter</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.SurfaceFilter.html">SurfaceFilter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_ActionManager.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.ActionManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L348">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_ActionManager_" data-uid="Mobge.Platformer.Character.Character2D.ActionManager*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_ActionManager" data-uid="Mobge.Platformer.Character.Character2D.ActionManager">ActionManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActionManager ActionManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.ActionManager.html">ActionManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_Active.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.Active%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L152">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_Active_" data-uid="Mobge.Platformer.Character.Character2D.Active*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_Active" data-uid="Mobge.Platformer.Character.Character2D.Active">Active</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Active { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_Alive.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.Alive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L243">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_Alive_" data-uid="Mobge.Platformer.Character.Character2D.Alive*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_Alive" data-uid="Mobge.Platformer.Character.Character2D.Alive">Alive</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Alive { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_AngularVelocity.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.AngularVelocity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L214">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_AngularVelocity_" data-uid="Mobge.Platformer.Character.Character2D.AngularVelocity*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_AngularVelocity" data-uid="Mobge.Platformer.Character.Character2D.AngularVelocity">AngularVelocity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AngularVelocity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_Animation.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.Animation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L52">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_Animation_" data-uid="Mobge.Platformer.Character.Character2D.Animation*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_Animation" data-uid="Mobge.Platformer.Character.Character2D.Animation">Animation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AAnimation Animation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Animation.AAnimation.html">AAnimation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_BodyCollider.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.BodyCollider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L107">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_BodyCollider_" data-uid="Mobge.Platformer.Character.Character2D.BodyCollider*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_BodyCollider" data-uid="Mobge.Platformer.Character.Character2D.BodyCollider">BodyCollider</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Collider2D BodyCollider { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Collider2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_BodyState.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.BodyState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L116">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_BodyState_" data-uid="Mobge.Platformer.Character.Character2D.BodyState*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_BodyState" data-uid="Mobge.Platformer.Character.Character2D.BodyState">BodyState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Character2D.State BodyState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.Character2D.State.html">Character2D.State</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_Bounds.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.Bounds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L349">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_Bounds_" data-uid="Mobge.Platformer.Character.Character2D.Bounds*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_Bounds" data-uid="Mobge.Platformer.Character.Character2D.Bounds">Bounds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bounds Bounds { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Bounds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_Center.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.Center%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L291">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_Center_" data-uid="Mobge.Platformer.Character.Character2D.Center*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_Center" data-uid="Mobge.Platformer.Character.Character2D.Center">Center</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 Center { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_ControlModules.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.ControlModules%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L119">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_ControlModules_" data-uid="Mobge.Platformer.Character.Character2D.ControlModules*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_ControlModules" data-uid="Mobge.Platformer.Character.Character2D.ControlModules">ControlModules</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModuleList&lt;IControlModule&gt; ControlModules { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.ModuleList-1.html">ModuleList</a>&lt;<a class="xref" href="Mobge.Platformer.Character.IControlModule.html">IControlModule</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_ControlModulesEnabled.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.ControlModulesEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L99">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_ControlModulesEnabled_" data-uid="Mobge.Platformer.Character.Character2D.ControlModulesEnabled*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_ControlModulesEnabled" data-uid="Mobge.Platformer.Character.Character2D.ControlModulesEnabled">ControlModulesEnabled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ControlModulesEnabled { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_CurrentAirJumpCount.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.CurrentAirJumpCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L144">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_CurrentAirJumpCount_" data-uid="Mobge.Platformer.Character.Character2D.CurrentAirJumpCount*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_CurrentAirJumpCount" data-uid="Mobge.Platformer.Character.Character2D.CurrentAirJumpCount">CurrentAirJumpCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CurrentAirJumpCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_CurrentJumpModuleIndex.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.CurrentJumpModuleIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L76">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_CurrentJumpModuleIndex_" data-uid="Mobge.Platformer.Character.Character2D.CurrentJumpModuleIndex*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_CurrentJumpModuleIndex" data-uid="Mobge.Platformer.Character.Character2D.CurrentJumpModuleIndex">CurrentJumpModuleIndex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CurrentJumpModuleIndex { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_CurrentMoveModuleIndex.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.CurrentMoveModuleIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L75">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_CurrentMoveModuleIndex_" data-uid="Mobge.Platformer.Character.Character2D.CurrentMoveModuleIndex*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_CurrentMoveModuleIndex" data-uid="Mobge.Platformer.Character.Character2D.CurrentMoveModuleIndex">CurrentMoveModuleIndex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CurrentMoveModuleIndex { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_CurrentState.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.CurrentState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L184">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_CurrentState_" data-uid="Mobge.Platformer.Character.Character2D.CurrentState*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_CurrentState" data-uid="Mobge.Platformer.Character.Character2D.CurrentState">CurrentState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IStateModule CurrentState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.IStateModule.html">IStateModule</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_CurrentVelocity.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.CurrentVelocity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L205">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_CurrentVelocity_" data-uid="Mobge.Platformer.Character.Character2D.CurrentVelocity*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_CurrentVelocity" data-uid="Mobge.Platformer.Character.Character2D.CurrentVelocity">CurrentVelocity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 CurrentVelocity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_DamageHandler.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.DamageHandler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L67">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_DamageHandler_" data-uid="Mobge.Platformer.Character.Character2D.DamageHandler*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_DamageHandler" data-uid="Mobge.Platformer.Character.Character2D.DamageHandler">DamageHandler</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DamageHandlerState DamageHandler { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.DamageHandlerState.html">DamageHandlerState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_Direction.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.Direction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L541">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_Direction_" data-uid="Mobge.Platformer.Character.Character2D.Direction*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_Direction" data-uid="Mobge.Platformer.Character.Character2D.Direction">Direction</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Direction { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_GameSetup.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.GameSetup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L72">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_GameSetup_" data-uid="Mobge.Platformer.Character.Character2D.GameSetup*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_GameSetup" data-uid="Mobge.Platformer.Character.Character2D.GameSetup">GameSetup</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameSetup GameSetup { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.GameSetup.html">GameSetup</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_GravityScale.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.GravityScale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L198">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_GravityScale_" data-uid="Mobge.Platformer.Character.Character2D.GravityScale*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_GravityScale" data-uid="Mobge.Platformer.Character.Character2D.GravityScale">GravityScale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GravityScale { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_GroundContact.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.GroundContact%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L194">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_GroundContact_" data-uid="Mobge.Platformer.Character.Character2D.GroundContact*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_GroundContact" data-uid="Mobge.Platformer.Character.Character2D.GroundContact">GroundContact</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GroundContact GroundContact { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.GroundContact.html">GroundContact</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_Health.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.Health%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L172">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_Health_" data-uid="Mobge.Platformer.Character.Character2D.Health*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_Health" data-uid="Mobge.Platformer.Character.Character2D.Health">Health</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Health { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_Input.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.Input%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L179">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_Input_" data-uid="Mobge.Platformer.Character.Character2D.Input*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_Input" data-uid="Mobge.Platformer.Character.Character2D.Input">Input</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharacterInput Input { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.CharacterInput.html">CharacterInput</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_IsRigidbodySleeping.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.IsRigidbodySleeping%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L227">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_IsRigidbodySleeping_" data-uid="Mobge.Platformer.Character.Character2D.IsRigidbodySleeping*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_IsRigidbodySleeping" data-uid="Mobge.Platformer.Character.Character2D.IsRigidbodySleeping">IsRigidbodySleeping</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRigidbodySleeping { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_IsWalkDisabled.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.IsWalkDisabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L362">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_IsWalkDisabled_" data-uid="Mobge.Platformer.Character.Character2D.IsWalkDisabled*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_IsWalkDisabled" data-uid="Mobge.Platformer.Character.Character2D.IsWalkDisabled">IsWalkDisabled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsWalkDisabled { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_JumpModules.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.JumpModules%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L80">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_JumpModules_" data-uid="Mobge.Platformer.Character.Character2D.JumpModules*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_JumpModules" data-uid="Mobge.Platformer.Character.Character2D.JumpModules">JumpModules</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModuleList&lt;BaseJumpModule&gt; JumpModules { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.ModuleList-1.html">ModuleList</a>&lt;<a class="xref" href="Mobge.Platformer.Character.BaseJumpModule.html">BaseJumpModule</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_LastGroundTime.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.LastGroundTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L189">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_LastGroundTime_" data-uid="Mobge.Platformer.Character.Character2D.LastGroundTime*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_LastGroundTime" data-uid="Mobge.Platformer.Character.Character2D.LastGroundTime">LastGroundTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LastGroundTime { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_LocalCenter.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.LocalCenter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L298">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_LocalCenter_" data-uid="Mobge.Platformer.Character.Character2D.LocalCenter*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_LocalCenter" data-uid="Mobge.Platformer.Character.Character2D.LocalCenter">LocalCenter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 LocalCenter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_Mass.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.Mass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L197">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_Mass_" data-uid="Mobge.Platformer.Character.Character2D.Mass*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_Mass" data-uid="Mobge.Platformer.Character.Character2D.Mass">Mass</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Mass { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_MaxHealth.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.MaxHealth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L168">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_MaxHealth_" data-uid="Mobge.Platformer.Character.Character2D.MaxHealth*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_MaxHealth" data-uid="Mobge.Platformer.Character.Character2D.MaxHealth">MaxHealth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxHealth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_MaxPoise.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.MaxPoise%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L175">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_MaxPoise_" data-uid="Mobge.Platformer.Character.Character2D.MaxPoise*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_MaxPoise" data-uid="Mobge.Platformer.Character.Character2D.MaxPoise">MaxPoise</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxPoise { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_MoveModules.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.MoveModules%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L79">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_MoveModules_" data-uid="Mobge.Platformer.Character.Character2D.MoveModules*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_MoveModules" data-uid="Mobge.Platformer.Character.Character2D.MoveModules">MoveModules</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModuleList&lt;BaseMoveModule&gt; MoveModules { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.ModuleList-1.html">ModuleList</a>&lt;<a class="xref" href="Mobge.Platformer.Character.BaseMoveModule.html">BaseMoveModule</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_OnDeath.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.OnDeath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L42">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_OnDeath_" data-uid="Mobge.Platformer.Character.Character2D.OnDeath*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_OnDeath" data-uid="Mobge.Platformer.Character.Character2D.OnDeath">OnDeath</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;Character2D&gt; OnDeath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Mobge.Platformer.Character.Character2D.html">Character2D</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_OnGround.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.OnGround%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L165">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_OnGround_" data-uid="Mobge.Platformer.Character.Character2D.OnGround*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_OnGround" data-uid="Mobge.Platformer.Character.Character2D.OnGround">OnGround</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnGround { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_OnGroundStanding.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.OnGroundStanding%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L160">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_OnGroundStanding_" data-uid="Mobge.Platformer.Character.Character2D.OnGroundStanding*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_OnGroundStanding" data-uid="Mobge.Platformer.Character.Character2D.OnGroundStanding">OnGroundStanding</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnGroundStanding { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_PhysicalCenter.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.PhysicalCenter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L286">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_PhysicalCenter_" data-uid="Mobge.Platformer.Character.Character2D.PhysicalCenter*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_PhysicalCenter" data-uid="Mobge.Platformer.Character.Character2D.PhysicalCenter">PhysicalCenter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 PhysicalCenter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_PhysicalPosition.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.PhysicalPosition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L271">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_PhysicalPosition_" data-uid="Mobge.Platformer.Character.Character2D.PhysicalPosition*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_PhysicalPosition" data-uid="Mobge.Platformer.Character.Character2D.PhysicalPosition">PhysicalPosition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 PhysicalPosition { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_PhysicalRotation.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.PhysicalRotation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L223">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_PhysicalRotation_" data-uid="Mobge.Platformer.Character.Character2D.PhysicalRotation*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_PhysicalRotation" data-uid="Mobge.Platformer.Character.Character2D.PhysicalRotation">PhysicalRotation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PhysicalRotation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_Position.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.Position%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L275">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_Position_" data-uid="Mobge.Platformer.Character.Character2D.Position*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_Position" data-uid="Mobge.Platformer.Character.Character2D.Position">Position</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 Position { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_Rigidbody.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.Rigidbody%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L559">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_Rigidbody_" data-uid="Mobge.Platformer.Character.Character2D.Rigidbody*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_Rigidbody" data-uid="Mobge.Platformer.Character.Character2D.Rigidbody">Rigidbody</h4>
+  <div class="markdown level1 summary"><p>Try not to use as much as possible. Using this makes debugging harder. Use functions like <a class="xref" href="Mobge.Platformer.Character.Character2D.html#Mobge_Platformer_Character_Character2D_AddForce_UnityEngine_Vector2_UnityEngine_ForceMode2D_">AddForce(Vector2, ForceMode2D)</a>, <a class="xref" href="Mobge.Platformer.Character.Character2D.html#Mobge_Platformer_Character_Character2D_AngularVelocity">AngularVelocity</a> to manage physical properties of the character.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rigidbody2D Rigidbody { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Rigidbody2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_RigidbodyType.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.RigidbodyType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L230">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_RigidbodyType_" data-uid="Mobge.Platformer.Character.Character2D.RigidbodyType*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_RigidbodyType" data-uid="Mobge.Platformer.Character.Character2D.RigidbodyType">RigidbodyType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RigidbodyType2D RigidbodyType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.RigidbodyType2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_Size.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.Size%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L495">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_Size_" data-uid="Mobge.Platformer.Character.Character2D.Size*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_Size" data-uid="Mobge.Platformer.Character.Character2D.Size">Size</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 Size { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_States.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.States%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L253">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_States_" data-uid="Mobge.Platformer.Character.Character2D.States*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_States" data-uid="Mobge.Platformer.Character.Character2D.States">States</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Character2D.InputMapper States { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.Character2D.InputMapper.html">Character2D.InputMapper</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_Team.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.Team%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L77">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_Team_" data-uid="Mobge.Platformer.Character.Character2D.Team*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_Team" data-uid="Mobge.Platformer.Character.Character2D.Team">Team</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Team { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_AddForce_UnityEngine_Vector2_UnityEngine_ForceMode2D_.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.AddForce(UnityEngine.Vector2%2CUnityEngine.ForceMode2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L237">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_AddForce_" data-uid="Mobge.Platformer.Character.Character2D.AddForce*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_AddForce_UnityEngine_Vector2_UnityEngine_ForceMode2D_" data-uid="Mobge.Platformer.Character.Character2D.AddForce(UnityEngine.Vector2,UnityEngine.ForceMode2D)">AddForce(Vector2, ForceMode2D)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddForce(Vector2 force, ForceMode2D mode = ForceMode2D.Force)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">force</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.ForceMode2D</span></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_AddOrUpdatePropertyModifier.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.AddOrUpdatePropertyModifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L149">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_AddOrUpdatePropertyModifier_" data-uid="Mobge.Platformer.Character.Character2D.AddOrUpdatePropertyModifier*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_AddOrUpdatePropertyModifier" data-uid="Mobge.Platformer.Character.Character2D.AddOrUpdatePropertyModifier">AddOrUpdatePropertyModifier()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOrUpdatePropertyModifier()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_AddPropertyModifier_Mobge_Platformer_PropertyModifier_IModifierDescription_Mobge_Platformer_PropertyModifier_Modifier_.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.AddPropertyModifier(Mobge.Platformer.PropertyModifier.IModifierDescription%2CMobge.Platformer.PropertyModifier.Modifier)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L145">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_AddPropertyModifier_" data-uid="Mobge.Platformer.Character.Character2D.AddPropertyModifier*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_AddPropertyModifier_Mobge_Platformer_PropertyModifier_IModifierDescription_Mobge_Platformer_PropertyModifier_Modifier_" data-uid="Mobge.Platformer.Character.Character2D.AddPropertyModifier(Mobge.Platformer.PropertyModifier.IModifierDescription,Mobge.Platformer.PropertyModifier.Modifier)">AddPropertyModifier(IModifierDescription, Modifier)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddPropertyModifier(IModifierDescription description, Modifier modifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.PropertyModifier.IModifierDescription.html">IModifierDescription</a></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.PropertyModifier.Modifier.html">Modifier</a></td>
+        <td><span class="parametername">modifier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_AddTorque_System_Single_UnityEngine_ForceMode2D_.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.AddTorque(System.Single%2CUnityEngine.ForceMode2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L234">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_AddTorque_" data-uid="Mobge.Platformer.Character.Character2D.AddTorque*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_AddTorque_System_Single_UnityEngine_ForceMode2D_" data-uid="Mobge.Platformer.Character.Character2D.AddTorque(System.Single,UnityEngine.ForceMode2D)">AddTorque(Single, ForceMode2D)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTorque(float torque, ForceMode2D mode = ForceMode2D.Force)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">torque</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.ForceMode2D</span></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_Attack_Mobge_Platformer_Character_Character2D_Mobge_Platformer_Character_DamageData__.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.Attack(Mobge.Platformer.Character.Character2D%2CMobge.Platformer.Character.DamageData%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L314">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_Attack_" data-uid="Mobge.Platformer.Character.Character2D.Attack*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_Attack_Mobge_Platformer_Character_Character2D_Mobge_Platformer_Character_DamageData__" data-uid="Mobge.Platformer.Character.Character2D.Attack(Mobge.Platformer.Character.Character2D,Mobge.Platformer.Character.DamageData@)">Attack(Character2D, ref DamageData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Attack(Character2D target, ref DamageData data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.Character2D.html">Character2D</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.DamageData.html">DamageData</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_Awake.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.Awake%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L81">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_Awake_" data-uid="Mobge.Platformer.Character.Character2D.Awake*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_Awake" data-uid="Mobge.Platformer.Character.Character2D.Awake">Awake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Awake()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_FindCeiling_UnityEngine_Vector2__UnityEngine_Vector2__.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.FindCeiling(UnityEngine.Vector2%40%2CUnityEngine.Vector2%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L475">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_FindCeiling_" data-uid="Mobge.Platformer.Character.Character2D.FindCeiling*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_FindCeiling_UnityEngine_Vector2__UnityEngine_Vector2__" data-uid="Mobge.Platformer.Character.Character2D.FindCeiling(UnityEngine.Vector2@,UnityEngine.Vector2@)">FindCeiling(out Vector2, out Vector2)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rigidbody2D FindCeiling(out Vector2 point, out Vector2 normal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">normal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Rigidbody2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_FindGround_UnityEngine_Vector2__.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.FindGround(UnityEngine.Vector2%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L469">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_FindGround_" data-uid="Mobge.Platformer.Character.Character2D.FindGround*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_FindGround_UnityEngine_Vector2__" data-uid="Mobge.Platformer.Character.Character2D.FindGround(UnityEngine.Vector2@)">FindGround(out Vector2)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rigidbody2D FindGround(out Vector2 normal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">normal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Rigidbody2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_FindGroundAtPosition_UnityEngine_Vector2_System_Single_UnityEngine_RaycastHit2D__.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.FindGroundAtPosition(UnityEngine.Vector2%2CSystem.Single%2CUnityEngine.RaycastHit2D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L515">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_FindGroundAtPosition_" data-uid="Mobge.Platformer.Character.Character2D.FindGroundAtPosition*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_FindGroundAtPosition_UnityEngine_Vector2_System_Single_UnityEngine_RaycastHit2D__" data-uid="Mobge.Platformer.Character.Character2D.FindGroundAtPosition(UnityEngine.Vector2,System.Single,UnityEngine.RaycastHit2D@)">FindGroundAtPosition(Vector2, Single, out RaycastHit2D)</h4>
+  <div class="markdown level1 summary"><p>Finds ground for character at specified position.
+Returns false if there is no room for character at specified position, returns true otherwise.
+Note that the function may return true even if no ground is found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FindGroundAtPosition(Vector2 position, float checkDistance, out RaycastHit2D result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">checkDistance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.RaycastHit2D</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_FindGroundOnDirection_UnityEngine_Vector2_UnityEngine_Vector2__UnityEngine_Vector2__.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.FindGroundOnDirection(UnityEngine.Vector2%2CUnityEngine.Vector2%40%2CUnityEngine.Vector2%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L487">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_FindGroundOnDirection_" data-uid="Mobge.Platformer.Character.Character2D.FindGroundOnDirection*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_FindGroundOnDirection_UnityEngine_Vector2_UnityEngine_Vector2__UnityEngine_Vector2__" data-uid="Mobge.Platformer.Character.Character2D.FindGroundOnDirection(UnityEngine.Vector2,UnityEngine.Vector2@,UnityEngine.Vector2@)">FindGroundOnDirection(Vector2, out Vector2, out Vector2)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rigidbody2D FindGroundOnDirection(Vector2 direction, out Vector2 point, out Vector2 normal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">direction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">normal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Rigidbody2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_FindWallTop_UnityEngine_Vector2__UnityEngine_Vector2__.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.FindWallTop(UnityEngine.Vector2%40%2CUnityEngine.Vector2%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L472">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_FindWallTop_" data-uid="Mobge.Platformer.Character.Character2D.FindWallTop*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_FindWallTop_UnityEngine_Vector2__UnityEngine_Vector2__" data-uid="Mobge.Platformer.Character.Character2D.FindWallTop(UnityEngine.Vector2@,UnityEngine.Vector2@)">FindWallTop(out Vector2, out Vector2)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rigidbody2D FindWallTop(out Vector2 point, out Vector2 normal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">normal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Rigidbody2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_FixedUpdate.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.FixedUpdate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L339">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_FixedUpdate_" data-uid="Mobge.Platformer.Character.Character2D.FixedUpdate*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_FixedUpdate" data-uid="Mobge.Platformer.Character.Character2D.FixedUpdate">FixedUpdate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void FixedUpdate()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_FromCollider_UnityEngine_Collider2D_.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.FromCollider(UnityEngine.Collider2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L571">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_FromCollider_" data-uid="Mobge.Platformer.Character.Character2D.FromCollider*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_FromCollider_UnityEngine_Collider2D_" data-uid="Mobge.Platformer.Character.Character2D.FromCollider(UnityEngine.Collider2D)">FromCollider(Collider2D)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Character2D FromCollider(Collider2D col)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Collider2D</span></td>
+        <td><span class="parametername">col</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.Character2D.html">Character2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_FromRigidbody_UnityEngine_Rigidbody2D_.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.FromRigidbody(UnityEngine.Rigidbody2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L575">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_FromRigidbody_" data-uid="Mobge.Platformer.Character.Character2D.FromRigidbody*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_FromRigidbody_UnityEngine_Rigidbody2D_" data-uid="Mobge.Platformer.Character.Character2D.FromRigidbody(UnityEngine.Rigidbody2D)">FromRigidbody(Rigidbody2D)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Character2D FromRigidbody(Rigidbody2D rb)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Rigidbody2D</span></td>
+        <td><span class="parametername">rb</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.Character2D.html">Character2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_GetContacts_UnityEngine_ContactFilter2D_.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.GetContacts(UnityEngine.ContactFilter2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L466">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_GetContacts_" data-uid="Mobge.Platformer.Character.Character2D.GetContacts*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_GetContacts_UnityEngine_ContactFilter2D_" data-uid="Mobge.Platformer.Character.Character2D.GetContacts(UnityEngine.ContactFilter2D)">GetContacts(ContactFilter2D)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContactPoint2DList GetContacts(ContactFilter2D filter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.ContactFilter2D</span></td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.ContactPoint2DList.html">ContactPoint2DList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_InterruptCurrentState.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.InterruptCurrentState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L419">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_InterruptCurrentState_" data-uid="Mobge.Platformer.Character.Character2D.InterruptCurrentState*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_InterruptCurrentState" data-uid="Mobge.Platformer.Character.Character2D.InterruptCurrentState">InterruptCurrentState()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InterruptCurrentState()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_InverseTransformPoint_UnityEngine_Vector3_.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.InverseTransformPoint(UnityEngine.Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L250">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_InverseTransformPoint_" data-uid="Mobge.Platformer.Character.Character2D.InverseTransformPoint*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_InverseTransformPoint_UnityEngine_Vector3_" data-uid="Mobge.Platformer.Character.Character2D.InverseTransformPoint(UnityEngine.Vector3)">InverseTransformPoint(Vector3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 InverseTransformPoint(Vector3 point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_IsEnemy_Mobge_GameSetup_System_Int32_.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.IsEnemy(Mobge.GameSetup%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L307">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_IsEnemy_" data-uid="Mobge.Platformer.Character.Character2D.IsEnemy*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_IsEnemy_Mobge_GameSetup_System_Int32_" data-uid="Mobge.Platformer.Character.Character2D.IsEnemy(Mobge.GameSetup,System.Int32)">IsEnemy(GameSetup, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEnemy(GameSetup gameSetup, int team)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.GameSetup.html">GameSetup</a></td>
+        <td><span class="parametername">gameSetup</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">team</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_IsEnemy_Mobge_Platformer_Character_Character2D_.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.IsEnemy(Mobge.Platformer.Character.Character2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L303">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_IsEnemy_" data-uid="Mobge.Platformer.Character.Character2D.IsEnemy*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_IsEnemy_Mobge_Platformer_Character_Character2D_" data-uid="Mobge.Platformer.Character.Character2D.IsEnemy(Mobge.Platformer.Character.Character2D)">IsEnemy(Character2D)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEnemy(Character2D character)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.Character2D.html">Character2D</a></td>
+        <td><span class="parametername">character</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_IsTouchingGround.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.IsTouchingGround%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L478">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_IsTouchingGround_" data-uid="Mobge.Platformer.Character.Character2D.IsTouchingGround*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_IsTouchingGround" data-uid="Mobge.Platformer.Character.Character2D.IsTouchingGround">IsTouchingGround()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTouchingGround()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_IsTouchingLayers.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.IsTouchingLayers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L484">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_IsTouchingLayers_" data-uid="Mobge.Platformer.Character.Character2D.IsTouchingLayers*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_IsTouchingLayers" data-uid="Mobge.Platformer.Character.Character2D.IsTouchingLayers">IsTouchingLayers()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTouchingLayers()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_IsTouchingLayers_System_Int32_.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.IsTouchingLayers(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L481">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_IsTouchingLayers_" data-uid="Mobge.Platformer.Character.Character2D.IsTouchingLayers*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_IsTouchingLayers_System_Int32_" data-uid="Mobge.Platformer.Character.Character2D.IsTouchingLayers(System.Int32)">IsTouchingLayers(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTouchingLayers(int layerMask)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">layerMask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_JumpStart_System_Single_.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.JumpStart(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L462">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_JumpStart_" data-uid="Mobge.Platformer.Character.Character2D.JumpStart*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_JumpStart_System_Single_" data-uid="Mobge.Platformer.Character.Character2D.JumpStart(System.Single)">JumpStart(Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void JumpStart(float airTime = 0.2F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">airTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_OnDestroy.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.OnDestroy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L94">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_OnDestroy_" data-uid="Mobge.Platformer.Character.Character2D.OnDestroy*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_OnDestroy" data-uid="Mobge.Platformer.Character.Character2D.OnDestroy">OnDestroy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnDestroy()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_OverlapAreaForGround_UnityEngine_Vector2_.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.OverlapAreaForGround(UnityEngine.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L490">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_OverlapAreaForGround_" data-uid="Mobge.Platformer.Character.Character2D.OverlapAreaForGround*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_OverlapAreaForGround_UnityEngine_Vector2_" data-uid="Mobge.Platformer.Character.Character2D.OverlapAreaForGround(UnityEngine.Vector2)">OverlapAreaForGround(Vector2)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Collider2dList OverlapAreaForGround(Vector2 point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Collider2dList.html">Collider2dList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_Reset_Mobge_GameSetup_System_Int32_.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.Reset(Mobge.GameSetup%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L124">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_Reset_" data-uid="Mobge.Platformer.Character.Character2D.Reset*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_Reset_Mobge_GameSetup_System_Int32_" data-uid="Mobge.Platformer.Character.Character2D.Reset(Mobge.GameSetup,System.Int32)">Reset(GameSetup, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset(GameSetup gameSetup, int team = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.GameSetup.html">GameSetup</a></td>
+        <td><span class="parametername">gameSetup</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">team</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_SetModule__1_System_Int32___0_System_Int32_.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.SetModule%60%601(System.Int32%2C%60%600%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L263">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_SetModule_" data-uid="Mobge.Platformer.Character.Character2D.SetModule*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_SetModule__1_System_Int32___0_System_Int32_" data-uid="Mobge.Platformer.Character.Character2D.SetModule``1(System.Int32,``0,System.Int32)">SetModule&lt;T&gt;(Int32, T, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetModule&lt;T&gt;(int index, T state, int actionIndex = 0)
+
+    where T : Object, IStateModule</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">actionIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_SetModuleData_System_Int32_Mobge_Platformer_Character_StateModuleData_System_Int32_.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.SetModuleData(System.Int32%2CMobge.Platformer.Character.StateModuleData%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L267">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_SetModuleData_" data-uid="Mobge.Platformer.Character.Character2D.SetModuleData*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_SetModuleData_System_Int32_Mobge_Platformer_Character_StateModuleData_System_Int32_" data-uid="Mobge.Platformer.Character.Character2D.SetModuleData(System.Int32,Mobge.Platformer.Character.StateModuleData,System.Int32)">SetModuleData(Int32, StateModuleData, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetModuleData(int index, StateModuleData data, int actionIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.StateModuleData.html">StateModuleData</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">actionIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_TakeDamage_Mobge_Platformer_Character_DamageData__.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.TakeDamage(Mobge.Platformer.Character.DamageData%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L317">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_TakeDamage_" data-uid="Mobge.Platformer.Character.Character2D.TakeDamage*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_TakeDamage_Mobge_Platformer_Character_DamageData__" data-uid="Mobge.Platformer.Character.Character2D.TakeDamage(Mobge.Platformer.Character.DamageData@)">TakeDamage(DamageData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TakeDamage(in DamageData damage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.DamageData.html">DamageData</a></td>
+        <td><span class="parametername">damage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_TransformPoint_UnityEngine_Vector3_.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.TransformPoint(UnityEngine.Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L247">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_TransformPoint_" data-uid="Mobge.Platformer.Character.Character2D.TransformPoint*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_TransformPoint_UnityEngine_Vector3_" data-uid="Mobge.Platformer.Character.Character2D.TransformPoint(UnityEngine.Vector3)">TransformPoint(Vector3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 TransformPoint(Vector3 point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_TrySetCurrentState_Mobge_Platformer_Character_IStateModule_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.TrySetCurrentState(Mobge.Platformer.Character.IStateModule%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L433">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_TrySetCurrentState_" data-uid="Mobge.Platformer.Character.Character2D.TrySetCurrentState*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_TrySetCurrentState_Mobge_Platformer_Character_IStateModule_System_Int32_System_Boolean_" data-uid="Mobge.Platformer.Character.Character2D.TrySetCurrentState(Mobge.Platformer.Character.IStateModule,System.Int32,System.Boolean)">TrySetCurrentState(IStateModule, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TrySetCurrentState(IStateModule module, int actionIndex = 0, bool interruptCurrent = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.IStateModule.html">IStateModule</a></td>
+        <td><span class="parametername">module</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">actionIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">interruptCurrent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_TrySetCurrentState_Mobge_Platformer_Character_StateModuleData_System_Int32_.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.TrySetCurrentState(Mobge.Platformer.Character.StateModuleData%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L422">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_TrySetCurrentState_" data-uid="Mobge.Platformer.Character.Character2D.TrySetCurrentState*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_TrySetCurrentState_Mobge_Platformer_Character_StateModuleData_System_Int32_" data-uid="Mobge.Platformer.Character.Character2D.TrySetCurrentState(Mobge.Platformer.Character.StateModuleData,System.Int32)">TrySetCurrentState(StateModuleData, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TrySetCurrentState(StateModuleData moduleData, int actionIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.StateModuleData.html">StateModuleData</a></td>
+        <td><span class="parametername">moduleData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">actionIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_TrySetCurrentState_Mobge_Platformer_Character_StateModuleData_System_Int32_Mobge_Platformer_Character_IStateModule__.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.TrySetCurrentState(Mobge.Platformer.Character.StateModuleData%2CSystem.Int32%2CMobge.Platformer.Character.IStateModule%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L425">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_TrySetCurrentState_" data-uid="Mobge.Platformer.Character.Character2D.TrySetCurrentState*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_TrySetCurrentState_Mobge_Platformer_Character_StateModuleData_System_Int32_Mobge_Platformer_Character_IStateModule__" data-uid="Mobge.Platformer.Character.Character2D.TrySetCurrentState(Mobge.Platformer.Character.StateModuleData,System.Int32,Mobge.Platformer.Character.IStateModule@)">TrySetCurrentState(StateModuleData, Int32, out IStateModule)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TrySetCurrentState(StateModuleData moduleData, int actionIndex, out IStateModule module)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.StateModuleData.html">StateModuleData</a></td>
+        <td><span class="parametername">moduleData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">actionIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.IStateModule.html">IStateModule</a></td>
+        <td><span class="parametername">module</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_WakeRigidbody.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.WakeRigidbody%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L244">View Source</a>
+  </span>
+  <a id="Mobge_Platformer_Character_Character2D_WakeRigidbody_" data-uid="Mobge.Platformer.Character.Character2D.WakeRigidbody*"></a>
+  <h4 id="Mobge_Platformer_Character_Character2D_WakeRigidbody" data-uid="Mobge.Platformer.Character.Character2D.WakeRigidbody">WakeRigidbody()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WakeRigidbody()</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D_VisibilityChanged.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D.VisibilityChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2D.cs/#L43">View Source</a>
+  </span>
+  <h4 id="Mobge_Platformer_Character_Character2D_VisibilityChanged" data-uid="Mobge.Platformer.Character.Character2D.VisibilityChanged">VisibilityChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;bool&gt; VisibilityChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Mobge.Animation.IAnimationOwner.html">IAnimationOwner</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Mobge.UnityExtensions.html#Mobge_UnityExtensions_DestroyObj_UnityEngine_Object_UnityEngine_Object_">UnityExtensions.DestroyObj(Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mobge.UnityExtensions.html#Mobge_UnityExtensions_DestroySelf_UnityEngine_Object_">UnityExtensions.DestroySelf(Object)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Platformer_Character_Character2D.md&amp;value=---%0Auid%3A%20Mobge.Platformer.Character.Character2D%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/Platformer/Character/Character2DModules.cs/#L7" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Example Unity documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

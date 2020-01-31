@@ -1,0 +1,1144 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EditorLayoutDrawer
+   | Example Unity documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EditorLayoutDrawer
+   | Example Unity documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mobge.EditorLayoutDrawer">
+  
+  
+  <h1 id="Mobge_EditorLayoutDrawer" data-uid="Mobge.EditorLayoutDrawer" class="text-break">Class EditorLayoutDrawer
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="Mobge.BaseEditorDrawer.html">BaseEditorDrawer</a></div>
+    <div class="level2"><span class="xref">EditorLayoutDrawer</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Mobge.BaseEditorDrawer.html#Mobge_BaseEditorDrawer_s_tempPairs">BaseEditorDrawer.s_tempPairs</a>
+    </div>
+    <div>
+      <a class="xref" href="Mobge.BaseEditorDrawer.html#Mobge_BaseEditorDrawer_GetNames_System_Collections_Generic_List_Mobge_BaseEditorDrawer_Pair__">BaseEditorDrawer.GetNames(List&lt;BaseEditorDrawer.Pair&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mobge.BaseEditorDrawer.html#Mobge_BaseEditorDrawer_IndexOf_System_Collections_Generic_List_Mobge_BaseEditorDrawer_Pair__System_Int32_">BaseEditorDrawer.IndexOf(List&lt;BaseEditorDrawer.Pair&gt;, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mobge.BaseEditorDrawer.html#Mobge_BaseEditorDrawer_PrepareTempPairList_System_String_">BaseEditorDrawer.PrepareTempPairList(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mobge.BaseEditorDrawer.html#Mobge_BaseEditorDrawer_FillTempPairList_System_Collections_IList_System_String_">BaseEditorDrawer.FillTempPairList(IList, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mobge.BaseEditorDrawer.html#Mobge_BaseEditorDrawer_FillTempPairList__1_Mobge_AutoIndexedMap___0__System_String_System_Func___0_System_String__">BaseEditorDrawer.FillTempPairList&lt;T&gt;(AutoIndexedMap&lt;T&gt;, String, Func&lt;T, String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mobge.BaseEditorDrawer.html#Mobge_BaseEditorDrawer_PrePopup_System_Collections_Generic_List_Mobge_BaseEditorDrawer_Pair__System_Int32_">BaseEditorDrawer.PrePopup(List&lt;BaseEditorDrawer.Pair&gt;, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mobge.BaseEditorDrawer.html#Mobge_BaseEditorDrawer_PreConvert__2_System_Collections_Generic_IList___0____1_System_Func___0___1__System_Collections_IList__System_String_">BaseEditorDrawer.PreConvert&lt;K, T&gt;(IList&lt;K&gt;, T, Func&lt;K, T&gt;, IList, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mobge.BaseEditorDrawer.html#Mobge_BaseEditorDrawer_PostConvert__2_System_Collections_Generic_IList___0__System_Int32___1_System_Func___0___1____0__">BaseEditorDrawer.PostConvert&lt;K, T&gt;(IList&lt;K&gt;, Int32, T, Func&lt;K, T&gt;, K)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mobge.BaseEditorDrawer.html#Mobge_BaseEditorDrawer_PostPopup_System_Collections_Generic_List_Mobge_BaseEditorDrawer_Pair__Mobge_BaseEditorDrawer_PopupData_">BaseEditorDrawer.PostPopup(List&lt;BaseEditorDrawer.Pair&gt;, BaseEditorDrawer.PopupData)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mobge.BaseEditorDrawer.html#Mobge_BaseEditorDrawer_CustomListField__1_System_String_System_Collections_IList_System_Func_Mobge_LayoutRectSource___0___0__System_Int32__System_Boolean_Mobge_LayoutRectSource_">BaseEditorDrawer.CustomListField&lt;T&gt;(String, IList, Func&lt;LayoutRectSource, T, T&gt;, Int32, Boolean, LayoutRectSource)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mobge.BaseEditorDrawer.html#Mobge_BaseEditorDrawer_CustomArrayField__1_System_String___0____System_Func_Mobge_LayoutRectSource___0___0__System_Int32__System_Boolean_Mobge_LayoutRectSource_">BaseEditorDrawer.CustomArrayField&lt;T&gt;(String, T[], Func&lt;LayoutRectSource, T, T&gt;, Int32, Boolean, LayoutRectSource)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mobge.BaseEditorDrawer.html#Mobge_BaseEditorDrawer_CustomListField_UnityEditor_SerializedProperty_System_Action_Mobge_LayoutRectSource_UnityEditor_SerializedProperty_System_Int32__System_Boolean_Mobge_LayoutRectSource_">BaseEditorDrawer.CustomListField(SerializedProperty, Action&lt;LayoutRectSource, SerializedProperty, Int32&gt;, Boolean, LayoutRectSource)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mobge.html">Mobge</a></h6>
+  <h6><strong>Assembly</strong>: Mobge.dll</h6>
+  <h5 id="Mobge_EditorLayoutDrawer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class EditorLayoutDrawer : BaseEditorDrawer</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_EditorLayoutDrawer_CustomArrayField__1_System_String___0____System_Func_Mobge_LayoutRectSource___0___0__.md&amp;value=---%0Auid%3A%20Mobge.EditorLayoutDrawer.CustomArrayField%60%601(System.String%2C%60%600%5B%5D%40%2CSystem.Func%7BMobge.LayoutRectSource%2C%60%600%2C%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/EditorPlus/Editor/EditorExtensions.cs/#L432">View Source</a>
+  </span>
+  <a id="Mobge_EditorLayoutDrawer_CustomArrayField_" data-uid="Mobge.EditorLayoutDrawer.CustomArrayField*"></a>
+  <h4 id="Mobge_EditorLayoutDrawer_CustomArrayField__1_System_String___0____System_Func_Mobge_LayoutRectSource___0___0__" data-uid="Mobge.EditorLayoutDrawer.CustomArrayField``1(System.String,``0[]@,System.Func{Mobge.LayoutRectSource,``0,``0})">CustomArrayField&lt;T&gt;(String, ref T[], Func&lt;LayoutRectSource, T, T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BaseEditorDrawer.ReorderableListHelper.ListAttributes CustomArrayField&lt;T&gt;(string label, ref T[] array, Func&lt;LayoutRectSource, T, T&gt; customField)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="Mobge.LayoutRectSource.html">LayoutRectSource</a>, T, T&gt;</td>
+        <td><span class="parametername">customField</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.BaseEditorDrawer.ReorderableListHelper.ListAttributes.html">BaseEditorDrawer.ReorderableListHelper.ListAttributes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_EditorLayoutDrawer_CustomArrayField__1_System_String___0____System_Func_Mobge_LayoutRectSource___0___0__System_Int32__.md&amp;value=---%0Auid%3A%20Mobge.EditorLayoutDrawer.CustomArrayField%60%601(System.String%2C%60%600%5B%5D%40%2CSystem.Func%7BMobge.LayoutRectSource%2C%60%600%2C%60%600%7D%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/EditorPlus/Editor/EditorExtensions.cs/#L429">View Source</a>
+  </span>
+  <a id="Mobge_EditorLayoutDrawer_CustomArrayField_" data-uid="Mobge.EditorLayoutDrawer.CustomArrayField*"></a>
+  <h4 id="Mobge_EditorLayoutDrawer_CustomArrayField__1_System_String___0____System_Func_Mobge_LayoutRectSource___0___0__System_Int32__" data-uid="Mobge.EditorLayoutDrawer.CustomArrayField``1(System.String,``0[]@,System.Func{Mobge.LayoutRectSource,``0,``0},System.Int32@)">CustomArrayField&lt;T&gt;(String, ref T[], Func&lt;LayoutRectSource, T, T&gt;, ref Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BaseEditorDrawer.ReorderableListHelper.ListAttributes CustomArrayField&lt;T&gt;(string label, ref T[] array, Func&lt;LayoutRectSource, T, T&gt; customField, ref int selectedRow)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="Mobge.LayoutRectSource.html">LayoutRectSource</a>, T, T&gt;</td>
+        <td><span class="parametername">customField</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">selectedRow</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.BaseEditorDrawer.ReorderableListHelper.ListAttributes.html">BaseEditorDrawer.ReorderableListHelper.ListAttributes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_EditorLayoutDrawer_CustomCollectionField_UnityEditor_SerializedProperty_System_Action_Mobge_LayoutRectSource_UnityEditor_SerializedProperty_System_Int32__.md&amp;value=---%0Auid%3A%20Mobge.EditorLayoutDrawer.CustomCollectionField(UnityEditor.SerializedProperty%2CSystem.Action%7BMobge.LayoutRectSource%2CUnityEditor.SerializedProperty%2CSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/EditorPlus/Editor/EditorExtensions.cs/#L452">View Source</a>
+  </span>
+  <a id="Mobge_EditorLayoutDrawer_CustomCollectionField_" data-uid="Mobge.EditorLayoutDrawer.CustomCollectionField*"></a>
+  <h4 id="Mobge_EditorLayoutDrawer_CustomCollectionField_UnityEditor_SerializedProperty_System_Action_Mobge_LayoutRectSource_UnityEditor_SerializedProperty_System_Int32__" data-uid="Mobge.EditorLayoutDrawer.CustomCollectionField(UnityEditor.SerializedProperty,System.Action{Mobge.LayoutRectSource,UnityEditor.SerializedProperty,System.Int32})">CustomCollectionField(SerializedProperty, Action&lt;LayoutRectSource, SerializedProperty, Int32&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BaseEditorDrawer.ReorderableListHelper.ListAttributes CustomCollectionField(SerializedProperty property, Action&lt;LayoutRectSource, SerializedProperty, int&gt; customField)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-3">Action</a>&lt;<a class="xref" href="Mobge.LayoutRectSource.html">LayoutRectSource</a>, <span class="xref">UnityEditor.SerializedProperty</span>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">customField</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.BaseEditorDrawer.ReorderableListHelper.ListAttributes.html">BaseEditorDrawer.ReorderableListHelper.ListAttributes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_EditorLayoutDrawer_CustomListField__1_System_String_Mobge_AutoIndexedMap___0__System_Action_Mobge_LayoutRectSource_System_Int32__System_Boolean__.md&amp;value=---%0Auid%3A%20Mobge.EditorLayoutDrawer.CustomListField%60%601(System.String%2CMobge.AutoIndexedMap%7B%60%600%7D%2CSystem.Action%7BMobge.LayoutRectSource%2CSystem.Int32%7D%2CSystem.Boolean%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/EditorPlus/Editor/EditorExtensions.cs/#L440">View Source</a>
+  </span>
+  <a id="Mobge_EditorLayoutDrawer_CustomListField_" data-uid="Mobge.EditorLayoutDrawer.CustomListField*"></a>
+  <h4 id="Mobge_EditorLayoutDrawer_CustomListField__1_System_String_Mobge_AutoIndexedMap___0__System_Action_Mobge_LayoutRectSource_System_Int32__System_Boolean__" data-uid="Mobge.EditorLayoutDrawer.CustomListField``1(System.String,Mobge.AutoIndexedMap{``0},System.Action{Mobge.LayoutRectSource,System.Int32},System.Boolean@)">CustomListField&lt;T&gt;(String, AutoIndexedMap&lt;T&gt;, Action&lt;LayoutRectSource, Int32&gt;, ref Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CustomListField&lt;T&gt;(string label, AutoIndexedMap&lt;T&gt; list, Action&lt;LayoutRectSource, int&gt; fieldForKey, ref bool isOpen)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mobge.AutoIndexedMap-1.html">AutoIndexedMap</a>&lt;T&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Mobge.LayoutRectSource.html">LayoutRectSource</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">fieldForKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isOpen</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_EditorLayoutDrawer_CustomListField__1_System_String_System_Collections_IList_System_Func_Mobge_LayoutRectSource___0___0__.md&amp;value=---%0Auid%3A%20Mobge.EditorLayoutDrawer.CustomListField%60%601(System.String%2CSystem.Collections.IList%2CSystem.Func%7BMobge.LayoutRectSource%2C%60%600%2C%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/EditorPlus/Editor/EditorExtensions.cs/#L448">View Source</a>
+  </span>
+  <a id="Mobge_EditorLayoutDrawer_CustomListField_" data-uid="Mobge.EditorLayoutDrawer.CustomListField*"></a>
+  <h4 id="Mobge_EditorLayoutDrawer_CustomListField__1_System_String_System_Collections_IList_System_Func_Mobge_LayoutRectSource___0___0__" data-uid="Mobge.EditorLayoutDrawer.CustomListField``1(System.String,System.Collections.IList,System.Func{Mobge.LayoutRectSource,``0,``0})">CustomListField&lt;T&gt;(String, IList, Func&lt;LayoutRectSource, T, T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BaseEditorDrawer.ReorderableListHelper.ListAttributes CustomListField&lt;T&gt;(string label, IList list, Func&lt;LayoutRectSource, T, T&gt; customField)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ilist">IList</a></td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="Mobge.LayoutRectSource.html">LayoutRectSource</a>, T, T&gt;</td>
+        <td><span class="parametername">customField</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.BaseEditorDrawer.ReorderableListHelper.ListAttributes.html">BaseEditorDrawer.ReorderableListHelper.ListAttributes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_EditorLayoutDrawer_CustomListField__1_System_String_System_Collections_IList_System_Func_Mobge_LayoutRectSource___0___0__System_Int32__.md&amp;value=---%0Auid%3A%20Mobge.EditorLayoutDrawer.CustomListField%60%601(System.String%2CSystem.Collections.IList%2CSystem.Func%7BMobge.LayoutRectSource%2C%60%600%2C%60%600%7D%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/EditorPlus/Editor/EditorExtensions.cs/#L436">View Source</a>
+  </span>
+  <a id="Mobge_EditorLayoutDrawer_CustomListField_" data-uid="Mobge.EditorLayoutDrawer.CustomListField*"></a>
+  <h4 id="Mobge_EditorLayoutDrawer_CustomListField__1_System_String_System_Collections_IList_System_Func_Mobge_LayoutRectSource___0___0__System_Int32__" data-uid="Mobge.EditorLayoutDrawer.CustomListField``1(System.String,System.Collections.IList,System.Func{Mobge.LayoutRectSource,``0,``0},System.Int32@)">CustomListField&lt;T&gt;(String, IList, Func&lt;LayoutRectSource, T, T&gt;, ref Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BaseEditorDrawer.ReorderableListHelper.ListAttributes CustomListField&lt;T&gt;(string label, IList list, Func&lt;LayoutRectSource, T, T&gt; customField, ref int selectedRow)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ilist">IList</a></td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="Mobge.LayoutRectSource.html">LayoutRectSource</a>, T, T&gt;</td>
+        <td><span class="parametername">customField</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">selectedRow</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.BaseEditorDrawer.ReorderableListHelper.ListAttributes.html">BaseEditorDrawer.ReorderableListHelper.ListAttributes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_EditorLayoutDrawer_ObjectField__1___0_System_Boolean_UnityEngine_GUILayoutOption___.md&amp;value=---%0Auid%3A%20Mobge.EditorLayoutDrawer.ObjectField%60%601(%60%600%2CSystem.Boolean%2CUnityEngine.GUILayoutOption%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/EditorPlus/Editor/EditorExtensions.cs/#L487">View Source</a>
+  </span>
+  <a id="Mobge_EditorLayoutDrawer_ObjectField_" data-uid="Mobge.EditorLayoutDrawer.ObjectField*"></a>
+  <h4 id="Mobge_EditorLayoutDrawer_ObjectField__1___0_System_Boolean_UnityEngine_GUILayoutOption___" data-uid="Mobge.EditorLayoutDrawer.ObjectField``1(``0,System.Boolean,UnityEngine.GUILayoutOption[])">ObjectField&lt;T&gt;(T, Boolean, GUILayoutOption[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T ObjectField&lt;T&gt;(T obj, bool allowSceneObjects = true, params GUILayoutOption[] options)
+
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">allowSceneObjects</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.GUILayoutOption</span>[]</td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_EditorLayoutDrawer_ObjectField__1_System_String___0_System_Boolean_UnityEngine_GUILayoutOption___.md&amp;value=---%0Auid%3A%20Mobge.EditorLayoutDrawer.ObjectField%60%601(System.String%2C%60%600%2CSystem.Boolean%2CUnityEngine.GUILayoutOption%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/EditorPlus/Editor/EditorExtensions.cs/#L484">View Source</a>
+  </span>
+  <a id="Mobge_EditorLayoutDrawer_ObjectField_" data-uid="Mobge.EditorLayoutDrawer.ObjectField*"></a>
+  <h4 id="Mobge_EditorLayoutDrawer_ObjectField__1_System_String___0_System_Boolean_UnityEngine_GUILayoutOption___" data-uid="Mobge.EditorLayoutDrawer.ObjectField``1(System.String,``0,System.Boolean,UnityEngine.GUILayoutOption[])">ObjectField&lt;T&gt;(String, T, Boolean, GUILayoutOption[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T ObjectField&lt;T&gt;(string label, T obj, bool allowSceneObjects = true, params GUILayoutOption[] options)
+
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">allowSceneObjects</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.GUILayoutOption</span>[]</td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_EditorLayoutDrawer_Popup_System_String_System_Collections_Generic_IEnumerable_Mobge_BaseEditorDrawer_Pair__System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Mobge.EditorLayoutDrawer.Popup(System.String%2CSystem.Collections.Generic.IEnumerable%7BMobge.BaseEditorDrawer.Pair%7D%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/EditorPlus/Editor/EditorExtensions.cs/#L460">View Source</a>
+  </span>
+  <a id="Mobge_EditorLayoutDrawer_Popup_" data-uid="Mobge.EditorLayoutDrawer.Popup*"></a>
+  <h4 id="Mobge_EditorLayoutDrawer_Popup_System_String_System_Collections_Generic_IEnumerable_Mobge_BaseEditorDrawer_Pair__System_Int32_System_String_" data-uid="Mobge.EditorLayoutDrawer.Popup(System.String,System.Collections.Generic.IEnumerable{Mobge.BaseEditorDrawer.Pair},System.Int32,System.String)">Popup(String, IEnumerable&lt;BaseEditorDrawer.Pair&gt;, Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Popup(string label, IEnumerable&lt;BaseEditorDrawer.Pair&gt; pairs, int selectedId, string noneOptionName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Mobge.BaseEditorDrawer.Pair.html">BaseEditorDrawer.Pair</a>&gt;</td>
+        <td><span class="parametername">pairs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">selectedId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">noneOptionName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_EditorLayoutDrawer_Popup_System_String_System_Collections_IList_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Mobge.EditorLayoutDrawer.Popup(System.String%2CSystem.Collections.IList%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/EditorPlus/Editor/EditorExtensions.cs/#L455">View Source</a>
+  </span>
+  <a id="Mobge_EditorLayoutDrawer_Popup_" data-uid="Mobge.EditorLayoutDrawer.Popup*"></a>
+  <h4 id="Mobge_EditorLayoutDrawer_Popup_System_String_System_Collections_IList_System_Int32_System_String_" data-uid="Mobge.EditorLayoutDrawer.Popup(System.String,System.Collections.IList,System.Int32,System.String)">Popup(String, IList, Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Popup(string label, IList content, int selectedIndex, string noneOptionName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ilist">IList</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">selectedIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">noneOptionName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_EditorLayoutDrawer_Popup__1_System_String_Mobge_AutoIndexedMap___0__System_Int32_System_String_System_Func___0_System_String__.md&amp;value=---%0Auid%3A%20Mobge.EditorLayoutDrawer.Popup%60%601(System.String%2CMobge.AutoIndexedMap%7B%60%600%7D%2CSystem.Int32%2CSystem.String%2CSystem.Func%7B%60%600%2CSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/EditorPlus/Editor/EditorExtensions.cs/#L465">View Source</a>
+  </span>
+  <a id="Mobge_EditorLayoutDrawer_Popup_" data-uid="Mobge.EditorLayoutDrawer.Popup*"></a>
+  <h4 id="Mobge_EditorLayoutDrawer_Popup__1_System_String_Mobge_AutoIndexedMap___0__System_Int32_System_String_System_Func___0_System_String__" data-uid="Mobge.EditorLayoutDrawer.Popup``1(System.String,Mobge.AutoIndexedMap{``0},System.Int32,System.String,System.Func{``0,System.String})">Popup&lt;T&gt;(String, AutoIndexedMap&lt;T&gt;, Int32, String, Func&lt;T, String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Popup&lt;T&gt;(string label, AutoIndexedMap&lt;T&gt; map, int selectedIndex, string noneOptionName = null, Func&lt;T, string&gt; toString = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mobge.AutoIndexedMap-1.html">AutoIndexedMap</a>&lt;T&gt;</td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">selectedIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">noneOptionName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">toString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_EditorLayoutDrawer_Popup__2_System_String_System_Collections_Generic_IList___1____0_System_Func___1___0__.md&amp;value=---%0Auid%3A%20Mobge.EditorLayoutDrawer.Popup%60%602(System.String%2CSystem.Collections.Generic.IList%7B%60%601%7D%2C%60%600%2CSystem.Func%7B%60%601%2C%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/EditorPlus/Editor/EditorExtensions.cs/#L475">View Source</a>
+  </span>
+  <a id="Mobge_EditorLayoutDrawer_Popup_" data-uid="Mobge.EditorLayoutDrawer.Popup*"></a>
+  <h4 id="Mobge_EditorLayoutDrawer_Popup__2_System_String_System_Collections_Generic_IList___1____0_System_Func___1___0__" data-uid="Mobge.EditorLayoutDrawer.Popup``2(System.String,System.Collections.Generic.IList{``1},``0,System.Func{``1,``0})">Popup&lt;T, K&gt;(String, IList&lt;K&gt;, T, Func&lt;K, T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Popup&lt;T, K&gt;(string label, IList&lt;K&gt; content, T element, Func&lt;K, T&gt; convert)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;K&gt;</td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">element</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;K, T&gt;</td>
+        <td><span class="parametername">convert</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">K</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_EditorLayoutDrawer_Popup__2_System_String_System_Collections_Generic_IList___1____0_System_Func___1___0____1__.md&amp;value=---%0Auid%3A%20Mobge.EditorLayoutDrawer.Popup%60%602(System.String%2CSystem.Collections.Generic.IList%7B%60%601%7D%2C%60%600%2CSystem.Func%7B%60%601%2C%60%600%7D%2C%60%601%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/EditorPlus/Editor/EditorExtensions.cs/#L469">View Source</a>
+  </span>
+  <a id="Mobge_EditorLayoutDrawer_Popup_" data-uid="Mobge.EditorLayoutDrawer.Popup*"></a>
+  <h4 id="Mobge_EditorLayoutDrawer_Popup__2_System_String_System_Collections_Generic_IList___1____0_System_Func___1___0____1__" data-uid="Mobge.EditorLayoutDrawer.Popup``2(System.String,System.Collections.Generic.IList{``1},``0,System.Func{``1,``0},``1@)">Popup&lt;T, K&gt;(String, IList&lt;K&gt;, T, Func&lt;K, T&gt;, out K)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Popup&lt;T, K&gt;(string label, IList&lt;K&gt; content, T element, Func&lt;K, T&gt; convert, out K selected)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;K&gt;</td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">element</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;K, T&gt;</td>
+        <td><span class="parametername">convert</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><span class="parametername">selected</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">K</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_EditorLayoutDrawer.md&amp;value=---%0Auid%3A%20Mobge.EditorLayoutDrawer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Mobge/EditorPlus/Editor/EditorExtensions.cs/#L424" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Example Unity documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,958 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AttachmentRegionExtensions
+   | Example Unity documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AttachmentRegionExtensions
+   | Example Unity documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions">
+  
+  
+  <h1 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions" class="text-break">Class AttachmentRegionExtensions
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">AttachmentRegionExtensions</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Spine.Unity.AttachmentTools.html">Spine.Unity.AttachmentTools</a></h6>
+  <h6><strong>Assembly</strong>: spine-unity.dll</h6>
+  <h5 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class AttachmentRegionExtensions</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_AttachmentTools_AttachmentRegionExtensions_GetRegion_Spine_Attachment_.md&amp;value=---%0Auid%3A%20Spine.Unity.AttachmentTools.AttachmentRegionExtensions.GetRegion(Spine.Attachment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs/#L39">View Source</a>
+  </span>
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_GetRegion_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.GetRegion*"></a>
+  <h4 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_GetRegion_Spine_Attachment_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.GetRegion(Spine.Attachment)">GetRegion(Attachment)</h4>
+  <div class="markdown level1 summary"><p>Tries to get the region (image) of a renderable attachment. If the attachment is not renderable, it returns null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AtlasRegion GetRegion(this Attachment attachment)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Attachment.html">Attachment</a></td>
+        <td><span class="parametername">attachment</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_AttachmentTools_AttachmentRegionExtensions_GetRegion_Spine_MeshAttachment_.md&amp;value=---%0Auid%3A%20Spine.Unity.AttachmentTools.AttachmentRegionExtensions.GetRegion(Spine.MeshAttachment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs/#L53">View Source</a>
+  </span>
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_GetRegion_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.GetRegion*"></a>
+  <h4 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_GetRegion_Spine_MeshAttachment_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.GetRegion(Spine.MeshAttachment)">GetRegion(MeshAttachment)</h4>
+  <div class="markdown level1 summary"><p>Gets the region (image) of a MeshAttachment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AtlasRegion GetRegion(this MeshAttachment meshAttachment)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.MeshAttachment.html">MeshAttachment</a></td>
+        <td><span class="parametername">meshAttachment</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_AttachmentTools_AttachmentRegionExtensions_GetRegion_Spine_RegionAttachment_.md&amp;value=---%0Auid%3A%20Spine.Unity.AttachmentTools.AttachmentRegionExtensions.GetRegion(Spine.RegionAttachment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs/#L48">View Source</a>
+  </span>
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_GetRegion_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.GetRegion*"></a>
+  <h4 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_GetRegion_Spine_RegionAttachment_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.GetRegion(Spine.RegionAttachment)">GetRegion(RegionAttachment)</h4>
+  <div class="markdown level1 summary"><p>Gets the region (image) of a RegionAttachment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AtlasRegion GetRegion(this RegionAttachment regionAttachment)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></td>
+        <td><span class="parametername">regionAttachment</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetPositionOffset_Spine_RegionAttachment_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetPositionOffset(Spine.RegionAttachment%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs/#L196">View Source</a>
+  </span>
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetPositionOffset_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetPositionOffset*"></a>
+  <h4 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetPositionOffset_Spine_RegionAttachment_System_Single_System_Single_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetPositionOffset(Spine.RegionAttachment,System.Single,System.Single)">SetPositionOffset(RegionAttachment, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Sets the position offset. Call regionAttachment.UpdateOffset to apply the change.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPositionOffset(this RegionAttachment regionAttachment, float x, float y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></td>
+        <td><span class="parametername">regionAttachment</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetPositionOffset_Spine_RegionAttachment_UnityEngine_Vector2_.md&amp;value=---%0Auid%3A%20Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetPositionOffset(Spine.RegionAttachment%2CUnityEngine.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs/#L190">View Source</a>
+  </span>
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetPositionOffset_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetPositionOffset*"></a>
+  <h4 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetPositionOffset_Spine_RegionAttachment_UnityEngine_Vector2_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetPositionOffset(Spine.RegionAttachment,UnityEngine.Vector2)">SetPositionOffset(RegionAttachment, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Sets the position offset. Call regionAttachment.UpdateOffset to apply the change.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPositionOffset(this RegionAttachment regionAttachment, Vector2 offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></td>
+        <td><span class="parametername">regionAttachment</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetRegion_Spine_Attachment_Spine_AtlasRegion_System_Boolean_.md&amp;value=---%0Auid%3A%20Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetRegion(Spine.Attachment%2CSpine.AtlasRegion%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs/#L60">View Source</a>
+  </span>
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetRegion_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetRegion*"></a>
+  <h4 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetRegion_Spine_Attachment_Spine_AtlasRegion_System_Boolean_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetRegion(Spine.Attachment,Spine.AtlasRegion,System.Boolean)">SetRegion(Attachment, AtlasRegion, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Tries to set the region (image) of a renderable attachment. If the attachment is not renderable, nothing is applied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetRegion(this Attachment attachment, AtlasRegion region, bool updateOffset = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Attachment.html">Attachment</a></td>
+        <td><span class="parametername">attachment</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></td>
+        <td><span class="parametername">region</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">updateOffset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetRegion_Spine_MeshAttachment_Spine_AtlasRegion_System_Boolean_.md&amp;value=---%0Auid%3A%20Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetRegion(Spine.MeshAttachment%2CSpine.AtlasRegion%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs/#L88">View Source</a>
+  </span>
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetRegion_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetRegion*"></a>
+  <h4 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetRegion_Spine_MeshAttachment_Spine_AtlasRegion_System_Boolean_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetRegion(Spine.MeshAttachment,Spine.AtlasRegion,System.Boolean)">SetRegion(MeshAttachment, AtlasRegion, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets the region (image) of a MeshAttachment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetRegion(this MeshAttachment attachment, AtlasRegion region, bool updateUVs = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.MeshAttachment.html">MeshAttachment</a></td>
+        <td><span class="parametername">attachment</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></td>
+        <td><span class="parametername">region</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">updateUVs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetRegion_Spine_RegionAttachment_Spine_AtlasRegion_System_Boolean_.md&amp;value=---%0Auid%3A%20Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetRegion(Spine.RegionAttachment%2CSpine.AtlasRegion%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs/#L71">View Source</a>
+  </span>
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetRegion_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetRegion*"></a>
+  <h4 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetRegion_Spine_RegionAttachment_Spine_AtlasRegion_System_Boolean_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetRegion(Spine.RegionAttachment,Spine.AtlasRegion,System.Boolean)">SetRegion(RegionAttachment, AtlasRegion, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets the region (image) of a RegionAttachment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetRegion(this RegionAttachment attachment, AtlasRegion region, bool updateOffset = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></td>
+        <td><span class="parametername">attachment</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></td>
+        <td><span class="parametername">region</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">updateOffset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetRotation_Spine_RegionAttachment_System_Single_.md&amp;value=---%0Auid%3A%20Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetRotation(Spine.RegionAttachment%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs/#L202">View Source</a>
+  </span>
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetRotation_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetRotation*"></a>
+  <h4 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetRotation_Spine_RegionAttachment_System_Single_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetRotation(Spine.RegionAttachment,System.Single)">SetRotation(RegionAttachment, Single)</h4>
+  <div class="markdown level1 summary"><p>Sets the rotation. Call regionAttachment.UpdateOffset to apply the change.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetRotation(this RegionAttachment regionAttachment, float rotation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></td>
+        <td><span class="parametername">regionAttachment</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">rotation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetScale_Spine_RegionAttachment_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetScale(Spine.RegionAttachment%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs/#L184">View Source</a>
+  </span>
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetScale_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetScale*"></a>
+  <h4 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetScale_Spine_RegionAttachment_System_Single_System_Single_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetScale(Spine.RegionAttachment,System.Single,System.Single)">SetScale(RegionAttachment, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Sets the scale. Call regionAttachment.UpdateOffset to apply the change.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetScale(this RegionAttachment regionAttachment, float x, float y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></td>
+        <td><span class="parametername">regionAttachment</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetScale_Spine_RegionAttachment_UnityEngine_Vector2_.md&amp;value=---%0Auid%3A%20Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetScale(Spine.RegionAttachment%2CUnityEngine.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs/#L178">View Source</a>
+  </span>
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetScale_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetScale*"></a>
+  <h4 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetScale_Spine_RegionAttachment_UnityEngine_Vector2_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetScale(Spine.RegionAttachment,UnityEngine.Vector2)">SetScale(RegionAttachment, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Sets the scale. Call regionAttachment.UpdateOffset to apply the change.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetScale(this RegionAttachment regionAttachment, Vector2 scale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></td>
+        <td><span class="parametername">regionAttachment</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachment_Spine_AtlasRegion_System_String_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachment(Spine.AtlasRegion%2CSystem.String%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs/#L142">View Source</a>
+  </span>
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachment_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachment*"></a>
+  <h4 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachment_Spine_AtlasRegion_System_String_System_Single_System_Single_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachment(Spine.AtlasRegion,System.String,System.Single,System.Single)">ToRegionAttachment(AtlasRegion, String, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Creates a new RegionAttachment from a given AtlasRegion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RegionAttachment ToRegionAttachment(this AtlasRegion region, string attachmentName, float scale = 0.01F, float rotation = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></td>
+        <td><span class="parametername">region</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">attachmentName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">rotation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachment_UnityEngine_Sprite_Spine_AtlasPage_System_Single_.md&amp;value=---%0Auid%3A%20Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachment(UnityEngine.Sprite%2CSpine.AtlasPage%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs/#L118">View Source</a>
+  </span>
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachment_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachment*"></a>
+  <h4 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachment_UnityEngine_Sprite_Spine_AtlasPage_System_Single_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachment(UnityEngine.Sprite,Spine.AtlasPage,System.Single)">ToRegionAttachment(Sprite, AtlasPage, Single)</h4>
+  <div class="markdown level1 summary"><p>Creates a RegionAttachment based on a sprite. This method creates a real, usable AtlasRegion. That AtlasRegion uses the AtlasPage provided./// </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RegionAttachment ToRegionAttachment(this Sprite sprite, AtlasPage page, float rotation = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Sprite</span></td>
+        <td><span class="parametername">sprite</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Spine.AtlasPage.html">AtlasPage</a></td>
+        <td><span class="parametername">page</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">rotation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachment_UnityEngine_Sprite_UnityEngine_Material_System_Single_.md&amp;value=---%0Auid%3A%20Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachment(UnityEngine.Sprite%2CUnityEngine.Material%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs/#L112">View Source</a>
+  </span>
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachment_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachment*"></a>
+  <h4 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachment_UnityEngine_Sprite_UnityEngine_Material_System_Single_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachment(UnityEngine.Sprite,UnityEngine.Material,System.Single)">ToRegionAttachment(Sprite, Material, Single)</h4>
+  <div class="markdown level1 summary"><p>Creates a RegionAttachment based on a sprite. This method creates a real, usable AtlasRegion. That AtlasRegion uses a new AtlasPage with the Material provided./// </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RegionAttachment ToRegionAttachment(this Sprite sprite, Material material, float rotation = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Sprite</span></td>
+        <td><span class="parametername">sprite</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Material</span></td>
+        <td><span class="parametername">material</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">rotation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachmentPMAClone_UnityEngine_Sprite_UnityEngine_Material_UnityEngine_TextureFormat_System_Boolean_System_Single_.md&amp;value=---%0Auid%3A%20Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachmentPMAClone(UnityEngine.Sprite%2CUnityEngine.Material%2CUnityEngine.TextureFormat%2CSystem.Boolean%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs/#L136">View Source</a>
+  </span>
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachmentPMAClone_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachmentPMAClone*"></a>
+  <h4 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachmentPMAClone_UnityEngine_Sprite_UnityEngine_Material_UnityEngine_TextureFormat_System_Boolean_System_Single_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachmentPMAClone(UnityEngine.Sprite,UnityEngine.Material,UnityEngine.TextureFormat,System.Boolean,System.Single)">ToRegionAttachmentPMAClone(Sprite, Material, TextureFormat, Boolean, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RegionAttachment ToRegionAttachmentPMAClone(this Sprite sprite, Material materialPropertySource, TextureFormat textureFormat = TextureFormat.RGBA32, bool mipmaps = false, float rotation = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Sprite</span></td>
+        <td><span class="parametername">sprite</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Material</span></td>
+        <td><span class="parametername">materialPropertySource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.TextureFormat</span></td>
+        <td><span class="parametername">textureFormat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">mipmaps</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">rotation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachmentPMAClone_UnityEngine_Sprite_UnityEngine_Shader_UnityEngine_TextureFormat_System_Boolean_UnityEngine_Material_System_Single_.md&amp;value=---%0Auid%3A%20Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachmentPMAClone(UnityEngine.Sprite%2CUnityEngine.Shader%2CUnityEngine.TextureFormat%2CSystem.Boolean%2CUnityEngine.Material%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs/#L128">View Source</a>
+  </span>
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachmentPMAClone_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachmentPMAClone*"></a>
+  <h4 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachmentPMAClone_UnityEngine_Sprite_UnityEngine_Shader_UnityEngine_TextureFormat_System_Boolean_UnityEngine_Material_System_Single_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachmentPMAClone(UnityEngine.Sprite,UnityEngine.Shader,UnityEngine.TextureFormat,System.Boolean,UnityEngine.Material,System.Single)">ToRegionAttachmentPMAClone(Sprite, Shader, TextureFormat, Boolean, Material, Single)</h4>
+  <div class="markdown level1 summary"><p>Creates a Spine.AtlasRegion that uses a premultiplied alpha duplicate texture of the Sprite&apos;s texture data. Returns a RegionAttachment that uses it. Use this if you plan to use a premultiply alpha shader such as &quot;Spine/Skeleton&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RegionAttachment ToRegionAttachmentPMAClone(this Sprite sprite, Shader shader, TextureFormat textureFormat = TextureFormat.RGBA32, bool mipmaps = false, Material materialPropertySource = null, float rotation = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Sprite</span></td>
+        <td><span class="parametername">sprite</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Shader</span></td>
+        <td><span class="parametername">shader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.TextureFormat</span></td>
+        <td><span class="parametername">textureFormat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">mipmaps</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Material</span></td>
+        <td><span class="parametername">materialPropertySource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">rotation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_AttachmentTools_AttachmentRegionExtensions.md&amp;value=---%0Auid%3A%20Spine.Unity.AttachmentTools.AttachmentRegionExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs/#L35" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Example Unity documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

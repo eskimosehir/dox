@@ -1,0 +1,699 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HexagonalRuleTile
+   | Example Unity documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HexagonalRuleTile
+   | Example Unity documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.HexagonalRuleTile">
+  
+  
+  <h1 id="UnityEngine_HexagonalRuleTile" data-uid="UnityEngine.HexagonalRuleTile" class="text-break">Class HexagonalRuleTile
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.ScriptableObject</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Tilemaps.TileBase</span></div>
+    <div class="level4"><a class="xref" href="UnityEngine.RuleTile.html">RuleTile</a></div>
+    <div class="level5"><span class="xref">HexagonalRuleTile</span></div>
+      <div class="level6"><a class="xref" href="UnityEngine.HexagonalRuleTile-1.html">HexagonalRuleTile&lt;T&gt;</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UnityEngine.RuleTile.html#UnityEngine_RuleTile_m_NeighborType">RuleTile.m_NeighborType</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.RuleTile.html#UnityEngine_RuleTile_m_DefaultSprite">RuleTile.m_DefaultSprite</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.RuleTile.html#UnityEngine_RuleTile_m_DefaultGameObject">RuleTile.m_DefaultGameObject</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.RuleTile.html#UnityEngine_RuleTile_m_DefaultColliderType">RuleTile.m_DefaultColliderType</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.RuleTile.html#UnityEngine_RuleTile_m_Self">RuleTile.m_Self</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.RuleTile.html#UnityEngine_RuleTile_m_CachedNeighboringTiles">RuleTile.m_CachedNeighboringTiles</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.RuleTile.html#UnityEngine_RuleTile_m_TilingRules">RuleTile.m_TilingRules</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.RuleTile.html#UnityEngine_RuleTile_StartUp_UnityEngine_Vector3Int_UnityEngine_Tilemaps_ITilemap_UnityEngine_GameObject_">RuleTile.StartUp(Vector3Int, ITilemap, GameObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.RuleTile.html#UnityEngine_RuleTile_GetTileData_UnityEngine_Vector3Int_UnityEngine_Tilemaps_ITilemap_UnityEngine_Tilemaps_TileData__">RuleTile.GetTileData(Vector3Int, ITilemap, TileData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.RuleTile.html#UnityEngine_RuleTile_GetPerlinValue_UnityEngine_Vector3Int_System_Single_System_Single_">RuleTile.GetPerlinValue(Vector3Int, Single, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.RuleTile.html#UnityEngine_RuleTile_GetTileAnimationData_UnityEngine_Vector3Int_UnityEngine_Tilemaps_ITilemap_UnityEngine_Tilemaps_TileAnimationData__">RuleTile.GetTileAnimationData(Vector3Int, ITilemap, TileAnimationData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.RuleTile.html#UnityEngine_RuleTile_RuleMatch_System_Int32_UnityEngine_Tilemaps_TileBase_">RuleTile.RuleMatch(Int32, TileBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.RuleTile.html#UnityEngine_RuleTile_RuleMatches_UnityEngine_RuleTile_TilingRule_UnityEngine_Tilemaps_TileBase____System_Int32_">RuleTile.RuleMatches(RuleTile.TilingRule, TileBase[], Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.RuleTile.html#UnityEngine_RuleTile_RuleMatches_UnityEngine_RuleTile_TilingRule_UnityEngine_Tilemaps_TileBase____System_Boolean_System_Boolean_">RuleTile.RuleMatches(RuleTile.TilingRule, TileBase[], Boolean, Boolean)</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.SetDirty()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.CreateInstance(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.CreateInstance(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.CreateInstance&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindSceneObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeAll(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.name</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.hideFlags</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.html">UnityEngine</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="UnityEngine_HexagonalRuleTile_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+[CreateAssetMenu(fileName = &quot;New Hexagonal Rule Tile&quot;, menuName = &quot;Tiles/Hexagonal Rule Tile&quot;)]
+public class HexagonalRuleTile : RuleTile</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=UnityEngine_HexagonalRuleTile_m_FlatTop.md&amp;value=---%0Auid%3A%20UnityEngine.HexagonalRuleTile.m_FlatTop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/MobgeSpriteShapeAdapter/UnityTilemap/Tiles/Hexagonal Rule Tile/HexagonalRuleTile.cs/#L50">View Source</a>
+  </span>
+  <h4 id="UnityEngine_HexagonalRuleTile_m_FlatTop" data-uid="UnityEngine.HexagonalRuleTile.m_FlatTop">m_FlatTop</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool m_FlatTop</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=UnityEngine_HexagonalRuleTile_neighborCount.md&amp;value=---%0Auid%3A%20UnityEngine.HexagonalRuleTile.neighborCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/MobgeSpriteShapeAdapter/UnityTilemap/Tiles/Hexagonal Rule Tile/HexagonalRuleTile.cs/#L45">View Source</a>
+  </span>
+  <a id="UnityEngine_HexagonalRuleTile_neighborCount_" data-uid="UnityEngine.HexagonalRuleTile.neighborCount*"></a>
+  <h4 id="UnityEngine_HexagonalRuleTile_neighborCount" data-uid="UnityEngine.HexagonalRuleTile.neighborCount">neighborCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int neighborCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.RuleTile.html#UnityEngine_RuleTile_neighborCount">RuleTile.neighborCount</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=UnityEngine_HexagonalRuleTile_ApplyRandomTransform_UnityEngine_RuleTile_TilingRule_Transform_UnityEngine_Matrix4x4_System_Single_UnityEngine_Vector3Int_.md&amp;value=---%0Auid%3A%20UnityEngine.HexagonalRuleTile.ApplyRandomTransform(UnityEngine.RuleTile.TilingRule.Transform%2CUnityEngine.Matrix4x4%2CSystem.Single%2CUnityEngine.Vector3Int)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/MobgeSpriteShapeAdapter/UnityTilemap/Tiles/Hexagonal Rule Tile/HexagonalRuleTile.cs/#L93">View Source</a>
+  </span>
+  <a id="UnityEngine_HexagonalRuleTile_ApplyRandomTransform_" data-uid="UnityEngine.HexagonalRuleTile.ApplyRandomTransform*"></a>
+  <h4 id="UnityEngine_HexagonalRuleTile_ApplyRandomTransform_UnityEngine_RuleTile_TilingRule_Transform_UnityEngine_Matrix4x4_System_Single_UnityEngine_Vector3Int_" data-uid="UnityEngine.HexagonalRuleTile.ApplyRandomTransform(UnityEngine.RuleTile.TilingRule.Transform,UnityEngine.Matrix4x4,System.Single,UnityEngine.Vector3Int)">ApplyRandomTransform(RuleTile.TilingRule.Transform, Matrix4x4, Single, Vector3Int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Matrix4x4 ApplyRandomTransform(RuleTile.TilingRule.Transform type, Matrix4x4 original, float perlinScale, Vector3Int position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.RuleTile.TilingRule.Transform.html">RuleTile.TilingRule.Transform</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Matrix4x4</span></td>
+        <td><span class="parametername">original</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">perlinScale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3Int</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Matrix4x4</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.RuleTile.html#UnityEngine_RuleTile_ApplyRandomTransform_UnityEngine_RuleTile_TilingRule_Transform_UnityEngine_Matrix4x4_System_Single_UnityEngine_Vector3Int_">RuleTile.ApplyRandomTransform(RuleTile.TilingRule.Transform, Matrix4x4, Single, Vector3Int)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=UnityEngine_HexagonalRuleTile_GetMatchingNeighboringTiles_UnityEngine_Tilemaps_ITilemap_UnityEngine_Vector3Int_UnityEngine_Tilemaps_TileBase____.md&amp;value=---%0Auid%3A%20UnityEngine.HexagonalRuleTile.GetMatchingNeighboringTiles(UnityEngine.Tilemaps.ITilemap%2CUnityEngine.Vector3Int%2CUnityEngine.Tilemaps.TileBase%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/MobgeSpriteShapeAdapter/UnityTilemap/Tiles/Hexagonal Rule Tile/HexagonalRuleTile.cs/#L109">View Source</a>
+  </span>
+  <a id="UnityEngine_HexagonalRuleTile_GetMatchingNeighboringTiles_" data-uid="UnityEngine.HexagonalRuleTile.GetMatchingNeighboringTiles*"></a>
+  <h4 id="UnityEngine_HexagonalRuleTile_GetMatchingNeighboringTiles_UnityEngine_Tilemaps_ITilemap_UnityEngine_Vector3Int_UnityEngine_Tilemaps_TileBase____" data-uid="UnityEngine.HexagonalRuleTile.GetMatchingNeighboringTiles(UnityEngine.Tilemaps.ITilemap,UnityEngine.Vector3Int,UnityEngine.Tilemaps.TileBase[]@)">GetMatchingNeighboringTiles(ITilemap, Vector3Int, ref TileBase[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void GetMatchingNeighboringTiles(ITilemap tilemap, Vector3Int position, ref TileBase[] neighboringTiles)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Tilemaps.ITilemap</span></td>
+        <td><span class="parametername">tilemap</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3Int</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Tilemaps.TileBase</span>[]</td>
+        <td><span class="parametername">neighboringTiles</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.RuleTile.html#UnityEngine_RuleTile_GetMatchingNeighboringTiles_UnityEngine_Tilemaps_ITilemap_UnityEngine_Vector3Int_UnityEngine_Tilemaps_TileBase____">RuleTile.GetMatchingNeighboringTiles(ITilemap, Vector3Int, ref TileBase[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=UnityEngine_HexagonalRuleTile_GetMirroredIndex_System_Int32_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20UnityEngine.HexagonalRuleTile.GetMirroredIndex(System.Int32%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/MobgeSpriteShapeAdapter/UnityTilemap/Tiles/Hexagonal Rule Tile/HexagonalRuleTile.cs/#L130">View Source</a>
+  </span>
+  <a id="UnityEngine_HexagonalRuleTile_GetMirroredIndex_" data-uid="UnityEngine.HexagonalRuleTile.GetMirroredIndex*"></a>
+  <h4 id="UnityEngine_HexagonalRuleTile_GetMirroredIndex_System_Int32_System_Boolean_System_Boolean_" data-uid="UnityEngine.HexagonalRuleTile.GetMirroredIndex(System.Int32,System.Boolean,System.Boolean)">GetMirroredIndex(Int32, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int GetMirroredIndex(int original, bool mirrorX, bool mirrorY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">original</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">mirrorX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">mirrorY</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.RuleTile.html#UnityEngine_RuleTile_GetMirroredIndex_System_Int32_System_Boolean_System_Boolean_">RuleTile.GetMirroredIndex(Int32, Boolean, Boolean)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=UnityEngine_HexagonalRuleTile_GetRotatedIndex_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20UnityEngine.HexagonalRuleTile.GetRotatedIndex(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/MobgeSpriteShapeAdapter/UnityTilemap/Tiles/Hexagonal Rule Tile/HexagonalRuleTile.cs/#L125">View Source</a>
+  </span>
+  <a id="UnityEngine_HexagonalRuleTile_GetRotatedIndex_" data-uid="UnityEngine.HexagonalRuleTile.GetRotatedIndex*"></a>
+  <h4 id="UnityEngine_HexagonalRuleTile_GetRotatedIndex_System_Int32_System_Int32_" data-uid="UnityEngine.HexagonalRuleTile.GetRotatedIndex(System.Int32,System.Int32)">GetRotatedIndex(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int GetRotatedIndex(int original, int rotation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">original</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">rotation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.RuleTile.html#UnityEngine_RuleTile_GetRotatedIndex_System_Int32_System_Int32_">RuleTile.GetRotatedIndex(Int32, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=UnityEngine_HexagonalRuleTile_RefreshTile_UnityEngine_Vector3Int_UnityEngine_Tilemaps_ITilemap_.md&amp;value=---%0Auid%3A%20UnityEngine.HexagonalRuleTile.RefreshTile(UnityEngine.Vector3Int%2CUnityEngine.Tilemaps.ITilemap)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/MobgeSpriteShapeAdapter/UnityTilemap/Tiles/Hexagonal Rule Tile/HexagonalRuleTile.cs/#L52">View Source</a>
+  </span>
+  <a id="UnityEngine_HexagonalRuleTile_RefreshTile_" data-uid="UnityEngine.HexagonalRuleTile.RefreshTile*"></a>
+  <h4 id="UnityEngine_HexagonalRuleTile_RefreshTile_UnityEngine_Vector3Int_UnityEngine_Tilemaps_ITilemap_" data-uid="UnityEngine.HexagonalRuleTile.RefreshTile(UnityEngine.Vector3Int,UnityEngine.Tilemaps.ITilemap)">RefreshTile(Vector3Int, ITilemap)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RefreshTile(Vector3Int location, ITilemap tileMap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3Int</span></td>
+        <td><span class="parametername">location</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Tilemaps.ITilemap</span></td>
+        <td><span class="parametername">tileMap</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.RuleTile.html#UnityEngine_RuleTile_RefreshTile_UnityEngine_Vector3Int_UnityEngine_Tilemaps_ITilemap_">RuleTile.RefreshTile(Vector3Int, ITilemap)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=UnityEngine_HexagonalRuleTile_RuleMatches_UnityEngine_RuleTile_TilingRule_UnityEngine_Tilemaps_TileBase____UnityEngine_Matrix4x4__.md&amp;value=---%0Auid%3A%20UnityEngine.HexagonalRuleTile.RuleMatches(UnityEngine.RuleTile.TilingRule%2CUnityEngine.Tilemaps.TileBase%5B%5D%40%2CUnityEngine.Matrix4x4%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/MobgeSpriteShapeAdapter/UnityTilemap/Tiles/Hexagonal Rule Tile/HexagonalRuleTile.cs/#L64">View Source</a>
+  </span>
+  <a id="UnityEngine_HexagonalRuleTile_RuleMatches_" data-uid="UnityEngine.HexagonalRuleTile.RuleMatches*"></a>
+  <h4 id="UnityEngine_HexagonalRuleTile_RuleMatches_UnityEngine_RuleTile_TilingRule_UnityEngine_Tilemaps_TileBase____UnityEngine_Matrix4x4__" data-uid="UnityEngine.HexagonalRuleTile.RuleMatches(UnityEngine.RuleTile.TilingRule,UnityEngine.Tilemaps.TileBase[]@,UnityEngine.Matrix4x4@)">RuleMatches(RuleTile.TilingRule, ref TileBase[], ref Matrix4x4)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool RuleMatches(RuleTile.TilingRule rule, ref TileBase[] neighboringTiles, ref Matrix4x4 transform)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.RuleTile.TilingRule.html">RuleTile.TilingRule</a></td>
+        <td><span class="parametername">rule</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Tilemaps.TileBase</span>[]</td>
+        <td><span class="parametername">neighboringTiles</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Matrix4x4</span></td>
+        <td><span class="parametername">transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.RuleTile.html#UnityEngine_RuleTile_RuleMatches_UnityEngine_RuleTile_TilingRule_UnityEngine_Tilemaps_TileBase____UnityEngine_Matrix4x4__">RuleTile.RuleMatches(RuleTile.TilingRule, ref TileBase[], ref Matrix4x4)</a></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Mobge.UnityExtensions.html#Mobge_UnityExtensions_DestroyObj_UnityEngine_Object_UnityEngine_Object_">UnityExtensions.DestroyObj(Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mobge.UnityExtensions.html#Mobge_UnityExtensions_DestroySelf_UnityEngine_Object_">UnityExtensions.DestroySelf(Object)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=UnityEngine_HexagonalRuleTile.md&amp;value=---%0Auid%3A%20UnityEngine.HexagonalRuleTile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//blob/master/Assets/MobgeSpriteShapeAdapter/UnityTilemap/Tiles/Hexagonal Rule Tile/HexagonalRuleTile.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Example Unity documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2048 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DelaunayTriangle
+   | Example Unity documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DelaunayTriangle
+   | Example Unity documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FerrPoly2Tri.DelaunayTriangle">
+  
+  
+  <h1 id="FerrPoly2Tri_DelaunayTriangle" data-uid="FerrPoly2Tri.DelaunayTriangle" class="text-break">Class DelaunayTriangle
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">DelaunayTriangle</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FerrPoly2Tri.html">FerrPoly2Tri</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="FerrPoly2Tri_DelaunayTriangle_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DelaunayTriangle</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle__ctor_FerrPoly2Tri_TriangulationPoint_FerrPoly2Tri_TriangulationPoint_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.%23ctor(FerrPoly2Tri.TriangulationPoint%2CFerrPoly2Tri.TriangulationPoint%2CFerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L57">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle__ctor_" data-uid="FerrPoly2Tri.DelaunayTriangle.#ctor*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle__ctor_FerrPoly2Tri_TriangulationPoint_FerrPoly2Tri_TriangulationPoint_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.DelaunayTriangle.#ctor(FerrPoly2Tri.TriangulationPoint,FerrPoly2Tri.TriangulationPoint,FerrPoly2Tri.TriangulationPoint)">DelaunayTriangle(TriangulationPoint, TriangulationPoint, TriangulationPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DelaunayTriangle(TriangulationPoint p1, TriangulationPoint p2, TriangulationPoint p3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_EdgeIsDelaunay.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.EdgeIsDelaunay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L54">View Source</a>
+  </span>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_EdgeIsDelaunay" data-uid="FerrPoly2Tri.DelaunayTriangle.EdgeIsDelaunay">EdgeIsDelaunay</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FixedBitArray3 EdgeIsDelaunay</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.FixedBitArray3.html">FixedBitArray3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_Neighbors.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.Neighbors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L51">View Source</a>
+  </span>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_Neighbors" data-uid="FerrPoly2Tri.DelaunayTriangle.Neighbors">Neighbors</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FixedArray3&lt;DelaunayTriangle&gt; Neighbors</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.FixedArray3-1.html">FixedArray3</a>&lt;<a class="xref" href="FerrPoly2Tri.DelaunayTriangle.html">DelaunayTriangle</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_Points.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.Points%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L50">View Source</a>
+  </span>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_Points" data-uid="FerrPoly2Tri.DelaunayTriangle.Points">Points</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FixedArray3&lt;TriangulationPoint&gt; Points</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.FixedArray3-1.html">FixedArray3</a>&lt;<a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_EdgeIsConstrained.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.EdgeIsConstrained%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L53">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_EdgeIsConstrained_" data-uid="FerrPoly2Tri.DelaunayTriangle.EdgeIsConstrained*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_EdgeIsConstrained" data-uid="FerrPoly2Tri.DelaunayTriangle.EdgeIsConstrained">EdgeIsConstrained</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FixedBitArray3 EdgeIsConstrained { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.FixedBitArray3.html">FixedBitArray3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_IsInterior.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.IsInterior%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L55">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_IsInterior_" data-uid="FerrPoly2Tri.DelaunayTriangle.IsInterior*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_IsInterior" data-uid="FerrPoly2Tri.DelaunayTriangle.IsInterior">IsInterior</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInterior { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_Area.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.Area%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L313">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_Area_" data-uid="FerrPoly2Tri.DelaunayTriangle.Area*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_Area" data-uid="FerrPoly2Tri.DelaunayTriangle.Area">Area()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Area()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_Centroid.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.Centroid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L321">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_Centroid_" data-uid="FerrPoly2Tri.DelaunayTriangle.Centroid*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_Centroid" data-uid="FerrPoly2Tri.DelaunayTriangle.Centroid">Centroid()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TriangulationPoint Centroid()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_Clear.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L169">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_Clear_" data-uid="FerrPoly2Tri.DelaunayTriangle.Clear*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_Clear" data-uid="FerrPoly2Tri.DelaunayTriangle.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Clears all references to all other triangles and points</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_ClearNeighbor_FerrPoly2Tri_DelaunayTriangle_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.ClearNeighbor(FerrPoly2Tri.DelaunayTriangle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L150">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_ClearNeighbor_" data-uid="FerrPoly2Tri.DelaunayTriangle.ClearNeighbor*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_ClearNeighbor_FerrPoly2Tri_DelaunayTriangle_" data-uid="FerrPoly2Tri.DelaunayTriangle.ClearNeighbor(FerrPoly2Tri.DelaunayTriangle)">ClearNeighbor(DelaunayTriangle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearNeighbor(DelaunayTriangle triangle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.DelaunayTriangle.html">DelaunayTriangle</a></td>
+        <td><span class="parametername">triangle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_ClearNeighbors.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.ClearNeighbors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L144">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_ClearNeighbors_" data-uid="FerrPoly2Tri.DelaunayTriangle.ClearNeighbors*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_ClearNeighbors" data-uid="FerrPoly2Tri.DelaunayTriangle.ClearNeighbors">ClearNeighbors()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearNeighbors()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_Contains_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.Contains(FerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L89">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_Contains_" data-uid="FerrPoly2Tri.DelaunayTriangle.Contains*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_Contains_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.DelaunayTriangle.Contains(FerrPoly2Tri.TriangulationPoint)">Contains(TriangulationPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(TriangulationPoint p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_EdgeIndex_FerrPoly2Tri_TriangulationPoint_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.EdgeIndex(FerrPoly2Tri.TriangulationPoint%2CFerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L333">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_EdgeIndex_" data-uid="FerrPoly2Tri.DelaunayTriangle.EdgeIndex*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_EdgeIndex_FerrPoly2Tri_TriangulationPoint_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.DelaunayTriangle.EdgeIndex(FerrPoly2Tri.TriangulationPoint,FerrPoly2Tri.TriangulationPoint)">EdgeIndex(TriangulationPoint, TriangulationPoint)</h4>
+  <div class="markdown level1 summary"><p>Get the index of the neighbor that shares this edge (or -1 if it isn&apos;t shared)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int EdgeIndex(TriangulationPoint p1, TriangulationPoint p2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>index of the shared edge or -1 if edge isn&apos;t shared</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_GetConstrainedEdgeAcross_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.GetConstrainedEdgeAcross(FerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L362">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_GetConstrainedEdgeAcross_" data-uid="FerrPoly2Tri.DelaunayTriangle.GetConstrainedEdgeAcross*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_GetConstrainedEdgeAcross_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.DelaunayTriangle.GetConstrainedEdgeAcross(FerrPoly2Tri.TriangulationPoint)">GetConstrainedEdgeAcross(TriangulationPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetConstrainedEdgeAcross(TriangulationPoint p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_GetConstrainedEdgeCCW_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.GetConstrainedEdgeCCW(FerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L360">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_GetConstrainedEdgeCCW_" data-uid="FerrPoly2Tri.DelaunayTriangle.GetConstrainedEdgeCCW*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_GetConstrainedEdgeCCW_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.DelaunayTriangle.GetConstrainedEdgeCCW(FerrPoly2Tri.TriangulationPoint)">GetConstrainedEdgeCCW(TriangulationPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetConstrainedEdgeCCW(TriangulationPoint p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_GetConstrainedEdgeCW_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.GetConstrainedEdgeCW(FerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L361">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_GetConstrainedEdgeCW_" data-uid="FerrPoly2Tri.DelaunayTriangle.GetConstrainedEdgeCW*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_GetConstrainedEdgeCW_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.DelaunayTriangle.GetConstrainedEdgeCW(FerrPoly2Tri.TriangulationPoint)">GetConstrainedEdgeCW(TriangulationPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetConstrainedEdgeCW(TriangulationPoint p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_GetDelaunayEdgeAcross_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.GetDelaunayEdgeAcross(FerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L394">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_GetDelaunayEdgeAcross_" data-uid="FerrPoly2Tri.DelaunayTriangle.GetDelaunayEdgeAcross*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_GetDelaunayEdgeAcross_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.DelaunayTriangle.GetDelaunayEdgeAcross(FerrPoly2Tri.TriangulationPoint)">GetDelaunayEdgeAcross(TriangulationPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetDelaunayEdgeAcross(TriangulationPoint p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_GetDelaunayEdgeCCW_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.GetDelaunayEdgeCCW(FerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L392">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_GetDelaunayEdgeCCW_" data-uid="FerrPoly2Tri.DelaunayTriangle.GetDelaunayEdgeCCW*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_GetDelaunayEdgeCCW_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.DelaunayTriangle.GetDelaunayEdgeCCW(FerrPoly2Tri.TriangulationPoint)">GetDelaunayEdgeCCW(TriangulationPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetDelaunayEdgeCCW(TriangulationPoint p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_GetDelaunayEdgeCW_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.GetDelaunayEdgeCW(FerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L393">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_GetDelaunayEdgeCW_" data-uid="FerrPoly2Tri.DelaunayTriangle.GetDelaunayEdgeCW*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_GetDelaunayEdgeCW_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.DelaunayTriangle.GetDelaunayEdgeCW(FerrPoly2Tri.TriangulationPoint)">GetDelaunayEdgeCW(TriangulationPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetDelaunayEdgeCW(TriangulationPoint p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_GetEdge_System_Int32_FerrPoly2Tri_DTSweepConstraint__.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.GetEdge(System.Int32%2CFerrPoly2Tri.DTSweepConstraint%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L400">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_GetEdge_" data-uid="FerrPoly2Tri.DelaunayTriangle.GetEdge*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_GetEdge_System_Int32_FerrPoly2Tri_DTSweepConstraint__" data-uid="FerrPoly2Tri.DelaunayTriangle.GetEdge(System.Int32,FerrPoly2Tri.DTSweepConstraint@)">GetEdge(Int32, out DTSweepConstraint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetEdge(int idx, out DTSweepConstraint edge)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">idx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.DTSweepConstraint.html">DTSweepConstraint</a></td>
+        <td><span class="parametername">edge</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_GetEdgeAcross_FerrPoly2Tri_TriangulationPoint_FerrPoly2Tri_DTSweepConstraint__.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.GetEdgeAcross(FerrPoly2Tri.TriangulationPoint%2CFerrPoly2Tri.DTSweepConstraint%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L438">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_GetEdgeAcross_" data-uid="FerrPoly2Tri.DelaunayTriangle.GetEdgeAcross*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_GetEdgeAcross_FerrPoly2Tri_TriangulationPoint_FerrPoly2Tri_DTSweepConstraint__" data-uid="FerrPoly2Tri.DelaunayTriangle.GetEdgeAcross(FerrPoly2Tri.TriangulationPoint,FerrPoly2Tri.DTSweepConstraint@)">GetEdgeAcross(TriangulationPoint, out DTSweepConstraint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetEdgeAcross(TriangulationPoint p, out DTSweepConstraint edge)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.DTSweepConstraint.html">DTSweepConstraint</a></td>
+        <td><span class="parametername">edge</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_GetEdgeCCW_FerrPoly2Tri_TriangulationPoint_FerrPoly2Tri_DTSweepConstraint__.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.GetEdgeCCW(FerrPoly2Tri.TriangulationPoint%2CFerrPoly2Tri.DTSweepConstraint%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L422">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_GetEdgeCCW_" data-uid="FerrPoly2Tri.DelaunayTriangle.GetEdgeCCW*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_GetEdgeCCW_FerrPoly2Tri_TriangulationPoint_FerrPoly2Tri_DTSweepConstraint__" data-uid="FerrPoly2Tri.DelaunayTriangle.GetEdgeCCW(FerrPoly2Tri.TriangulationPoint,FerrPoly2Tri.DTSweepConstraint@)">GetEdgeCCW(TriangulationPoint, out DTSweepConstraint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetEdgeCCW(TriangulationPoint p, out DTSweepConstraint edge)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.DTSweepConstraint.html">DTSweepConstraint</a></td>
+        <td><span class="parametername">edge</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_GetEdgeCW_FerrPoly2Tri_TriangulationPoint_FerrPoly2Tri_DTSweepConstraint__.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.GetEdgeCW(FerrPoly2Tri.TriangulationPoint%2CFerrPoly2Tri.DTSweepConstraint%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L430">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_GetEdgeCW_" data-uid="FerrPoly2Tri.DelaunayTriangle.GetEdgeCW*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_GetEdgeCW_FerrPoly2Tri_TriangulationPoint_FerrPoly2Tri_DTSweepConstraint__" data-uid="FerrPoly2Tri.DelaunayTriangle.GetEdgeCW(FerrPoly2Tri.TriangulationPoint,FerrPoly2Tri.DTSweepConstraint@)">GetEdgeCW(TriangulationPoint, out DTSweepConstraint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetEdgeCW(TriangulationPoint p, out DTSweepConstraint edge)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.DTSweepConstraint.html">DTSweepConstraint</a></td>
+        <td><span class="parametername">edge</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_IndexCCWFrom_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.IndexCCWFrom(FerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L83">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_IndexCCWFrom_" data-uid="FerrPoly2Tri.DelaunayTriangle.IndexCCWFrom*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_IndexCCWFrom_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.DelaunayTriangle.IndexCCWFrom(FerrPoly2Tri.TriangulationPoint)">IndexCCWFrom(TriangulationPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexCCWFrom(TriangulationPoint p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_IndexCWFrom_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.IndexCWFrom(FerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L77">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_IndexCWFrom_" data-uid="FerrPoly2Tri.DelaunayTriangle.IndexCWFrom*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_IndexCWFrom_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.DelaunayTriangle.IndexCWFrom(FerrPoly2Tri.TriangulationPoint)">IndexCWFrom(TriangulationPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexCWFrom(TriangulationPoint p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_IndexOf_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.IndexOf(FerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L65">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_IndexOf_" data-uid="FerrPoly2Tri.DelaunayTriangle.IndexOf*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_IndexOf_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.DelaunayTriangle.IndexOf(FerrPoly2Tri.TriangulationPoint)">IndexOf(TriangulationPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(TriangulationPoint p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_Legalize_FerrPoly2Tri_TriangulationPoint_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.Legalize(FerrPoly2Tri.TriangulationPoint%2CFerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L237">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_Legalize_" data-uid="FerrPoly2Tri.DelaunayTriangle.Legalize*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_Legalize_FerrPoly2Tri_TriangulationPoint_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.DelaunayTriangle.Legalize(FerrPoly2Tri.TriangulationPoint,FerrPoly2Tri.TriangulationPoint)">Legalize(TriangulationPoint, TriangulationPoint)</h4>
+  <div class="markdown level1 summary"><p>Legalize triangle by rotating clockwise around oPoint</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Legalize(TriangulationPoint oPoint, TriangulationPoint nPoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">oPoint</span></td>
+        <td><p>The origin point to rotate around</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">nPoint</span></td>
+        <td><p>???</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_MarkConstrainedEdge_FerrPoly2Tri_DTSweepConstraint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.MarkConstrainedEdge(FerrPoly2Tri.DTSweepConstraint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L294">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_MarkConstrainedEdge_" data-uid="FerrPoly2Tri.DelaunayTriangle.MarkConstrainedEdge*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_MarkConstrainedEdge_FerrPoly2Tri_DTSweepConstraint_" data-uid="FerrPoly2Tri.DelaunayTriangle.MarkConstrainedEdge(FerrPoly2Tri.DTSweepConstraint)">MarkConstrainedEdge(DTSweepConstraint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MarkConstrainedEdge(DTSweepConstraint edge)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.DTSweepConstraint.html">DTSweepConstraint</a></td>
+        <td><span class="parametername">edge</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_MarkConstrainedEdge_FerrPoly2Tri_TriangulationPoint_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.MarkConstrainedEdge(FerrPoly2Tri.TriangulationPoint%2CFerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L303">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_MarkConstrainedEdge_" data-uid="FerrPoly2Tri.DelaunayTriangle.MarkConstrainedEdge*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_MarkConstrainedEdge_FerrPoly2Tri_TriangulationPoint_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.DelaunayTriangle.MarkConstrainedEdge(FerrPoly2Tri.TriangulationPoint,FerrPoly2Tri.TriangulationPoint)">MarkConstrainedEdge(TriangulationPoint, TriangulationPoint)</h4>
+  <div class="markdown level1 summary"><p>Mark edge as constrained</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MarkConstrainedEdge(TriangulationPoint p, TriangulationPoint q)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">q</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_MarkConstrainedEdge_System_Int32_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.MarkConstrainedEdge(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L288">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_MarkConstrainedEdge_" data-uid="FerrPoly2Tri.DelaunayTriangle.MarkConstrainedEdge*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_MarkConstrainedEdge_System_Int32_" data-uid="FerrPoly2Tri.DelaunayTriangle.MarkConstrainedEdge(System.Int32)">MarkConstrainedEdge(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MarkConstrainedEdge(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_MarkEdge_FerrPoly2Tri_DelaunayTriangle_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.MarkEdge(FerrPoly2Tri.DelaunayTriangle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L265">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_MarkEdge_" data-uid="FerrPoly2Tri.DelaunayTriangle.MarkEdge*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_MarkEdge_FerrPoly2Tri_DelaunayTriangle_" data-uid="FerrPoly2Tri.DelaunayTriangle.MarkEdge(FerrPoly2Tri.DelaunayTriangle)">MarkEdge(DelaunayTriangle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MarkEdge(DelaunayTriangle triangle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.DelaunayTriangle.html">DelaunayTriangle</a></td>
+        <td><span class="parametername">triangle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_MarkEdge_System_Collections_Generic_List_FerrPoly2Tri_DelaunayTriangle__.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.MarkEdge(System.Collections.Generic.List%7BFerrPoly2Tri.DelaunayTriangle%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L273">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_MarkEdge_" data-uid="FerrPoly2Tri.DelaunayTriangle.MarkEdge*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_MarkEdge_System_Collections_Generic_List_FerrPoly2Tri_DelaunayTriangle__" data-uid="FerrPoly2Tri.DelaunayTriangle.MarkEdge(System.Collections.Generic.List{FerrPoly2Tri.DelaunayTriangle})">MarkEdge(List&lt;DelaunayTriangle&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MarkEdge(List&lt;DelaunayTriangle&gt; tList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FerrPoly2Tri.DelaunayTriangle.html">DelaunayTriangle</a>&gt;</td>
+        <td><span class="parametername">tList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_MarkNeighbor_FerrPoly2Tri_DelaunayTriangle_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.MarkNeighbor(FerrPoly2Tri.DelaunayTriangle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L115">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_MarkNeighbor_" data-uid="FerrPoly2Tri.DelaunayTriangle.MarkNeighbor*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_MarkNeighbor_FerrPoly2Tri_DelaunayTriangle_" data-uid="FerrPoly2Tri.DelaunayTriangle.MarkNeighbor(FerrPoly2Tri.DelaunayTriangle)">MarkNeighbor(DelaunayTriangle)</h4>
+  <div class="markdown level1 summary"><p>Exhaustive search to update neighbor pointers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MarkNeighbor(DelaunayTriangle t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.DelaunayTriangle.html">DelaunayTriangle</a></td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_MarkNeighborEdges.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.MarkNeighborEdges%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L253">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_MarkNeighborEdges_" data-uid="FerrPoly2Tri.DelaunayTriangle.MarkNeighborEdges*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_MarkNeighborEdges" data-uid="FerrPoly2Tri.DelaunayTriangle.MarkNeighborEdges">MarkNeighborEdges()</h4>
+  <div class="markdown level1 summary"><p>Finalize edge marking</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MarkNeighborEdges()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_NeighborAcrossFrom_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.NeighborAcrossFrom(FerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L205">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_NeighborAcrossFrom_" data-uid="FerrPoly2Tri.DelaunayTriangle.NeighborAcrossFrom*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_NeighborAcrossFrom_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.DelaunayTriangle.NeighborAcrossFrom(FerrPoly2Tri.TriangulationPoint)">NeighborAcrossFrom(TriangulationPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DelaunayTriangle NeighborAcrossFrom(TriangulationPoint point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.DelaunayTriangle.html">DelaunayTriangle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_NeighborCCWFrom_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.NeighborCCWFrom(FerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L199">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_NeighborCCWFrom_" data-uid="FerrPoly2Tri.DelaunayTriangle.NeighborCCWFrom*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_NeighborCCWFrom_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.DelaunayTriangle.NeighborCCWFrom(FerrPoly2Tri.TriangulationPoint)">NeighborCCWFrom(TriangulationPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DelaunayTriangle NeighborCCWFrom(TriangulationPoint point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.DelaunayTriangle.html">DelaunayTriangle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_NeighborCWFrom_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.NeighborCWFrom(FerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L193">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_NeighborCWFrom_" data-uid="FerrPoly2Tri.DelaunayTriangle.NeighborCWFrom*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_NeighborCWFrom_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.DelaunayTriangle.NeighborCWFrom(FerrPoly2Tri.TriangulationPoint)">NeighborCWFrom(TriangulationPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DelaunayTriangle NeighborCWFrom(TriangulationPoint point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.DelaunayTriangle.html">DelaunayTriangle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_OppositePoint_FerrPoly2Tri_DelaunayTriangle_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.OppositePoint(FerrPoly2Tri.DelaunayTriangle%2CFerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L186">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_OppositePoint_" data-uid="FerrPoly2Tri.DelaunayTriangle.OppositePoint*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_OppositePoint_FerrPoly2Tri_DelaunayTriangle_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.DelaunayTriangle.OppositePoint(FerrPoly2Tri.DelaunayTriangle,FerrPoly2Tri.TriangulationPoint)">OppositePoint(DelaunayTriangle, TriangulationPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TriangulationPoint OppositePoint(DelaunayTriangle t, TriangulationPoint p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.DelaunayTriangle.html">DelaunayTriangle</a></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Opposite triangle</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td><p>The point in t that isn&apos;t shared between the triangles</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_PointCCWFrom_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.PointCCWFrom(FerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L211">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_PointCCWFrom_" data-uid="FerrPoly2Tri.DelaunayTriangle.PointCCWFrom*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_PointCCWFrom_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.DelaunayTriangle.PointCCWFrom(FerrPoly2Tri.TriangulationPoint)">PointCCWFrom(TriangulationPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TriangulationPoint PointCCWFrom(TriangulationPoint point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_PointCWFrom_FerrPoly2Tri_TriangulationPoint_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.PointCWFrom(FerrPoly2Tri.TriangulationPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L217">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_PointCWFrom_" data-uid="FerrPoly2Tri.DelaunayTriangle.PointCWFrom*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_PointCWFrom_FerrPoly2Tri_TriangulationPoint_" data-uid="FerrPoly2Tri.DelaunayTriangle.PointCWFrom(FerrPoly2Tri.TriangulationPoint)">PointCWFrom(TriangulationPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TriangulationPoint PointCWFrom(TriangulationPoint point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_SetConstrainedEdge_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.SetConstrainedEdge(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L364">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_SetConstrainedEdge_" data-uid="FerrPoly2Tri.DelaunayTriangle.SetConstrainedEdge*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_SetConstrainedEdge_System_Int32_System_Boolean_" data-uid="FerrPoly2Tri.DelaunayTriangle.SetConstrainedEdge(System.Int32,System.Boolean)">SetConstrainedEdge(Int32, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetConstrainedEdge(int idx, bool ce)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">idx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">ce</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_SetConstrainedEdgeAcross_FerrPoly2Tri_TriangulationPoint_System_Boolean_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.SetConstrainedEdgeAcross(FerrPoly2Tri.TriangulationPoint%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L386">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_SetConstrainedEdgeAcross_" data-uid="FerrPoly2Tri.DelaunayTriangle.SetConstrainedEdgeAcross*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_SetConstrainedEdgeAcross_FerrPoly2Tri_TriangulationPoint_System_Boolean_" data-uid="FerrPoly2Tri.DelaunayTriangle.SetConstrainedEdgeAcross(FerrPoly2Tri.TriangulationPoint,System.Boolean)">SetConstrainedEdgeAcross(TriangulationPoint, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetConstrainedEdgeAcross(TriangulationPoint p, bool ce)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">ce</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_SetConstrainedEdgeCCW_FerrPoly2Tri_TriangulationPoint_System_Boolean_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.SetConstrainedEdgeCCW(FerrPoly2Tri.TriangulationPoint%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L376">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_SetConstrainedEdgeCCW_" data-uid="FerrPoly2Tri.DelaunayTriangle.SetConstrainedEdgeCCW*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_SetConstrainedEdgeCCW_FerrPoly2Tri_TriangulationPoint_System_Boolean_" data-uid="FerrPoly2Tri.DelaunayTriangle.SetConstrainedEdgeCCW(FerrPoly2Tri.TriangulationPoint,System.Boolean)">SetConstrainedEdgeCCW(TriangulationPoint, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetConstrainedEdgeCCW(TriangulationPoint p, bool ce)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">ce</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_SetConstrainedEdgeCW_FerrPoly2Tri_TriangulationPoint_System_Boolean_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.SetConstrainedEdgeCW(FerrPoly2Tri.TriangulationPoint%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L381">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_SetConstrainedEdgeCW_" data-uid="FerrPoly2Tri.DelaunayTriangle.SetConstrainedEdgeCW*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_SetConstrainedEdgeCW_FerrPoly2Tri_TriangulationPoint_System_Boolean_" data-uid="FerrPoly2Tri.DelaunayTriangle.SetConstrainedEdgeCW(FerrPoly2Tri.TriangulationPoint,System.Boolean)">SetConstrainedEdgeCW(TriangulationPoint, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetConstrainedEdgeCW(TriangulationPoint p, bool ce)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">ce</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_SetDelaunayEdgeAcross_FerrPoly2Tri_TriangulationPoint_System_Boolean_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.SetDelaunayEdgeAcross(FerrPoly2Tri.TriangulationPoint%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L397">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_SetDelaunayEdgeAcross_" data-uid="FerrPoly2Tri.DelaunayTriangle.SetDelaunayEdgeAcross*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_SetDelaunayEdgeAcross_FerrPoly2Tri_TriangulationPoint_System_Boolean_" data-uid="FerrPoly2Tri.DelaunayTriangle.SetDelaunayEdgeAcross(FerrPoly2Tri.TriangulationPoint,System.Boolean)">SetDelaunayEdgeAcross(TriangulationPoint, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDelaunayEdgeAcross(TriangulationPoint p, bool ce)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">ce</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_SetDelaunayEdgeCCW_FerrPoly2Tri_TriangulationPoint_System_Boolean_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.SetDelaunayEdgeCCW(FerrPoly2Tri.TriangulationPoint%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L395">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_SetDelaunayEdgeCCW_" data-uid="FerrPoly2Tri.DelaunayTriangle.SetDelaunayEdgeCCW*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_SetDelaunayEdgeCCW_FerrPoly2Tri_TriangulationPoint_System_Boolean_" data-uid="FerrPoly2Tri.DelaunayTriangle.SetDelaunayEdgeCCW(FerrPoly2Tri.TriangulationPoint,System.Boolean)">SetDelaunayEdgeCCW(TriangulationPoint, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDelaunayEdgeCCW(TriangulationPoint p, bool ce)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">ce</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_SetDelaunayEdgeCW_FerrPoly2Tri_TriangulationPoint_System_Boolean_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.SetDelaunayEdgeCW(FerrPoly2Tri.TriangulationPoint%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L396">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_SetDelaunayEdgeCW_" data-uid="FerrPoly2Tri.DelaunayTriangle.SetDelaunayEdgeCW*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_SetDelaunayEdgeCW_FerrPoly2Tri_TriangulationPoint_System_Boolean_" data-uid="FerrPoly2Tri.DelaunayTriangle.SetDelaunayEdgeCW(FerrPoly2Tri.TriangulationPoint,System.Boolean)">SetDelaunayEdgeCW(TriangulationPoint, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDelaunayEdgeCW(TriangulationPoint p, bool ce)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.TriangulationPoint.html">TriangulationPoint</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">ce</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle_ToString.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L244">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_DelaunayTriangle_ToString_" data-uid="FerrPoly2Tri.DelaunayTriangle.ToString*"></a>
+  <h4 id="FerrPoly2Tri_DelaunayTriangle_ToString" data-uid="FerrPoly2Tri.DelaunayTriangle.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_DelaunayTriangle.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.DelaunayTriangle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Delaunay/DelaunayTriangle.cs/#L47" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Example Unity documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

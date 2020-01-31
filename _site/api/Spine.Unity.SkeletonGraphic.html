@@ -1,0 +1,1745 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SkeletonGraphic
+   | Example Unity documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SkeletonGraphic
+   | Example Unity documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Spine.Unity.SkeletonGraphic">
+  
+  
+  <h1 id="Spine_Unity_SkeletonGraphic" data-uid="Spine.Unity.SkeletonGraphic" class="text-break">Class SkeletonGraphic
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">UnityEngine.EventSystems.UIBehaviour</span></div>
+    <div class="level6"><span class="xref">UnityEngine.UI.Graphic</span></div>
+    <div class="level7"><span class="xref">UnityEngine.UI.MaskableGraphic</span></div>
+    <div class="level8"><span class="xref">SkeletonGraphic</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">UnityEngine.UI.ICanvasElement</span></div>
+    <div><span class="xref">UnityEngine.UI.IClippable</span></div>
+    <div><span class="xref">UnityEngine.UI.IMaskable</span></div>
+    <div><span class="xref">UnityEngine.UI.IMaterialModifier</span></div>
+    <div><a class="xref" href="Spine.Unity.ISkeletonComponent.html">ISkeletonComponent</a></div>
+    <div><a class="xref" href="Spine.Unity.IAnimationStateComponent.html">IAnimationStateComponent</a></div>
+    <div><a class="xref" href="Spine.Unity.ISkeletonAnimation.html">ISkeletonAnimation</a></div>
+    <div><a class="xref" href="Spine.Unity.IHasSkeletonDataAsset.html">IHasSkeletonDataAsset</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">UnityEngine.UI.MaskableGraphic.m_ShouldRecalculateStencil</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.MaskableGraphic.m_MaskMaterial</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.MaskableGraphic.m_StencilValue</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.MaskableGraphic.GetModifiedMaterial(UnityEngine.Material)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.MaskableGraphic.Cull(UnityEngine.Rect, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.MaskableGraphic.SetClipRect(UnityEngine.Rect, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.MaskableGraphic.OnEnable()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.MaskableGraphic.OnDisable()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.MaskableGraphic.OnValidate()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.MaskableGraphic.OnTransformParentChanged()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.MaskableGraphic.OnCanvasHierarchyChanged()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.MaskableGraphic.RecalculateClipping()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.MaskableGraphic.RecalculateMasking()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.MaskableGraphic.UnityEngine.UI.IClippable.get_gameObject()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.MaskableGraphic.onCullStateChanged</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.MaskableGraphic.maskable</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.s_DefaultUI</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.s_WhiteTexture</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.m_Material</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.m_SkipLayoutUpdate</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.m_SkipMaterialUpdate</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.m_OnDirtyLayoutCallback</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.m_OnDirtyVertsCallback</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.m_OnDirtyMaterialCallback</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.s_Mesh</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.m_CachedMesh</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.m_CachedUvs</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.SetAllDirty()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.SetLayoutDirty()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.SetVerticesDirty()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.SetMaterialDirty()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.OnRectTransformDimensionsChange()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.OnBeforeTransformParentChanged()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.OnDestroy()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.OnCullingChanged()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.LayoutComplete()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.GraphicUpdateComplete()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.UpdateMaterial()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.UpdateGeometry()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.OnPopulateMesh(UnityEngine.Mesh)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.OnPopulateMesh(UnityEngine.UI.VertexHelper)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.OnRebuildRequested()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.Reset()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.OnDidApplyAnimationProperties()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.SetNativeSize()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.Raycast(UnityEngine.Vector2, UnityEngine.Camera)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.PixelAdjustPoint(UnityEngine.Vector2)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.GetPixelAdjustedRect()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.CrossFadeColor(UnityEngine.Color, System.Single, System.Boolean, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.CrossFadeColor(UnityEngine.Color, System.Single, System.Boolean, System.Boolean, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.CrossFadeAlpha(System.Single, System.Single, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.RegisterDirtyLayoutCallback(UnityEngine.Events.UnityAction)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.UnregisterDirtyLayoutCallback(UnityEngine.Events.UnityAction)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.RegisterDirtyVerticesCallback(UnityEngine.Events.UnityAction)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.UnregisterDirtyVerticesCallback(UnityEngine.Events.UnityAction)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.RegisterDirtyMaterialCallback(UnityEngine.Events.UnityAction)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.UnregisterDirtyMaterialCallback(UnityEngine.Events.UnityAction)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.UnityEngine.UI.ICanvasElement.get_transform()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.defaultGraphicMaterial</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.color</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.raycastTarget</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.useLegacyMeshGeneration</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.depth</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.rectTransform</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.canvas</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.canvasRenderer</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.defaultMaterial</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.material</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.materialForRendering</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.UI.Graphic.workerMesh</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.EventSystems.UIBehaviour.Start()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.EventSystems.UIBehaviour.IsActive()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.EventSystems.UIBehaviour.OnCanvasGroupChanged()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.EventSystems.UIBehaviour.IsDestroyed()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.Invoke(System.String, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.InvokeRepeating(System.String, System.Single, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.CancelInvoke(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.IsInvoking(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine_Auto(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(UnityEngine.Coroutine)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.print(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.TryGetComponent(System.Type, UnityEngine.Component)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.TryGetComponent&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Boolean, System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;(System.Boolean, System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents(System.Type, System.Collections.Generic.List&lt;UnityEngine.Component&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents&lt;T&gt;(System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.CompareTag(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindSceneObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeAll(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.name</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.hideFlags</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Spine.Unity.html">Spine.Unity</a></h6>
+  <h6><strong>Assembly</strong>: spine-unity.dll</h6>
+  <h5 id="Spine_Unity_SkeletonGraphic_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExecuteInEditMode]
+[RequireComponent(typeof(CanvasRenderer), typeof(RectTransform))]
+[DisallowMultipleComponent]
+[AddComponentMenu(&quot;Spine/SkeletonGraphic (Unity UI Canvas)&quot;)]
+public class SkeletonGraphic : MaskableGraphic, ICanvasElement, IClippable, IMaskable, IMaterialModifier, ISkeletonComponent, IAnimationStateComponent, ISkeletonAnimation, IHasSkeletonDataAsset</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_freeze.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.freeze%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L59">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_SkeletonGraphic_freeze" data-uid="Spine.Unity.SkeletonGraphic.freeze">freeze</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool freeze</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_initialFlipX.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.initialFlipX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L53">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_SkeletonGraphic_initialFlipX" data-uid="Spine.Unity.SkeletonGraphic.initialFlipX">initialFlipX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool initialFlipX</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_initialFlipY.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.initialFlipY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L53">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_SkeletonGraphic_initialFlipY" data-uid="Spine.Unity.SkeletonGraphic.initialFlipY">initialFlipY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool initialFlipY</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_initialSkinName.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.initialSkinName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L52">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_SkeletonGraphic_initialSkinName" data-uid="Spine.Unity.SkeletonGraphic.initialSkinName">initialSkinName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SpineSkin(&quot;&quot;, &quot;skeletonDataAsset&quot;, true, false, true)]
+public string initialSkinName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_meshGenerator.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.meshGenerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L233">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_SkeletonGraphic_meshGenerator" data-uid="Spine.Unity.SkeletonGraphic.meshGenerator">meshGenerator</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected MeshGenerator meshGenerator</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Unity.MeshGenerator.html">MeshGenerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_skeleton.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.skeleton%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L225">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_SkeletonGraphic_skeleton" data-uid="Spine.Unity.SkeletonGraphic.skeleton">skeleton</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Skeleton skeleton</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Skeleton.html">Skeleton</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_skeletonDataAsset.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.skeletonDataAsset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L48">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_SkeletonGraphic_skeletonDataAsset" data-uid="Spine.Unity.SkeletonGraphic.skeletonDataAsset">skeletonDataAsset</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SkeletonDataAsset skeletonDataAsset</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Unity.SkeletonDataAsset.html">SkeletonDataAsset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_startingAnimation.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.startingAnimation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L56">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_SkeletonGraphic_startingAnimation" data-uid="Spine.Unity.SkeletonGraphic.startingAnimation">startingAnimation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SpineAnimation(&quot;&quot;, &quot;skeletonDataAsset&quot;, true, false)]
+public string startingAnimation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_startingLoop.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.startingLoop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L57">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_SkeletonGraphic_startingLoop" data-uid="Spine.Unity.SkeletonGraphic.startingLoop">startingLoop</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool startingLoop</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_state.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.state%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L230">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_SkeletonGraphic_state" data-uid="Spine.Unity.SkeletonGraphic.state">state</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AnimationState state</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.AnimationState.html">AnimationState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_timeScale.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.timeScale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L58">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_SkeletonGraphic_timeScale" data-uid="Spine.Unity.SkeletonGraphic.timeScale">timeScale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float timeScale</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_unscaledTime.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.unscaledTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L60">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_SkeletonGraphic_unscaledTime" data-uid="Spine.Unity.SkeletonGraphic.unscaledTime">unscaledTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool unscaledTime</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_AnimationState.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.AnimationState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L231">View Source</a>
+  </span>
+  <a id="Spine_Unity_SkeletonGraphic_AnimationState_" data-uid="Spine.Unity.SkeletonGraphic.AnimationState*"></a>
+  <h4 id="Spine_Unity_SkeletonGraphic_AnimationState" data-uid="Spine.Unity.SkeletonGraphic.AnimationState">AnimationState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnimationState AnimationState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.AnimationState.html">AnimationState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_IsValid.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.IsValid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L228">View Source</a>
+  </span>
+  <a id="Spine_Unity_SkeletonGraphic_IsValid_" data-uid="Spine.Unity.SkeletonGraphic.IsValid*"></a>
+  <h4 id="Spine_Unity_SkeletonGraphic_IsValid" data-uid="Spine.Unity.SkeletonGraphic.IsValid">IsValid</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValid { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_mainTexture.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.mainTexture%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L155">View Source</a>
+  </span>
+  <a id="Spine_Unity_SkeletonGraphic_mainTexture_" data-uid="Spine.Unity.SkeletonGraphic.mainTexture*"></a>
+  <h4 id="Spine_Unity_SkeletonGraphic_mainTexture" data-uid="Spine.Unity.SkeletonGraphic.mainTexture">mainTexture</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Texture mainTexture { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">UnityEngine.UI.Graphic.mainTexture</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_MeshGenerator.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.MeshGenerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L234">View Source</a>
+  </span>
+  <a id="Spine_Unity_SkeletonGraphic_MeshGenerator_" data-uid="Spine.Unity.SkeletonGraphic.MeshGenerator*"></a>
+  <h4 id="Spine_Unity_SkeletonGraphic_MeshGenerator" data-uid="Spine.Unity.SkeletonGraphic.MeshGenerator">MeshGenerator</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshGenerator MeshGenerator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Unity.MeshGenerator.html">MeshGenerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_OverrideTexture.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.OverrideTexture%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L148">View Source</a>
+  </span>
+  <a id="Spine_Unity_SkeletonGraphic_OverrideTexture_" data-uid="Spine.Unity.SkeletonGraphic.OverrideTexture*"></a>
+  <h4 id="Spine_Unity_SkeletonGraphic_OverrideTexture" data-uid="Spine.Unity.SkeletonGraphic.OverrideTexture">OverrideTexture</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture OverrideTexture { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_Skeleton.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.Skeleton%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L226">View Source</a>
+  </span>
+  <a id="Spine_Unity_SkeletonGraphic_Skeleton_" data-uid="Spine.Unity.SkeletonGraphic.Skeleton*"></a>
+  <h4 id="Spine_Unity_SkeletonGraphic_Skeleton" data-uid="Spine.Unity.SkeletonGraphic.Skeleton">Skeleton</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Skeleton Skeleton { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Skeleton.html">Skeleton</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_SkeletonData.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.SkeletonData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L227">View Source</a>
+  </span>
+  <a id="Spine_Unity_SkeletonGraphic_SkeletonData_" data-uid="Spine.Unity.SkeletonGraphic.SkeletonData*"></a>
+  <h4 id="Spine_Unity_SkeletonGraphic_SkeletonData" data-uid="Spine.Unity.SkeletonGraphic.SkeletonData">SkeletonData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SkeletonData SkeletonData { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.SkeletonData.html">SkeletonData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_SkeletonDataAsset.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.SkeletonDataAsset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L49">View Source</a>
+  </span>
+  <a id="Spine_Unity_SkeletonGraphic_SkeletonDataAsset_" data-uid="Spine.Unity.SkeletonGraphic.SkeletonDataAsset*"></a>
+  <h4 id="Spine_Unity_SkeletonGraphic_SkeletonDataAsset" data-uid="Spine.Unity.SkeletonGraphic.SkeletonDataAsset">SkeletonDataAsset</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SkeletonDataAsset SkeletonDataAsset { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Unity.SkeletonDataAsset.html">SkeletonDataAsset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_AddSkeletonGraphicComponent_UnityEngine_GameObject_Spine_Unity_SkeletonDataAsset_UnityEngine_Material_.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.AddSkeletonGraphicComponent(UnityEngine.GameObject%2CSpine.Unity.SkeletonDataAsset%2CUnityEngine.Material)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L134">View Source</a>
+  </span>
+  <a id="Spine_Unity_SkeletonGraphic_AddSkeletonGraphicComponent_" data-uid="Spine.Unity.SkeletonGraphic.AddSkeletonGraphicComponent*"></a>
+  <h4 id="Spine_Unity_SkeletonGraphic_AddSkeletonGraphicComponent_UnityEngine_GameObject_Spine_Unity_SkeletonDataAsset_UnityEngine_Material_" data-uid="Spine.Unity.SkeletonGraphic.AddSkeletonGraphicComponent(UnityEngine.GameObject,Spine.Unity.SkeletonDataAsset,UnityEngine.Material)">AddSkeletonGraphicComponent(GameObject, SkeletonDataAsset, Material)</h4>
+  <div class="markdown level1 summary"><p>Add a SkeletonGraphic component to a GameObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SkeletonGraphic AddSkeletonGraphicComponent(GameObject gameObject, SkeletonDataAsset skeletonDataAsset, Material material)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td><span class="parametername">gameObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Spine.Unity.SkeletonDataAsset.html">SkeletonDataAsset</a></td>
+        <td><span class="parametername">skeletonDataAsset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Material</span></td>
+        <td><span class="parametername">material</span></td>
+        <td><p>Material for the canvas renderer to use. Usually, the default SkeletonGraphic material will work.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Unity.SkeletonGraphic.html">SkeletonGraphic</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_Awake.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.Awake%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L162">View Source</a>
+  </span>
+  <a id="Spine_Unity_SkeletonGraphic_Awake_" data-uid="Spine.Unity.SkeletonGraphic.Awake*"></a>
+  <h4 id="Spine_Unity_SkeletonGraphic_Awake" data-uid="Spine.Unity.SkeletonGraphic.Awake">Awake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">UnityEngine.EventSystems.UIBehaviour.Awake()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_Clear.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L249">View Source</a>
+  </span>
+  <a id="Spine_Unity_SkeletonGraphic_Clear_" data-uid="Spine.Unity.SkeletonGraphic.Clear*"></a>
+  <h4 id="Spine_Unity_SkeletonGraphic_Clear" data-uid="Spine.Unity.SkeletonGraphic.Clear">Clear()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_GetLastMesh.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.GetLastMesh%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L238">View Source</a>
+  </span>
+  <a id="Spine_Unity_SkeletonGraphic_GetLastMesh_" data-uid="Spine.Unity.SkeletonGraphic.GetLastMesh*"></a>
+  <h4 id="Spine_Unity_SkeletonGraphic_GetLastMesh" data-uid="Spine.Unity.SkeletonGraphic.GetLastMesh">GetLastMesh()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mesh GetLastMesh()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Mesh</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_Initialize_System_Boolean_.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.Initialize(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L254">View Source</a>
+  </span>
+  <a id="Spine_Unity_SkeletonGraphic_Initialize_" data-uid="Spine.Unity.SkeletonGraphic.Initialize*"></a>
+  <h4 id="Spine_Unity_SkeletonGraphic_Initialize_System_Boolean_" data-uid="Spine.Unity.SkeletonGraphic.Initialize(System.Boolean)">Initialize(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(bool overwrite)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">overwrite</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_LateUpdate.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.LateUpdate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L217">View Source</a>
+  </span>
+  <a id="Spine_Unity_SkeletonGraphic_LateUpdate_" data-uid="Spine.Unity.SkeletonGraphic.LateUpdate*"></a>
+  <h4 id="Spine_Unity_SkeletonGraphic_LateUpdate" data-uid="Spine.Unity.SkeletonGraphic.LateUpdate">LateUpdate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LateUpdate()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_NewSkeletonGraphicGameObject_Spine_Unity_SkeletonDataAsset_UnityEngine_Transform_UnityEngine_Material_.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.NewSkeletonGraphicGameObject(Spine.Unity.SkeletonDataAsset%2CUnityEngine.Transform%2CUnityEngine.Material)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L126">View Source</a>
+  </span>
+  <a id="Spine_Unity_SkeletonGraphic_NewSkeletonGraphicGameObject_" data-uid="Spine.Unity.SkeletonGraphic.NewSkeletonGraphicGameObject*"></a>
+  <h4 id="Spine_Unity_SkeletonGraphic_NewSkeletonGraphicGameObject_Spine_Unity_SkeletonDataAsset_UnityEngine_Transform_UnityEngine_Material_" data-uid="Spine.Unity.SkeletonGraphic.NewSkeletonGraphicGameObject(Spine.Unity.SkeletonDataAsset,UnityEngine.Transform,UnityEngine.Material)">NewSkeletonGraphicGameObject(SkeletonDataAsset, Transform, Material)</h4>
+  <div class="markdown level1 summary"><p>Create a new GameObject with a SkeletonGraphic component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SkeletonGraphic NewSkeletonGraphicGameObject(SkeletonDataAsset skeletonDataAsset, Transform parent, Material material)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Unity.SkeletonDataAsset.html">SkeletonDataAsset</a></td>
+        <td><span class="parametername">skeletonDataAsset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Material</span></td>
+        <td><span class="parametername">material</span></td>
+        <td><p>Material for the canvas renderer to use. Usually, the default SkeletonGraphic material will work.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Unity.SkeletonGraphic.html">SkeletonGraphic</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_Rebuild_UnityEngine_UI_CanvasUpdate_.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.Rebuild(UnityEngine.UI.CanvasUpdate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L179">View Source</a>
+  </span>
+  <a id="Spine_Unity_SkeletonGraphic_Rebuild_" data-uid="Spine.Unity.SkeletonGraphic.Rebuild*"></a>
+  <h4 id="Spine_Unity_SkeletonGraphic_Rebuild_UnityEngine_UI_CanvasUpdate_" data-uid="Spine.Unity.SkeletonGraphic.Rebuild(UnityEngine.UI.CanvasUpdate)">Rebuild(CanvasUpdate)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Rebuild(CanvasUpdate update)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.UI.CanvasUpdate</span></td>
+        <td><span class="parametername">update</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">UnityEngine.UI.Graphic.Rebuild(UnityEngine.UI.CanvasUpdate)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_Update.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.Update%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L185">View Source</a>
+  </span>
+  <a id="Spine_Unity_SkeletonGraphic_Update_" data-uid="Spine.Unity.SkeletonGraphic.Update*"></a>
+  <h4 id="Spine_Unity_SkeletonGraphic_Update" data-uid="Spine.Unity.SkeletonGraphic.Update">Update()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Update()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_Update_System_Single_.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.Update(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L197">View Source</a>
+  </span>
+  <a id="Spine_Unity_SkeletonGraphic_Update_" data-uid="Spine.Unity.SkeletonGraphic.Update*"></a>
+  <h4 id="Spine_Unity_SkeletonGraphic_Update_System_Single_" data-uid="Spine.Unity.SkeletonGraphic.Update(System.Single)">Update(Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Update(float deltaTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">deltaTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_UpdateMesh.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.UpdateMesh%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L295">View Source</a>
+  </span>
+  <a id="Spine_Unity_SkeletonGraphic_UpdateMesh_" data-uid="Spine.Unity.SkeletonGraphic.UpdateMesh*"></a>
+  <h4 id="Spine_Unity_SkeletonGraphic_UpdateMesh" data-uid="Spine.Unity.SkeletonGraphic.UpdateMesh">UpdateMesh()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateMesh()</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_OnPostProcessVertices.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.OnPostProcessVertices%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L247">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_SkeletonGraphic_OnPostProcessVertices" data-uid="Spine.Unity.SkeletonGraphic.OnPostProcessVertices">OnPostProcessVertices</h4>
+  <div class="markdown level1 summary"><p>Occurs after the vertex data populated every frame, before the vertices are pushed into the mesh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event MeshGeneratorDelegate OnPostProcessVertices</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Unity.MeshGeneratorDelegate.html">MeshGeneratorDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_UpdateComplete.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.UpdateComplete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L244">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_SkeletonGraphic_UpdateComplete" data-uid="Spine.Unity.SkeletonGraphic.UpdateComplete">UpdateComplete</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event UpdateBonesDelegate UpdateComplete</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Unity.UpdateBonesDelegate.html">UpdateBonesDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_UpdateLocal.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.UpdateLocal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L242">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_SkeletonGraphic_UpdateLocal" data-uid="Spine.Unity.SkeletonGraphic.UpdateLocal">UpdateLocal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event UpdateBonesDelegate UpdateLocal</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Unity.UpdateBonesDelegate.html">UpdateBonesDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic_UpdateWorld.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic.UpdateWorld%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L243">View Source</a>
+  </span>
+  <h4 id="Spine_Unity_SkeletonGraphic_UpdateWorld" data-uid="Spine.Unity.SkeletonGraphic.UpdateWorld">UpdateWorld</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event UpdateBonesDelegate UpdateWorld</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Spine.Unity.UpdateBonesDelegate.html">UpdateBonesDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">UnityEngine.UI.ICanvasElement</span>
+  </div>
+  <div>
+      <span class="xref">UnityEngine.UI.IClippable</span>
+  </div>
+  <div>
+      <span class="xref">UnityEngine.UI.IMaskable</span>
+  </div>
+  <div>
+      <span class="xref">UnityEngine.UI.IMaterialModifier</span>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.ISkeletonComponent.html">ISkeletonComponent</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.IAnimationStateComponent.html">IAnimationStateComponent</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.ISkeletonAnimation.html">ISkeletonAnimation</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.IHasSkeletonDataAsset.html">IHasSkeletonDataAsset</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Mobge.UnityExtensions.html#Mobge_UnityExtensions_DestroyObj_UnityEngine_Object_UnityEngine_Object_">UnityExtensions.DestroyObj(Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mobge.UnityExtensions.html#Mobge_UnityExtensions_DestroySelf_UnityEngine_Object_">UnityExtensions.DestroySelf(Object)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Spine_Unity_SkeletonGraphic.md&amp;value=---%0Auid%3A%20Spine.Unity.SkeletonGraphic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs/#L41" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Example Unity documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

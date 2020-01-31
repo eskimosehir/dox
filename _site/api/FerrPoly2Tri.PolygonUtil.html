@@ -1,0 +1,1071 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PolygonUtil
+   | Example Unity documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PolygonUtil
+   | Example Unity documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FerrPoly2Tri.PolygonUtil">
+  
+  
+  <h1 id="FerrPoly2Tri_PolygonUtil" data-uid="FerrPoly2Tri.PolygonUtil" class="text-break">Class PolygonUtil
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">PolygonUtil</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FerrPoly2Tri.html">FerrPoly2Tri</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="FerrPoly2Tri_PolygonUtil_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PolygonUtil</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_PolygonUtil_CalculateWindingOrder_System_Collections_Generic_IList_FerrPoly2Tri_Point2D__.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.PolygonUtil.CalculateWindingOrder(System.Collections.Generic.IList%7BFerrPoly2Tri.Point2D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/PolygonUtil.cs/#L155">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_PolygonUtil_CalculateWindingOrder_" data-uid="FerrPoly2Tri.PolygonUtil.CalculateWindingOrder*"></a>
+  <h4 id="FerrPoly2Tri_PolygonUtil_CalculateWindingOrder_System_Collections_Generic_IList_FerrPoly2Tri_Point2D__" data-uid="FerrPoly2Tri.PolygonUtil.CalculateWindingOrder(System.Collections.Generic.IList{FerrPoly2Tri.Point2D})">CalculateWindingOrder(IList&lt;Point2D&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Point2DList.WindingOrderType CalculateWindingOrder(IList&lt;Point2D&gt; l)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a>&gt;</td>
+        <td><span class="parametername">l</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Point2DList.WindingOrderType.html">Point2DList.WindingOrderType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_PolygonUtil_ClipPolygonToEdge2D_FerrPoly2Tri_Point2D_FerrPoly2Tri_Point2D_System_Collections_Generic_IList_FerrPoly2Tri_Point2D__System_Collections_Generic_List_FerrPoly2Tri_Point2D___.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.PolygonUtil.ClipPolygonToEdge2D(FerrPoly2Tri.Point2D%2CFerrPoly2Tri.Point2D%2CSystem.Collections.Generic.IList%7BFerrPoly2Tri.Point2D%7D%2CSystem.Collections.Generic.List%7BFerrPoly2Tri.Point2D%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/PolygonUtil.cs/#L440">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_PolygonUtil_ClipPolygonToEdge2D_" data-uid="FerrPoly2Tri.PolygonUtil.ClipPolygonToEdge2D*"></a>
+  <h4 id="FerrPoly2Tri_PolygonUtil_ClipPolygonToEdge2D_FerrPoly2Tri_Point2D_FerrPoly2Tri_Point2D_System_Collections_Generic_IList_FerrPoly2Tri_Point2D__System_Collections_Generic_List_FerrPoly2Tri_Point2D___" data-uid="FerrPoly2Tri.PolygonUtil.ClipPolygonToEdge2D(FerrPoly2Tri.Point2D,FerrPoly2Tri.Point2D,System.Collections.Generic.IList{FerrPoly2Tri.Point2D},System.Collections.Generic.List{FerrPoly2Tri.Point2D}@)">ClipPolygonToEdge2D(Point2D, Point2D, IList&lt;Point2D&gt;, out List&lt;Point2D&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClipPolygonToEdge2D(Point2D edgeBegin, Point2D edgeEnd, IList&lt;Point2D&gt; poly, out List&lt;Point2D&gt; outPoly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a></td>
+        <td><span class="parametername">edgeBegin</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a></td>
+        <td><span class="parametername">edgeEnd</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a>&gt;</td>
+        <td><span class="parametername">poly</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a>&gt;</td>
+        <td><span class="parametername">outPoly</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_PolygonUtil_ClipPolygonToPolygon_System_Collections_Generic_IList_FerrPoly2Tri_Point2D__System_Collections_Generic_IList_FerrPoly2Tri_Point2D__System_Collections_Generic_List_FerrPoly2Tri_Point2D___.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.PolygonUtil.ClipPolygonToPolygon(System.Collections.Generic.IList%7BFerrPoly2Tri.Point2D%7D%2CSystem.Collections.Generic.IList%7BFerrPoly2Tri.Point2D%7D%2CSystem.Collections.Generic.List%7BFerrPoly2Tri.Point2D%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/PolygonUtil.cs/#L503">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_PolygonUtil_ClipPolygonToPolygon_" data-uid="FerrPoly2Tri.PolygonUtil.ClipPolygonToPolygon*"></a>
+  <h4 id="FerrPoly2Tri_PolygonUtil_ClipPolygonToPolygon_System_Collections_Generic_IList_FerrPoly2Tri_Point2D__System_Collections_Generic_IList_FerrPoly2Tri_Point2D__System_Collections_Generic_List_FerrPoly2Tri_Point2D___" data-uid="FerrPoly2Tri.PolygonUtil.ClipPolygonToPolygon(System.Collections.Generic.IList{FerrPoly2Tri.Point2D},System.Collections.Generic.IList{FerrPoly2Tri.Point2D},System.Collections.Generic.List{FerrPoly2Tri.Point2D}@)">ClipPolygonToPolygon(IList&lt;Point2D&gt;, IList&lt;Point2D&gt;, out List&lt;Point2D&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClipPolygonToPolygon(IList&lt;Point2D&gt; poly, IList&lt;Point2D&gt; clipPoly, out List&lt;Point2D&gt; outPoly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a>&gt;</td>
+        <td><span class="parametername">poly</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a>&gt;</td>
+        <td><span class="parametername">clipPoly</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a>&gt;</td>
+        <td><span class="parametername">outPoly</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_PolygonUtil_PointInPolygon2D_System_Collections_Generic_IList_FerrPoly2Tri_Point2D__FerrPoly2Tri_Point2D_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.PolygonUtil.PointInPolygon2D(System.Collections.Generic.IList%7BFerrPoly2Tri.Point2D%7D%2CFerrPoly2Tri.Point2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/PolygonUtil.cs/#L266">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_PolygonUtil_PointInPolygon2D_" data-uid="FerrPoly2Tri.PolygonUtil.PointInPolygon2D*"></a>
+  <h4 id="FerrPoly2Tri_PolygonUtil_PointInPolygon2D_System_Collections_Generic_IList_FerrPoly2Tri_Point2D__FerrPoly2Tri_Point2D_" data-uid="FerrPoly2Tri.PolygonUtil.PointInPolygon2D(System.Collections.Generic.IList{FerrPoly2Tri.Point2D},FerrPoly2Tri.Point2D)">PointInPolygon2D(IList&lt;Point2D&gt;, Point2D)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PointInPolygon2D(IList&lt;Point2D&gt; polygon, Point2D p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a>&gt;</td>
+        <td><span class="parametername">polygon</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_PolygonUtil_PolygonContainsPolygon_System_Collections_Generic_IList_FerrPoly2Tri_Point2D__FerrPoly2Tri_Rect2D_System_Collections_Generic_IList_FerrPoly2Tri_Point2D__FerrPoly2Tri_Rect2D_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.PolygonUtil.PolygonContainsPolygon(System.Collections.Generic.IList%7BFerrPoly2Tri.Point2D%7D%2CFerrPoly2Tri.Rect2D%2CSystem.Collections.Generic.IList%7BFerrPoly2Tri.Point2D%7D%2CFerrPoly2Tri.Rect2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/PolygonUtil.cs/#L353">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_PolygonUtil_PolygonContainsPolygon_" data-uid="FerrPoly2Tri.PolygonUtil.PolygonContainsPolygon*"></a>
+  <h4 id="FerrPoly2Tri_PolygonUtil_PolygonContainsPolygon_System_Collections_Generic_IList_FerrPoly2Tri_Point2D__FerrPoly2Tri_Rect2D_System_Collections_Generic_IList_FerrPoly2Tri_Point2D__FerrPoly2Tri_Rect2D_" data-uid="FerrPoly2Tri.PolygonUtil.PolygonContainsPolygon(System.Collections.Generic.IList{FerrPoly2Tri.Point2D},FerrPoly2Tri.Rect2D,System.Collections.Generic.IList{FerrPoly2Tri.Point2D},FerrPoly2Tri.Rect2D)">PolygonContainsPolygon(IList&lt;Point2D&gt;, Rect2D, IList&lt;Point2D&gt;, Rect2D)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PolygonContainsPolygon(IList&lt;Point2D&gt; poly1, Rect2D boundRect1, IList&lt;Point2D&gt; poly2, Rect2D boundRect2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a>&gt;</td>
+        <td><span class="parametername">poly1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Rect2D.html">Rect2D</a></td>
+        <td><span class="parametername">boundRect1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a>&gt;</td>
+        <td><span class="parametername">poly2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Rect2D.html">Rect2D</a></td>
+        <td><span class="parametername">boundRect2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_PolygonUtil_PolygonContainsPolygon_System_Collections_Generic_IList_FerrPoly2Tri_Point2D__FerrPoly2Tri_Rect2D_System_Collections_Generic_IList_FerrPoly2Tri_Point2D__FerrPoly2Tri_Rect2D_System_Boolean_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.PolygonUtil.PolygonContainsPolygon(System.Collections.Generic.IList%7BFerrPoly2Tri.Point2D%7D%2CFerrPoly2Tri.Rect2D%2CSystem.Collections.Generic.IList%7BFerrPoly2Tri.Point2D%7D%2CFerrPoly2Tri.Rect2D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/PolygonUtil.cs/#L383">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_PolygonUtil_PolygonContainsPolygon_" data-uid="FerrPoly2Tri.PolygonUtil.PolygonContainsPolygon*"></a>
+  <h4 id="FerrPoly2Tri_PolygonUtil_PolygonContainsPolygon_System_Collections_Generic_IList_FerrPoly2Tri_Point2D__FerrPoly2Tri_Rect2D_System_Collections_Generic_IList_FerrPoly2Tri_Point2D__FerrPoly2Tri_Rect2D_System_Boolean_" data-uid="FerrPoly2Tri.PolygonUtil.PolygonContainsPolygon(System.Collections.Generic.IList{FerrPoly2Tri.Point2D},FerrPoly2Tri.Rect2D,System.Collections.Generic.IList{FerrPoly2Tri.Point2D},FerrPoly2Tri.Rect2D,System.Boolean)">PolygonContainsPolygon(IList&lt;Point2D&gt;, Rect2D, IList&lt;Point2D&gt;, Rect2D, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Checks to see if poly1 contains poly2.  return true if so, false otherwise.</p>
+<p>If the polygons intersect, then poly1 cannot contain poly2 (or vice-versa for that matter)
+Since the poly intersection test can be somewhat expensive, we&apos;ll only run it if the user
+requests it.   If runIntersectionTest is false, then it is assumed that the user has already
+verified that the polygons do not intersect.  If the polygons DO intersect and runIntersectionTest
+is false, then the return value is meaningless.  Caveat emptor.</p>
+<p>As an added bonus, just to cause more user-carnage, if runIntersectionTest is false, then the 
+boundRects are not used and can safely be passed in as nulls.   However, if runIntersectionTest
+is true and you pass nulls for boundRect1 or boundRect2, you will cause a program crash.</p>
+<p>Finally, the polygon points are assumed to be passed in Clockwise winding order.   It is possible
+that CounterClockwise ordering would work, but I have not verified the behavior in that case. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PolygonContainsPolygon(IList&lt;Point2D&gt; poly1, Rect2D boundRect1, IList&lt;Point2D&gt; poly2, Rect2D boundRect2, bool runIntersectionTest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a>&gt;</td>
+        <td><span class="parametername">poly1</span></td>
+        <td><p>points of polygon1</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Rect2D.html">Rect2D</a></td>
+        <td><span class="parametername">boundRect1</span></td>
+        <td><p>bounding rect of polygon1.  Only used if runIntersectionTest is true</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a>&gt;</td>
+        <td><span class="parametername">poly2</span></td>
+        <td><p>points of polygon2</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Rect2D.html">Rect2D</a></td>
+        <td><span class="parametername">boundRect2</span></td>
+        <td><p>bounding rect of polygon2.  Only used if runIntersectionTest is true</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">runIntersectionTest</span></td>
+        <td><p>see summary above</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if poly1 fully contains poly2</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_PolygonUtil_PolygonIntersect_FerrPoly2Tri_Point2DList_FerrPoly2Tri_Point2DList_FerrPoly2Tri_Point2DList__.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.PolygonUtil.PolygonIntersect(FerrPoly2Tri.Point2DList%2CFerrPoly2Tri.Point2DList%2CFerrPoly2Tri.Point2DList%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/PolygonUtil.cs/#L667">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_PolygonUtil_PolygonIntersect_" data-uid="FerrPoly2Tri.PolygonUtil.PolygonIntersect*"></a>
+  <h4 id="FerrPoly2Tri_PolygonUtil_PolygonIntersect_FerrPoly2Tri_Point2DList_FerrPoly2Tri_Point2DList_FerrPoly2Tri_Point2DList__" data-uid="FerrPoly2Tri.PolygonUtil.PolygonIntersect(FerrPoly2Tri.Point2DList,FerrPoly2Tri.Point2DList,FerrPoly2Tri.Point2DList@)">PolygonIntersect(Point2DList, Point2DList, out Point2DList)</h4>
+  <div class="markdown level1 summary"><p>Finds the intersection between two polygons.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PolygonUtil.PolyUnionError PolygonIntersect(Point2DList polygon1, Point2DList polygon2, out Point2DList intersectOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Point2DList.html">Point2DList</a></td>
+        <td><span class="parametername">polygon1</span></td>
+        <td><p>The first polygon.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Point2DList.html">Point2DList</a></td>
+        <td><span class="parametername">polygon2</span></td>
+        <td><p>The second polygon.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Point2DList.html">Point2DList</a></td>
+        <td><span class="parametername">intersectOut</span></td>
+        <td><p>The intersection of the two polygons</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.PolygonUtil.PolyUnionError.html">PolygonUtil.PolyUnionError</a></td>
+        <td><p>error code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_PolygonUtil_PolygonIntersectInternal_FerrPoly2Tri_PolygonOperationContext_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.PolygonUtil.PolygonIntersectInternal(FerrPoly2Tri.PolygonOperationContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/PolygonUtil.cs/#L677">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_PolygonUtil_PolygonIntersectInternal_" data-uid="FerrPoly2Tri.PolygonUtil.PolygonIntersectInternal*"></a>
+  <h4 id="FerrPoly2Tri_PolygonUtil_PolygonIntersectInternal_FerrPoly2Tri_PolygonOperationContext_" data-uid="FerrPoly2Tri.PolygonUtil.PolygonIntersectInternal(FerrPoly2Tri.PolygonOperationContext)">PolygonIntersectInternal(PolygonOperationContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void PolygonIntersectInternal(PolygonOperationContext ctx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.PolygonOperationContext.html">PolygonOperationContext</a></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_PolygonUtil_PolygonOperation_FerrPoly2Tri_PolygonOperationContext_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.PolygonUtil.PolygonOperation(FerrPoly2Tri.PolygonOperationContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/PolygonUtil.cs/#L983">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_PolygonUtil_PolygonOperation_" data-uid="FerrPoly2Tri.PolygonUtil.PolygonOperation*"></a>
+  <h4 id="FerrPoly2Tri_PolygonUtil_PolygonOperation_FerrPoly2Tri_PolygonOperationContext_" data-uid="FerrPoly2Tri.PolygonUtil.PolygonOperation(FerrPoly2Tri.PolygonOperationContext)">PolygonOperation(PolygonOperationContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PolygonUtil.PolyUnionError PolygonOperation(PolygonOperationContext ctx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.PolygonOperationContext.html">PolygonOperationContext</a></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.PolygonUtil.PolyUnionError.html">PolygonUtil.PolyUnionError</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_PolygonUtil_PolygonOperation_FerrPoly2Tri_PolygonUtil_PolyOperation_FerrPoly2Tri_Point2DList_FerrPoly2Tri_Point2DList_System_Collections_Generic_Dictionary_System_UInt32_FerrPoly2Tri_Point2DList___.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.PolygonUtil.PolygonOperation(FerrPoly2Tri.PolygonUtil.PolyOperation%2CFerrPoly2Tri.Point2DList%2CFerrPoly2Tri.Point2DList%2CSystem.Collections.Generic.Dictionary%7BSystem.UInt32%2CFerrPoly2Tri.Point2DList%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/PolygonUtil.cs/#L974">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_PolygonUtil_PolygonOperation_" data-uid="FerrPoly2Tri.PolygonUtil.PolygonOperation*"></a>
+  <h4 id="FerrPoly2Tri_PolygonUtil_PolygonOperation_FerrPoly2Tri_PolygonUtil_PolyOperation_FerrPoly2Tri_Point2DList_FerrPoly2Tri_Point2DList_System_Collections_Generic_Dictionary_System_UInt32_FerrPoly2Tri_Point2DList___" data-uid="FerrPoly2Tri.PolygonUtil.PolygonOperation(FerrPoly2Tri.PolygonUtil.PolyOperation,FerrPoly2Tri.Point2DList,FerrPoly2Tri.Point2DList,System.Collections.Generic.Dictionary{System.UInt32,FerrPoly2Tri.Point2DList}@)">PolygonOperation(PolygonUtil.PolyOperation, Point2DList, Point2DList, out Dictionary&lt;UInt32, Point2DList&gt;)</h4>
+  <div class="markdown level1 summary"><p>Performs one or more polygon operations on the 2 provided polygons</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PolygonUtil.PolyUnionError PolygonOperation(PolygonUtil.PolyOperation operations, Point2DList polygon1, Point2DList polygon2, out Dictionary&lt;uint, Point2DList&gt; results)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.PolygonUtil.PolyOperation.html">PolygonUtil.PolyOperation</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Point2DList.html">Point2DList</a></td>
+        <td><span class="parametername">polygon1</span></td>
+        <td><p>The first polygon.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Point2DList.html">Point2DList</a></td>
+        <td><span class="parametername">polygon2</span></td>
+        <td><p>The second polygon</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a>, <a class="xref" href="FerrPoly2Tri.Point2DList.html">Point2DList</a>&gt;</td>
+        <td><span class="parametername">results</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.PolygonUtil.PolyUnionError.html">PolygonUtil.PolyUnionError</a></td>
+        <td><p>error code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_PolygonUtil_PolygonsAreSame2D_System_Collections_Generic_IList_FerrPoly2Tri_Point2D__System_Collections_Generic_IList_FerrPoly2Tri_Point2D__.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.PolygonUtil.PolygonsAreSame2D(System.Collections.Generic.IList%7BFerrPoly2Tri.Point2D%7D%2CSystem.Collections.Generic.IList%7BFerrPoly2Tri.Point2D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/PolygonUtil.cs/#L188">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_PolygonUtil_PolygonsAreSame2D_" data-uid="FerrPoly2Tri.PolygonUtil.PolygonsAreSame2D*"></a>
+  <h4 id="FerrPoly2Tri_PolygonUtil_PolygonsAreSame2D_System_Collections_Generic_IList_FerrPoly2Tri_Point2D__System_Collections_Generic_IList_FerrPoly2Tri_Point2D__" data-uid="FerrPoly2Tri.PolygonUtil.PolygonsAreSame2D(System.Collections.Generic.IList{FerrPoly2Tri.Point2D},System.Collections.Generic.IList{FerrPoly2Tri.Point2D})">PolygonsAreSame2D(IList&lt;Point2D&gt;, IList&lt;Point2D&gt;)</h4>
+  <div class="markdown level1 summary"><p>Check if the polys are similar to within a tolerance (Doesn&apos;t include reflections,
+but allows for the points to be numbered differently, but not reversed).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PolygonsAreSame2D(IList&lt;Point2D&gt; poly1, IList&lt;Point2D&gt; poly2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a>&gt;</td>
+        <td><span class="parametername">poly1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a>&gt;</td>
+        <td><span class="parametername">poly2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_PolygonUtil_PolygonsIntersect2D_System_Collections_Generic_IList_FerrPoly2Tri_Point2D__FerrPoly2Tri_Rect2D_System_Collections_Generic_IList_FerrPoly2Tri_Point2D__FerrPoly2Tri_Rect2D_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.PolygonUtil.PolygonsIntersect2D(System.Collections.Generic.IList%7BFerrPoly2Tri.Point2D%7D%2CFerrPoly2Tri.Rect2D%2CSystem.Collections.Generic.IList%7BFerrPoly2Tri.Point2D%7D%2CFerrPoly2Tri.Rect2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/PolygonUtil.cs/#L304">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_PolygonUtil_PolygonsIntersect2D_" data-uid="FerrPoly2Tri.PolygonUtil.PolygonsIntersect2D*"></a>
+  <h4 id="FerrPoly2Tri_PolygonUtil_PolygonsIntersect2D_System_Collections_Generic_IList_FerrPoly2Tri_Point2D__FerrPoly2Tri_Rect2D_System_Collections_Generic_IList_FerrPoly2Tri_Point2D__FerrPoly2Tri_Rect2D_" data-uid="FerrPoly2Tri.PolygonUtil.PolygonsIntersect2D(System.Collections.Generic.IList{FerrPoly2Tri.Point2D},FerrPoly2Tri.Rect2D,System.Collections.Generic.IList{FerrPoly2Tri.Point2D},FerrPoly2Tri.Rect2D)">PolygonsIntersect2D(IList&lt;Point2D&gt;, Rect2D, IList&lt;Point2D&gt;, Rect2D)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PolygonsIntersect2D(IList&lt;Point2D&gt; poly1, Rect2D boundRect1, IList&lt;Point2D&gt; poly2, Rect2D boundRect2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a>&gt;</td>
+        <td><span class="parametername">poly1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Rect2D.html">Rect2D</a></td>
+        <td><span class="parametername">boundRect1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="FerrPoly2Tri.Point2D.html">Point2D</a>&gt;</td>
+        <td><span class="parametername">poly2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Rect2D.html">Rect2D</a></td>
+        <td><span class="parametername">boundRect2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_PolygonUtil_PolygonSubtract_FerrPoly2Tri_Point2DList_FerrPoly2Tri_Point2DList_FerrPoly2Tri_Point2DList__.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.PolygonUtil.PolygonSubtract(FerrPoly2Tri.Point2DList%2CFerrPoly2Tri.Point2DList%2CFerrPoly2Tri.Point2DList%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/PolygonUtil.cs/#L804">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_PolygonUtil_PolygonSubtract_" data-uid="FerrPoly2Tri.PolygonUtil.PolygonSubtract*"></a>
+  <h4 id="FerrPoly2Tri_PolygonUtil_PolygonSubtract_FerrPoly2Tri_Point2DList_FerrPoly2Tri_Point2DList_FerrPoly2Tri_Point2DList__" data-uid="FerrPoly2Tri.PolygonUtil.PolygonSubtract(FerrPoly2Tri.Point2DList,FerrPoly2Tri.Point2DList,FerrPoly2Tri.Point2DList@)">PolygonSubtract(Point2DList, Point2DList, out Point2DList)</h4>
+  <div class="markdown level1 summary"><p>Subtracts one polygon from another.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PolygonUtil.PolyUnionError PolygonSubtract(Point2DList polygon1, Point2DList polygon2, out Point2DList subtract)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Point2DList.html">Point2DList</a></td>
+        <td><span class="parametername">polygon1</span></td>
+        <td><p>The base polygon.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Point2DList.html">Point2DList</a></td>
+        <td><span class="parametername">polygon2</span></td>
+        <td><p>The polygon to subtract from the base.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Point2DList.html">Point2DList</a></td>
+        <td><span class="parametername">subtract</span></td>
+        <td><p>The result of the polygon subtraction</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.PolygonUtil.PolyUnionError.html">PolygonUtil.PolyUnionError</a></td>
+        <td><p>error code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_PolygonUtil_PolygonSubtractInternal_FerrPoly2Tri_PolygonOperationContext_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.PolygonUtil.PolygonSubtractInternal(FerrPoly2Tri.PolygonOperationContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/PolygonUtil.cs/#L814">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_PolygonUtil_PolygonSubtractInternal_" data-uid="FerrPoly2Tri.PolygonUtil.PolygonSubtractInternal*"></a>
+  <h4 id="FerrPoly2Tri_PolygonUtil_PolygonSubtractInternal_FerrPoly2Tri_PolygonOperationContext_" data-uid="FerrPoly2Tri.PolygonUtil.PolygonSubtractInternal(FerrPoly2Tri.PolygonOperationContext)">PolygonSubtractInternal(PolygonOperationContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PolygonSubtractInternal(PolygonOperationContext ctx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.PolygonOperationContext.html">PolygonOperationContext</a></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_PolygonUtil_PolygonUnion_FerrPoly2Tri_Point2DList_FerrPoly2Tri_Point2DList_FerrPoly2Tri_Point2DList__.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.PolygonUtil.PolygonUnion(FerrPoly2Tri.Point2DList%2CFerrPoly2Tri.Point2DList%2CFerrPoly2Tri.Point2DList%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/PolygonUtil.cs/#L536">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_PolygonUtil_PolygonUnion_" data-uid="FerrPoly2Tri.PolygonUtil.PolygonUnion*"></a>
+  <h4 id="FerrPoly2Tri_PolygonUtil_PolygonUnion_FerrPoly2Tri_Point2DList_FerrPoly2Tri_Point2DList_FerrPoly2Tri_Point2DList__" data-uid="FerrPoly2Tri.PolygonUtil.PolygonUnion(FerrPoly2Tri.Point2DList,FerrPoly2Tri.Point2DList,FerrPoly2Tri.Point2DList@)">PolygonUnion(Point2DList, Point2DList, out Point2DList)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PolygonUtil.PolyUnionError PolygonUnion(Point2DList polygon1, Point2DList polygon2, out Point2DList union)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Point2DList.html">Point2DList</a></td>
+        <td><span class="parametername">polygon1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Point2DList.html">Point2DList</a></td>
+        <td><span class="parametername">polygon2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Point2DList.html">Point2DList</a></td>
+        <td><span class="parametername">union</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.PolygonUtil.PolyUnionError.html">PolygonUtil.PolyUnionError</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_PolygonUtil_PolygonUnionInternal_FerrPoly2Tri_PolygonOperationContext_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.PolygonUtil.PolygonUnionInternal(FerrPoly2Tri.PolygonOperationContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/PolygonUtil.cs/#L546">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_PolygonUtil_PolygonUnionInternal_" data-uid="FerrPoly2Tri.PolygonUtil.PolygonUnionInternal*"></a>
+  <h4 id="FerrPoly2Tri_PolygonUtil_PolygonUnionInternal_FerrPoly2Tri_PolygonOperationContext_" data-uid="FerrPoly2Tri.PolygonUtil.PolygonUnionInternal(FerrPoly2Tri.PolygonOperationContext)">PolygonUnionInternal(PolygonOperationContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void PolygonUnionInternal(PolygonOperationContext ctx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.PolygonOperationContext.html">PolygonOperationContext</a></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_PolygonUtil_SplitComplexPolygon_FerrPoly2Tri_Point2DList_System_Double_.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.PolygonUtil.SplitComplexPolygon(FerrPoly2Tri.Point2DList%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/PolygonUtil.cs/#L1022">View Source</a>
+  </span>
+  <a id="FerrPoly2Tri_PolygonUtil_SplitComplexPolygon_" data-uid="FerrPoly2Tri.PolygonUtil.SplitComplexPolygon*"></a>
+  <h4 id="FerrPoly2Tri_PolygonUtil_SplitComplexPolygon_FerrPoly2Tri_Point2DList_System_Double_" data-uid="FerrPoly2Tri.PolygonUtil.SplitComplexPolygon(FerrPoly2Tri.Point2DList,System.Double)">SplitComplexPolygon(Point2DList, Double)</h4>
+  <div class="markdown level1 summary"><p>Trace the edge of a non-simple polygon and return a simple polygon.</p>
+<p>Method:
+Start at vertex with minimum y (pick maximum x one if there are two).<br>We aim our &quot;lastDir&quot; vector at (1.0, 0)
+We look at the two rays going off from our start vertex, and follow whichever
+has the smallest angle (in -Pi . Pi) wrt lastDir (&quot;rightest&quot; turn)</p>
+<p>Loop until we hit starting vertex:</p>
+<p>We add our current vertex to the list.
+We check the seg from current vertex to next vertex for intersections</p>
+<ul>
+<li>if no intersections, follow to next vertex and continue</li>
+<li>if intersections, pick one with minimum distance</li>
+<li>if more than one, pick one with &quot;rightest&quot; next point (two possibilities for each)</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Point2DList&gt; SplitComplexPolygon(Point2DList verts, double epsilon)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FerrPoly2Tri.Point2DList.html">Point2DList</a></td>
+        <td><span class="parametername">verts</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">epsilon</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FerrPoly2Tri.Point2DList.html">Point2DList</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=FerrPoly2Tri_PolygonUtil.md&amp;value=---%0Auid%3A%20FerrPoly2Tri.PolygonUtil%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/2D/Scripts/poly2tri.cs/Triangulation/Polygon/PolygonUtil.cs/#L135" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Example Unity documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

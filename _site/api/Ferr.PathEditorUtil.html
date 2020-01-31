@@ -1,0 +1,962 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PathEditorUtil
+   | Example Unity documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PathEditorUtil
+   | Example Unity documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Ferr.PathEditorUtil">
+  
+  
+  <h1 id="Ferr_PathEditorUtil" data-uid="Ferr.PathEditorUtil" class="text-break">Class PathEditorUtil
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">PathEditorUtil</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Ferr.html">Ferr</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp-Editor.dll</h6>
+  <h5 id="Ferr_PathEditorUtil_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class PathEditorUtil</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Ferr_PathEditorUtil_CenteredLabelStyle.md&amp;value=---%0Auid%3A%20Ferr.PathEditorUtil.CenteredLabelStyle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/Path/Editor/PathEditorUtil.cs/#L65">View Source</a>
+  </span>
+  <a id="Ferr_PathEditorUtil_CenteredLabelStyle_" data-uid="Ferr.PathEditorUtil.CenteredLabelStyle*"></a>
+  <h4 id="Ferr_PathEditorUtil_CenteredLabelStyle" data-uid="Ferr.PathEditorUtil.CenteredLabelStyle">CenteredLabelStyle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GUIStyle CenteredLabelStyle { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIStyle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Ferr_PathEditorUtil_CenteredShadowStyle.md&amp;value=---%0Auid%3A%20Ferr.PathEditorUtil.CenteredShadowStyle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/Path/Editor/PathEditorUtil.cs/#L73">View Source</a>
+  </span>
+  <a id="Ferr_PathEditorUtil_CenteredShadowStyle_" data-uid="Ferr.PathEditorUtil.CenteredShadowStyle*"></a>
+  <h4 id="Ferr_PathEditorUtil_CenteredShadowStyle" data-uid="Ferr.PathEditorUtil.CenteredShadowStyle">CenteredShadowStyle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GUIStyle CenteredShadowStyle { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIStyle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Ferr_PathEditorUtil_LabelStyle.md&amp;value=---%0Auid%3A%20Ferr.PathEditorUtil.LabelStyle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/Path/Editor/PathEditorUtil.cs/#L50">View Source</a>
+  </span>
+  <a id="Ferr_PathEditorUtil_LabelStyle_" data-uid="Ferr.PathEditorUtil.LabelStyle*"></a>
+  <h4 id="Ferr_PathEditorUtil_LabelStyle" data-uid="Ferr.PathEditorUtil.LabelStyle">LabelStyle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GUIStyle LabelStyle { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIStyle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Ferr_PathEditorUtil_ShadowStyle.md&amp;value=---%0Auid%3A%20Ferr.PathEditorUtil.ShadowStyle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/Path/Editor/PathEditorUtil.cs/#L57">View Source</a>
+  </span>
+  <a id="Ferr_PathEditorUtil_ShadowStyle_" data-uid="Ferr.PathEditorUtil.ShadowStyle*"></a>
+  <h4 id="Ferr_PathEditorUtil_ShadowStyle" data-uid="Ferr.PathEditorUtil.ShadowStyle">ShadowStyle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GUIStyle ShadowStyle { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIStyle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Ferr_PathEditorUtil_AddPoint_UnityEditor_SerializedProperty_UnityEngine_Vector2_Ferr_PointType_System_Single_UnityEngine_Vector2_UnityEngine_Vector2_System_Int32_.md&amp;value=---%0Auid%3A%20Ferr.PathEditorUtil.AddPoint(UnityEditor.SerializedProperty%2CUnityEngine.Vector2%2CFerr.PointType%2CSystem.Single%2CUnityEngine.Vector2%2CUnityEngine.Vector2%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/Path/Editor/PathEditorUtil.cs/#L682">View Source</a>
+  </span>
+  <a id="Ferr_PathEditorUtil_AddPoint_" data-uid="Ferr.PathEditorUtil.AddPoint*"></a>
+  <h4 id="Ferr_PathEditorUtil_AddPoint_UnityEditor_SerializedProperty_UnityEngine_Vector2_Ferr_PointType_System_Single_UnityEngine_Vector2_UnityEngine_Vector2_System_Int32_" data-uid="Ferr.PathEditorUtil.AddPoint(UnityEditor.SerializedProperty,UnityEngine.Vector2,Ferr.PointType,System.Single,UnityEngine.Vector2,UnityEngine.Vector2,System.Int32)">AddPoint(SerializedProperty, Vector2, PointType, Single, Vector2, Vector2, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SerializedProperty AddPoint(SerializedProperty aPath, Vector2 aPt, PointType aType, float aRadius = 1F, Vector2 aControlPointPrev = default(Vector2), Vector2 aControlPointNext = default(Vector2), int aIndex = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td><span class="parametername">aPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">aPt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ferr.PointType.html">PointType</a></td>
+        <td><span class="parametername">aType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">aRadius</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">aControlPointPrev</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">aControlPointNext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">aIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Ferr_PathEditorUtil_AddPoint_UnityEditor_SerializedProperty_UnityEngine_Vector2_System_Int32_.md&amp;value=---%0Auid%3A%20Ferr.PathEditorUtil.AddPoint(UnityEditor.SerializedProperty%2CUnityEngine.Vector2%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/Path/Editor/PathEditorUtil.cs/#L660">View Source</a>
+  </span>
+  <a id="Ferr_PathEditorUtil_AddPoint_" data-uid="Ferr.PathEditorUtil.AddPoint*"></a>
+  <h4 id="Ferr_PathEditorUtil_AddPoint_UnityEditor_SerializedProperty_UnityEngine_Vector2_System_Int32_" data-uid="Ferr.PathEditorUtil.AddPoint(UnityEditor.SerializedProperty,UnityEngine.Vector2,System.Int32)">AddPoint(SerializedProperty, Vector2, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SerializedProperty AddPoint(SerializedProperty aPath, Vector2 aPt, int aIndex = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td><span class="parametername">aPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">aPt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">aIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Ferr_PathEditorUtil_AutoSharpen_UnityEditor_SerializedProperty_System_Single_.md&amp;value=---%0Auid%3A%20Ferr.PathEditorUtil.AutoSharpen(UnityEditor.SerializedProperty%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/Path/Editor/PathEditorUtil.cs/#L847">View Source</a>
+  </span>
+  <a id="Ferr_PathEditorUtil_AutoSharpen_" data-uid="Ferr.PathEditorUtil.AutoSharpen*"></a>
+  <h4 id="Ferr_PathEditorUtil_AutoSharpen_UnityEditor_SerializedProperty_System_Single_" data-uid="Ferr.PathEditorUtil.AutoSharpen(UnityEditor.SerializedProperty,System.Single)">AutoSharpen(SerializedProperty, Single)</h4>
+  <div class="markdown level1 summary"><p>Takes a path, and switches Auto/Sharp marked control points based on their angles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AutoSharpen(SerializedProperty aPath, float aTolerance = 45F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td><span class="parametername">aPath</span></td>
+        <td><p>A SerializedProperty pointing to a Path2D object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">aTolerance</span></td>
+        <td><p>How far can the angle deviate from right angles before it switches? Degrees.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Ferr_PathEditorUtil_Clear_UnityEditor_SerializedProperty_.md&amp;value=---%0Auid%3A%20Ferr.PathEditorUtil.Clear(UnityEditor.SerializedProperty)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/Path/Editor/PathEditorUtil.cs/#L713">View Source</a>
+  </span>
+  <a id="Ferr_PathEditorUtil_Clear_" data-uid="Ferr.PathEditorUtil.Clear*"></a>
+  <h4 id="Ferr_PathEditorUtil_Clear_UnityEditor_SerializedProperty_" data-uid="Ferr.PathEditorUtil.Clear(UnityEditor.SerializedProperty)">Clear(SerializedProperty)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Clear(SerializedProperty aPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td><span class="parametername">aPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Ferr_PathEditorUtil_ClearSelections.md&amp;value=---%0Auid%3A%20Ferr.PathEditorUtil.ClearSelections%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/Path/Editor/PathEditorUtil.cs/#L279">View Source</a>
+  </span>
+  <a id="Ferr_PathEditorUtil_ClearSelections_" data-uid="Ferr.PathEditorUtil.ClearSelections*"></a>
+  <h4 id="Ferr_PathEditorUtil_ClearSelections" data-uid="Ferr.PathEditorUtil.ClearSelections">ClearSelections()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearSelections()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Ferr_PathEditorUtil_DoDragSelect_UnityEngine_Matrix4x4_Ferr_Path2D_UnityEngine_Rect_Ferr_PathEditorVisuals_.md&amp;value=---%0Auid%3A%20Ferr.PathEditorUtil.DoDragSelect(UnityEngine.Matrix4x4%2CFerr.Path2D%2CUnityEngine.Rect%2CFerr.PathEditorVisuals)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/Path/Editor/PathEditorUtil.cs/#L198">View Source</a>
+  </span>
+  <a id="Ferr_PathEditorUtil_DoDragSelect_" data-uid="Ferr.PathEditorUtil.DoDragSelect*"></a>
+  <h4 id="Ferr_PathEditorUtil_DoDragSelect_UnityEngine_Matrix4x4_Ferr_Path2D_UnityEngine_Rect_Ferr_PathEditorVisuals_" data-uid="Ferr.PathEditorUtil.DoDragSelect(UnityEngine.Matrix4x4,Ferr.Path2D,UnityEngine.Rect,Ferr.PathEditorVisuals)">DoDragSelect(Matrix4x4, Path2D, Rect, PathEditorVisuals)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DoDragSelect(Matrix4x4 aTransform, Path2D aPath, Rect aValidDragArea, PathEditorVisuals aVisuals)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Matrix4x4</span></td>
+        <td><span class="parametername">aTransform</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ferr.Path2D.html">Path2D</a></td>
+        <td><span class="parametername">aPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Rect</span></td>
+        <td><span class="parametername">aValidDragArea</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ferr.PathEditorVisuals.html">PathEditorVisuals</a></td>
+        <td><span class="parametername">aVisuals</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Ferr_PathEditorUtil_GetAllHandleLocations_UnityEngine_Matrix4x4_Ferr_Path2D_System_Boolean_Ferr_Path2D_Plane_.md&amp;value=---%0Auid%3A%20Ferr.PathEditorUtil.GetAllHandleLocations(UnityEngine.Matrix4x4%2CFerr.Path2D%2CSystem.Boolean%2CFerr.Path2D.Plane)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/Path/Editor/PathEditorUtil.cs/#L607">View Source</a>
+  </span>
+  <a id="Ferr_PathEditorUtil_GetAllHandleLocations_" data-uid="Ferr.PathEditorUtil.GetAllHandleLocations*"></a>
+  <h4 id="Ferr_PathEditorUtil_GetAllHandleLocations_UnityEngine_Matrix4x4_Ferr_Path2D_System_Boolean_Ferr_Path2D_Plane_" data-uid="Ferr.PathEditorUtil.GetAllHandleLocations(UnityEngine.Matrix4x4,Ferr.Path2D,System.Boolean,Ferr.Path2D.Plane)">GetAllHandleLocations(Matrix4x4, Path2D, Boolean, Path2D.Plane)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Vector3&gt; GetAllHandleLocations(Matrix4x4 aTransform, Path2D aPathRaw, bool aShowShiftAdd = true, Path2D.Plane aPlane = Path2D.Plane.XY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Matrix4x4</span></td>
+        <td><span class="parametername">aTransform</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ferr.Path2D.html">Path2D</a></td>
+        <td><span class="parametername">aPathRaw</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">aShowShiftAdd</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ferr.Path2D.Plane.html">Path2D.Plane</a></td>
+        <td><span class="parametername">aPlane</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">UnityEngine.Vector3</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Ferr_PathEditorUtil_GetSelection_Ferr_Path2D_.md&amp;value=---%0Auid%3A%20Ferr.PathEditorUtil.GetSelection(Ferr.Path2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/Path/Editor/PathEditorUtil.cs/#L271">View Source</a>
+  </span>
+  <a id="Ferr_PathEditorUtil_GetSelection_" data-uid="Ferr.PathEditorUtil.GetSelection*"></a>
+  <h4 id="Ferr_PathEditorUtil_GetSelection_Ferr_Path2D_" data-uid="Ferr.PathEditorUtil.GetSelection(Ferr.Path2D)">GetSelection(Path2D)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PathEditorUtil.Selection GetSelection(Path2D aPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ferr.Path2D.html">Path2D</a></td>
+        <td><span class="parametername">aPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ferr.PathEditorUtil.Selection.html">PathEditorUtil.Selection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Ferr_PathEditorUtil_MakePointAuto_UnityEditor_SerializedProperty_System_Int32_.md&amp;value=---%0Auid%3A%20Ferr.PathEditorUtil.MakePointAuto(UnityEditor.SerializedProperty%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/Path/Editor/PathEditorUtil.cs/#L833">View Source</a>
+  </span>
+  <a id="Ferr_PathEditorUtil_MakePointAuto_" data-uid="Ferr.PathEditorUtil.MakePointAuto*"></a>
+  <h4 id="Ferr_PathEditorUtil_MakePointAuto_UnityEditor_SerializedProperty_System_Int32_" data-uid="Ferr.PathEditorUtil.MakePointAuto(UnityEditor.SerializedProperty,System.Int32)">MakePointAuto(SerializedProperty, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MakePointAuto(SerializedProperty aPath, int aIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td><span class="parametername">aPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">aIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Ferr_PathEditorUtil_MakePointSharp_UnityEditor_SerializedProperty_System_Int32_.md&amp;value=---%0Auid%3A%20Ferr.PathEditorUtil.MakePointSharp(UnityEditor.SerializedProperty%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/Path/Editor/PathEditorUtil.cs/#L837">View Source</a>
+  </span>
+  <a id="Ferr_PathEditorUtil_MakePointSharp_" data-uid="Ferr.PathEditorUtil.MakePointSharp*"></a>
+  <h4 id="Ferr_PathEditorUtil_MakePointSharp_UnityEditor_SerializedProperty_System_Int32_" data-uid="Ferr.PathEditorUtil.MakePointSharp(UnityEditor.SerializedProperty,System.Int32)">MakePointSharp(SerializedProperty, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MakePointSharp(SerializedProperty aPath, int aIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td><span class="parametername">aPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">aIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Ferr_PathEditorUtil_OnSceneGUI_UnityEngine_Matrix4x4_UnityEngine_Matrix4x4_UnityEditor_SerializedProperty_Ferr_Path2D_System_Boolean_System_Action_UnityEditor_SerializedProperty_System_Int32__System_Action_UnityEditor_SerializedProperty_System_Int32__Ferr_Path2D_Plane_Ferr_PathSnap_System_Single_UnityEngine_KeyCode_Ferr_PathEditorVisuals_.md&amp;value=---%0Auid%3A%20Ferr.PathEditorUtil.OnSceneGUI(UnityEngine.Matrix4x4%2CUnityEngine.Matrix4x4%2CUnityEditor.SerializedProperty%2CFerr.Path2D%2CSystem.Boolean%2CSystem.Action%7BUnityEditor.SerializedProperty%2CSystem.Int32%7D%2CSystem.Action%7BUnityEditor.SerializedProperty%2CSystem.Int32%7D%2CFerr.Path2D.Plane%2CFerr.PathSnap%2CSystem.Single%2CUnityEngine.KeyCode%2CFerr.PathEditorVisuals)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/Path/Editor/PathEditorUtil.cs/#L93">View Source</a>
+  </span>
+  <a id="Ferr_PathEditorUtil_OnSceneGUI_" data-uid="Ferr.PathEditorUtil.OnSceneGUI*"></a>
+  <h4 id="Ferr_PathEditorUtil_OnSceneGUI_UnityEngine_Matrix4x4_UnityEngine_Matrix4x4_UnityEditor_SerializedProperty_Ferr_Path2D_System_Boolean_System_Action_UnityEditor_SerializedProperty_System_Int32__System_Action_UnityEditor_SerializedProperty_System_Int32__Ferr_Path2D_Plane_Ferr_PathSnap_System_Single_UnityEngine_KeyCode_Ferr_PathEditorVisuals_" data-uid="Ferr.PathEditorUtil.OnSceneGUI(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4,UnityEditor.SerializedProperty,Ferr.Path2D,System.Boolean,System.Action{UnityEditor.SerializedProperty,System.Int32},System.Action{UnityEditor.SerializedProperty,System.Int32},Ferr.Path2D.Plane,Ferr.PathSnap,System.Single,UnityEngine.KeyCode,Ferr.PathEditorVisuals)">OnSceneGUI(Matrix4x4, Matrix4x4, SerializedProperty, Path2D, Boolean, Action&lt;SerializedProperty, Int32&gt;, Action&lt;SerializedProperty, Int32&gt;, Path2D.Plane, PathSnap, Single, KeyCode, PathEditorVisuals)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnSceneGUI(Matrix4x4 aTransform, Matrix4x4 aInvTransform, SerializedProperty aPath, Path2D aPathRaw, bool aShowShiftAdd = true, Action&lt;SerializedProperty, int&gt; aOnAddPoint = null, Action&lt;SerializedProperty, int&gt; aOnRemovePoint = null, Path2D.Plane aPlane = Path2D.Plane.XY, PathSnap aSnapMode = PathSnap.Unity, float aSmartSnapDist = 0F, KeyCode aVertModeKey = KeyCode.C, PathEditorVisuals aVisuals = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Matrix4x4</span></td>
+        <td><span class="parametername">aTransform</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Matrix4x4</span></td>
+        <td><span class="parametername">aInvTransform</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td><span class="parametername">aPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ferr.Path2D.html">Path2D</a></td>
+        <td><span class="parametername">aPathRaw</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">aShowShiftAdd</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<span class="xref">UnityEditor.SerializedProperty</span>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">aOnAddPoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<span class="xref">UnityEditor.SerializedProperty</span>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">aOnRemovePoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ferr.Path2D.Plane.html">Path2D.Plane</a></td>
+        <td><span class="parametername">aPlane</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ferr.PathSnap.html">PathSnap</a></td>
+        <td><span class="parametername">aSnapMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">aSmartSnapDist</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.KeyCode</span></td>
+        <td><span class="parametername">aVertModeKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ferr.PathEditorVisuals.html">PathEditorVisuals</a></td>
+        <td><span class="parametername">aVisuals</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Ferr_PathEditorUtil_OnSceneGUIEasy_UnityEditor_SerializedProperty_Ferr_Path2D_Plane_Ferr_PathSnap_System_Single_Ferr_PathEditorVisuals_.md&amp;value=---%0Auid%3A%20Ferr.PathEditorUtil.OnSceneGUIEasy(UnityEditor.SerializedProperty%2CFerr.Path2D.Plane%2CFerr.PathSnap%2CSystem.Single%2CFerr.PathEditorVisuals)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/Path/Editor/PathEditorUtil.cs/#L84">View Source</a>
+  </span>
+  <a id="Ferr_PathEditorUtil_OnSceneGUIEasy_" data-uid="Ferr.PathEditorUtil.OnSceneGUIEasy*"></a>
+  <h4 id="Ferr_PathEditorUtil_OnSceneGUIEasy_UnityEditor_SerializedProperty_Ferr_Path2D_Plane_Ferr_PathSnap_System_Single_Ferr_PathEditorVisuals_" data-uid="Ferr.PathEditorUtil.OnSceneGUIEasy(UnityEditor.SerializedProperty,Ferr.Path2D.Plane,Ferr.PathSnap,System.Single,Ferr.PathEditorVisuals)">OnSceneGUIEasy(SerializedProperty, Path2D.Plane, PathSnap, Single, PathEditorVisuals)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnSceneGUIEasy(SerializedProperty aPath, Path2D.Plane aPlane = Path2D.Plane.XY, PathSnap aSnapMode = PathSnap.Unity, float aSmartSnapDist = 0F, PathEditorVisuals aVisuals = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td><span class="parametername">aPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ferr.Path2D.Plane.html">Path2D.Plane</a></td>
+        <td><span class="parametername">aPlane</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ferr.PathSnap.html">PathSnap</a></td>
+        <td><span class="parametername">aSnapMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">aSmartSnapDist</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ferr.PathEditorVisuals.html">PathEditorVisuals</a></td>
+        <td><span class="parametername">aVisuals</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Ferr_PathEditorUtil_SetDirty_UnityEditor_SerializedProperty_.md&amp;value=---%0Auid%3A%20Ferr.PathEditorUtil.SetDirty(UnityEditor.SerializedProperty)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/Path/Editor/PathEditorUtil.cs/#L708">View Source</a>
+  </span>
+  <a id="Ferr_PathEditorUtil_SetDirty_" data-uid="Ferr.PathEditorUtil.SetDirty*"></a>
+  <h4 id="Ferr_PathEditorUtil_SetDirty_UnityEditor_SerializedProperty_" data-uid="Ferr.PathEditorUtil.SetDirty(UnityEditor.SerializedProperty)">SetDirty(SerializedProperty)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetDirty(SerializedProperty aPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td><span class="parametername">aPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Ferr_PathEditorUtil_ShowPathLines_Ferr_Path2D_UnityEngine_Matrix4x4_System_Boolean_Ferr_Path2D_Plane_Ferr_PathEditorVisuals_.md&amp;value=---%0Auid%3A%20Ferr.PathEditorUtil.ShowPathLines(Ferr.Path2D%2CUnityEngine.Matrix4x4%2CSystem.Boolean%2CFerr.Path2D.Plane%2CFerr.PathEditorVisuals)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/Path/Editor/PathEditorUtil.cs/#L336">View Source</a>
+  </span>
+  <a id="Ferr_PathEditorUtil_ShowPathLines_" data-uid="Ferr.PathEditorUtil.ShowPathLines*"></a>
+  <h4 id="Ferr_PathEditorUtil_ShowPathLines_Ferr_Path2D_UnityEngine_Matrix4x4_System_Boolean_Ferr_Path2D_Plane_Ferr_PathEditorVisuals_" data-uid="Ferr.PathEditorUtil.ShowPathLines(Ferr.Path2D,UnityEngine.Matrix4x4,System.Boolean,Ferr.Path2D.Plane,Ferr.PathEditorVisuals)">ShowPathLines(Path2D, Matrix4x4, Boolean, Path2D.Plane, PathEditorVisuals)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ShowPathLines(Path2D aPathRaw, Matrix4x4 aTransform, bool aShowControls, Path2D.Plane aPlane, PathEditorVisuals aVisuals)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ferr.Path2D.html">Path2D</a></td>
+        <td><span class="parametername">aPathRaw</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Matrix4x4</span></td>
+        <td><span class="parametername">aTransform</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">aShowControls</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ferr.Path2D.Plane.html">Path2D.Plane</a></td>
+        <td><span class="parametername">aPlane</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ferr.PathEditorVisuals.html">PathEditorVisuals</a></td>
+        <td><span class="parametername">aVisuals</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Ferr_PathEditorUtil.md&amp;value=---%0Auid%3A%20Ferr.PathEditorUtil%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Ferr/Path/Editor/PathEditorUtil.cs/#L39" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Example Unity documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

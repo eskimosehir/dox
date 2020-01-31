@@ -1,0 +1,1411 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LevitateModule
+   | Example Unity documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LevitateModule
+   | Example Unity documentation ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mobge.Microns.LevitateModule">
+  
+  
+  <h1 id="Mobge_Microns_LevitateModule" data-uid="Mobge.Microns.LevitateModule" class="text-break">Class LevitateModule
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">LevitateModule</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Mobge.Platformer.Character.IStateModule.html">IStateModule</a></div>
+    <div><a class="xref" href="Mobge.Microns.IConnector.html">IConnector</a></div>
+    <div><a class="xref" href="Mobge.Trigger2DListener.html">Trigger2DListener</a></div>
+    <div><a class="xref" href="Mobge.Microns.IJumpStyle.html">IJumpStyle</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.Invoke(System.String, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.InvokeRepeating(System.String, System.Single, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.CancelInvoke(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.IsInvoking(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StartCoroutine_Auto(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(System.Collections.IEnumerator)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(UnityEngine.Coroutine)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopCoroutine(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.print(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.TryGetComponent(System.Type, UnityEngine.Component)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.TryGetComponent&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponent(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Boolean, System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInChildren&lt;T&gt;(System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent(System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;(System.Boolean, System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents(System.Type, System.Collections.Generic.List&lt;UnityEngine.Component&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents&lt;T&gt;(System.Collections.Generic.List&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.CompareTag(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessageUpwards(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.SendMessage(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, System.Object, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.BroadcastMessage(System.String, UnityEngine.SendMessageOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindSceneObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeAll(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.name</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.hideFlags</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mobge.Microns.html">Mobge.Microns</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="Mobge_Microns_LevitateModule_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LevitateModule : MonoBehaviour, IStateModule, IConnector, Trigger2DListener, IJumpStyle</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_balloonCloseAnim.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.balloonCloseAnim%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L26">View Source</a>
+  </span>
+  <h4 id="Mobge_Microns_LevitateModule_balloonCloseAnim" data-uid="Mobge.Microns.LevitateModule.balloonCloseAnim">balloonCloseAnim</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Animation(false)]
+public int balloonCloseAnim</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_balloonCycleAnim.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.balloonCycleAnim%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L24">View Source</a>
+  </span>
+  <h4 id="Mobge_Microns_LevitateModule_balloonCycleAnim" data-uid="Mobge.Microns.LevitateModule.balloonCycleAnim">balloonCycleAnim</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Animation(false)]
+public int balloonCycleAnim</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_balloonMode.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.balloonMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L20">View Source</a>
+  </span>
+  <h4 id="Mobge_Microns_LevitateModule_balloonMode" data-uid="Mobge.Microns.LevitateModule.balloonMode">balloonMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LevitateModule.Mode balloonMode</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Microns.LevitateModule.Mode.html">LevitateModule.Mode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_balloonStartAnim.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.balloonStartAnim%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L22">View Source</a>
+  </span>
+  <h4 id="Mobge_Microns_LevitateModule_balloonStartAnim" data-uid="Mobge.Microns.LevitateModule.balloonStartAnim">balloonStartAnim</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Animation(false)]
+public int balloonStartAnim</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_jumpSwitchModule.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.jumpSwitchModule%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L38">View Source</a>
+  </span>
+  <h4 id="Mobge_Microns_LevitateModule_jumpSwitchModule" data-uid="Mobge.Microns.LevitateModule.jumpSwitchModule">jumpSwitchModule</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JumpSwitchModule jumpSwitchModule</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Microns.JumpSwitchModule.html">JumpSwitchModule</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_normalMode.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.normalMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L19">View Source</a>
+  </span>
+  <h4 id="Mobge_Microns_LevitateModule_normalMode" data-uid="Mobge.Microns.LevitateModule.normalMode">normalMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LevitateModule.Mode normalMode</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Microns.LevitateModule.Mode.html">LevitateModule.Mode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_Awake.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.Awake%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L42">View Source</a>
+  </span>
+  <a id="Mobge_Microns_LevitateModule_Awake_" data-uid="Mobge.Microns.LevitateModule.Awake*"></a>
+  <h4 id="Mobge_Microns_LevitateModule_Awake" data-uid="Mobge.Microns.LevitateModule.Awake">Awake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Awake()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_Update.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.Update%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L63">View Source</a>
+  </span>
+  <a id="Mobge_Microns_LevitateModule_Update_" data-uid="Mobge.Microns.LevitateModule.Update*"></a>
+  <h4 id="Mobge_Microns_LevitateModule_Update" data-uid="Mobge.Microns.LevitateModule.Update">Update()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Update()</code></pre>
+  </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_Connect_UnityEngine_Rigidbody2D_.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.Mobge%23Microns%23IConnector%23Connect(UnityEngine.Rigidbody2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L142">View Source</a>
+  </span>
+  <a id="Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_Connect_" data-uid="Mobge.Microns.LevitateModule.Mobge#Microns#IConnector#Connect*"></a>
+  <h4 id="Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_Connect_UnityEngine_Rigidbody2D_" data-uid="Mobge.Microns.LevitateModule.Mobge#Microns#IConnector#Connect(UnityEngine.Rigidbody2D)">IConnector.Connect(Rigidbody2D)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IConnector.Connect(Rigidbody2D micron)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Rigidbody2D</span></td>
+        <td><span class="parametername">micron</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_ConnectionCount.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.Mobge%23Microns%23IConnector%23ConnectionCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L13">View Source</a>
+  </span>
+  <a id="Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_ConnectionCount_" data-uid="Mobge.Microns.LevitateModule.Mobge#Microns#IConnector#ConnectionCount*"></a>
+  <h4 id="Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_ConnectionCount" data-uid="Mobge.Microns.LevitateModule.Mobge#Microns#IConnector#ConnectionCount">IConnector.ConnectionCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int IConnector.ConnectionCount { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_Disconnect_UnityEngine_Rigidbody2D_.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.Mobge%23Microns%23IConnector%23Disconnect(UnityEngine.Rigidbody2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L145">View Source</a>
+  </span>
+  <a id="Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_Disconnect_" data-uid="Mobge.Microns.LevitateModule.Mobge#Microns#IConnector#Disconnect*"></a>
+  <h4 id="Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_Disconnect_UnityEngine_Rigidbody2D_" data-uid="Mobge.Microns.LevitateModule.Mobge#Microns#IConnector#Disconnect(UnityEngine.Rigidbody2D)">IConnector.Disconnect(Rigidbody2D)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IConnector.Disconnect(Rigidbody2D micron)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Rigidbody2D</span></td>
+        <td><span class="parametername">micron</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_DisconnectAll.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.Mobge%23Microns%23IConnector%23DisconnectAll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L153">View Source</a>
+  </span>
+  <a id="Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_DisconnectAll_" data-uid="Mobge.Microns.LevitateModule.Mobge#Microns#IConnector#DisconnectAll*"></a>
+  <h4 id="Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_DisconnectAll" data-uid="Mobge.Microns.LevitateModule.Mobge#Microns#IConnector#DisconnectAll">IConnector.DisconnectAll()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IConnector.DisconnectAll()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_GetConnection_System_Int32_.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.Mobge%23Microns%23IConnector%23GetConnection(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L139">View Source</a>
+  </span>
+  <a id="Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_GetConnection_" data-uid="Mobge.Microns.LevitateModule.Mobge#Microns#IConnector#GetConnection*"></a>
+  <h4 id="Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_GetConnection_System_Int32_" data-uid="Mobge.Microns.LevitateModule.Mobge#Microns#IConnector#GetConnection(System.Int32)">IConnector.GetConnection(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Rigidbody2D IConnector.GetConnection(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Rigidbody2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_IsGround.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.Mobge%23Microns%23IConnector%23IsGround%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L16">View Source</a>
+  </span>
+  <a id="Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_IsGround_" data-uid="Mobge.Microns.LevitateModule.Mobge#Microns#IConnector#IsGround*"></a>
+  <h4 id="Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_IsGround" data-uid="Mobge.Microns.LevitateModule.Mobge#Microns#IConnector#IsGround">IConnector.IsGround</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IConnector.IsGround { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_IsStable.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.Mobge%23Microns%23IConnector%23IsStable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L17">View Source</a>
+  </span>
+  <a id="Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_IsStable_" data-uid="Mobge.Microns.LevitateModule.Mobge#Microns#IConnector#IsStable*"></a>
+  <h4 id="Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_IsStable" data-uid="Mobge.Microns.LevitateModule.Mobge#Microns#IConnector#IsStable">IConnector.IsStable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IConnector.IsStable { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_Owner.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.Mobge%23Microns%23IConnector%23Owner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L15">View Source</a>
+  </span>
+  <a id="Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_Owner_" data-uid="Mobge.Microns.LevitateModule.Mobge#Microns#IConnector#Owner*"></a>
+  <h4 id="Mobge_Microns_LevitateModule_Mobge_Microns_IConnector_Owner" data-uid="Mobge.Microns.LevitateModule.Mobge#Microns#IConnector#Owner">IConnector.Owner</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Rigidbody2D IConnector.Owner { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Rigidbody2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_Mobge_Microns_IJumpStyle_BeginJump_Mobge_Microns_JumpStyleParams__UnityEngine_Vector3_.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.Mobge%23Microns%23IJumpStyle%23BeginJump(Mobge.Microns.JumpStyleParams%40%2CUnityEngine.Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L453">View Source</a>
+  </span>
+  <a id="Mobge_Microns_LevitateModule_Mobge_Microns_IJumpStyle_BeginJump_" data-uid="Mobge.Microns.LevitateModule.Mobge#Microns#IJumpStyle#BeginJump*"></a>
+  <h4 id="Mobge_Microns_LevitateModule_Mobge_Microns_IJumpStyle_BeginJump_Mobge_Microns_JumpStyleParams__UnityEngine_Vector3_" data-uid="Mobge.Microns.LevitateModule.Mobge#Microns#IJumpStyle#BeginJump(Mobge.Microns.JumpStyleParams@,UnityEngine.Vector3)">IJumpStyle.BeginJump(JumpStyleParams, Vector3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">JumpStyleUpdateData IJumpStyle.BeginJump(in JumpStyleParams args, Vector3 currentVelocity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Microns.JumpStyleParams.html">JumpStyleParams</a></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">currentVelocity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Microns.JumpStyleUpdateData.html">JumpStyleUpdateData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_Mobge_Microns_IJumpStyle_UpdateJump_Mobge_Microns_JumpStyleParams__UnityEngine_Vector3_Mobge_Microns_JumpStyleUpdateData__System_Boolean_.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.Mobge%23Microns%23IJumpStyle%23UpdateJump(Mobge.Microns.JumpStyleParams%40%2CUnityEngine.Vector3%2CMobge.Microns.JumpStyleUpdateData%40%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L463">View Source</a>
+  </span>
+  <a id="Mobge_Microns_LevitateModule_Mobge_Microns_IJumpStyle_UpdateJump_" data-uid="Mobge.Microns.LevitateModule.Mobge#Microns#IJumpStyle#UpdateJump*"></a>
+  <h4 id="Mobge_Microns_LevitateModule_Mobge_Microns_IJumpStyle_UpdateJump_Mobge_Microns_JumpStyleParams__UnityEngine_Vector3_Mobge_Microns_JumpStyleUpdateData__System_Boolean_" data-uid="Mobge.Microns.LevitateModule.Mobge#Microns#IJumpStyle#UpdateJump(Mobge.Microns.JumpStyleParams@,UnityEngine.Vector3,Mobge.Microns.JumpStyleUpdateData@,System.Boolean)">IJumpStyle.UpdateJump(JumpStyleParams, Vector3, ref JumpStyleUpdateData, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IJumpStyle.UpdateJump(in JumpStyleParams args, Vector3 velocity, ref JumpStyleUpdateData params, bool print)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Microns.JumpStyleParams.html">JumpStyleParams</a></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">velocity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mobge.Microns.JumpStyleUpdateData.html">JumpStyleUpdateData</a></td>
+        <td><span class="parametername">params</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">print</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_Mobge_Microns_IJumpStyle_UpdateRotation_System_Single_System_Single_System_Single_System_Single_System_Single__.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.Mobge%23Microns%23IJumpStyle%23UpdateRotation(System.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L468">View Source</a>
+  </span>
+  <a id="Mobge_Microns_LevitateModule_Mobge_Microns_IJumpStyle_UpdateRotation_" data-uid="Mobge.Microns.LevitateModule.Mobge#Microns#IJumpStyle#UpdateRotation*"></a>
+  <h4 id="Mobge_Microns_LevitateModule_Mobge_Microns_IJumpStyle_UpdateRotation_System_Single_System_Single_System_Single_System_Single_System_Single__" data-uid="Mobge.Microns.LevitateModule.Mobge#Microns#IJumpStyle#UpdateRotation(System.Single,System.Single,System.Single,System.Single,System.Single@)">IJumpStyle.UpdateRotation(Single, Single, Single, Single, out Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IJumpStyle.UpdateRotation(float maxAngularAcceleration, float mass, float av, float physicalRotation, out float torque)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">maxAngularAcceleration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">mass</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">av</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">physicalRotation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">torque</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_Mobge_Platformer_Character_IStateModule_ActionCount.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.Mobge%23Platformer%23Character%23IStateModule%23ActionCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L11">View Source</a>
+  </span>
+  <a id="Mobge_Microns_LevitateModule_Mobge_Platformer_Character_IStateModule_ActionCount_" data-uid="Mobge.Microns.LevitateModule.Mobge#Platformer#Character#IStateModule#ActionCount*"></a>
+  <h4 id="Mobge_Microns_LevitateModule_Mobge_Platformer_Character_IStateModule_ActionCount" data-uid="Mobge.Microns.LevitateModule.Mobge#Platformer#Character#IStateModule#ActionCount">IStateModule.ActionCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int IStateModule.ActionCount { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_Mobge_Platformer_Character_IStateModule_Attached_Mobge_Platformer_Character_Character2D_.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.Mobge%23Platformer%23Character%23IStateModule%23Attached(Mobge.Platformer.Character.Character2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L45">View Source</a>
+  </span>
+  <a id="Mobge_Microns_LevitateModule_Mobge_Platformer_Character_IStateModule_Attached_" data-uid="Mobge.Microns.LevitateModule.Mobge#Platformer#Character#IStateModule#Attached*"></a>
+  <h4 id="Mobge_Microns_LevitateModule_Mobge_Platformer_Character_IStateModule_Attached_Mobge_Platformer_Character_Character2D_" data-uid="Mobge.Microns.LevitateModule.Mobge#Platformer#Character#IStateModule#Attached(Mobge.Platformer.Character.Character2D)">IStateModule.Attached(Character2D)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IStateModule.Attached(Character2D character)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.Character2D.html">Character2D</a></td>
+        <td><span class="parametername">character</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_Mobge_Platformer_Character_IStateModule_Deattached.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.Mobge%23Platformer%23Character%23IStateModule%23Deattached%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L53">View Source</a>
+  </span>
+  <a id="Mobge_Microns_LevitateModule_Mobge_Platformer_Character_IStateModule_Deattached_" data-uid="Mobge.Microns.LevitateModule.Mobge#Platformer#Character#IStateModule#Deattached*"></a>
+  <h4 id="Mobge_Microns_LevitateModule_Mobge_Platformer_Character_IStateModule_Deattached" data-uid="Mobge.Microns.LevitateModule.Mobge#Platformer#Character#IStateModule#Deattached">IStateModule.Deattached()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IStateModule.Deattached()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_Mobge_Platformer_Character_IStateModule_Interrupted_Mobge_Platformer_Character_Character2D_.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.Mobge%23Platformer%23Character%23IStateModule%23Interrupted(Mobge.Platformer.Character.Character2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L60">View Source</a>
+  </span>
+  <a id="Mobge_Microns_LevitateModule_Mobge_Platformer_Character_IStateModule_Interrupted_" data-uid="Mobge.Microns.LevitateModule.Mobge#Platformer#Character#IStateModule#Interrupted*"></a>
+  <h4 id="Mobge_Microns_LevitateModule_Mobge_Platformer_Character_IStateModule_Interrupted_Mobge_Platformer_Character_Character2D_" data-uid="Mobge.Microns.LevitateModule.Mobge#Platformer#Character#IStateModule#Interrupted(Mobge.Platformer.Character.Character2D)">IStateModule.Interrupted(Character2D)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IStateModule.Interrupted(Character2D character)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.Character2D.html">Character2D</a></td>
+        <td><span class="parametername">character</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_Mobge_Platformer_Character_IStateModule_TryEnable_Mobge_Platformer_Character_Character2D_Mobge_Platformer_Character_CharacterInput_Button__System_Int32_.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.Mobge%23Platformer%23Character%23IStateModule%23TryEnable(Mobge.Platformer.Character.Character2D%2CMobge.Platformer.Character.CharacterInput.Button%40%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L103">View Source</a>
+  </span>
+  <a id="Mobge_Microns_LevitateModule_Mobge_Platformer_Character_IStateModule_TryEnable_" data-uid="Mobge.Microns.LevitateModule.Mobge#Platformer#Character#IStateModule#TryEnable*"></a>
+  <h4 id="Mobge_Microns_LevitateModule_Mobge_Platformer_Character_IStateModule_TryEnable_Mobge_Platformer_Character_Character2D_Mobge_Platformer_Character_CharacterInput_Button__System_Int32_" data-uid="Mobge.Microns.LevitateModule.Mobge#Platformer#Character#IStateModule#TryEnable(Mobge.Platformer.Character.Character2D,Mobge.Platformer.Character.CharacterInput.Button@,System.Int32)">IStateModule.TryEnable(Character2D, CharacterInput.Button, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IStateModule.TryEnable(Character2D character, in CharacterInput.Button button, int actionIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.Character2D.html">Character2D</a></td>
+        <td><span class="parametername">character</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.CharacterInput.Button.html">CharacterInput.Button</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">actionIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_Mobge_Platformer_Character_IStateModule_UpdateModule_Mobge_Platformer_Character_Character2D_Mobge_Platformer_Character_CharacterInput_Button__Mobge_Platformer_Character_Character2D_State__.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.Mobge%23Platformer%23Character%23IStateModule%23UpdateModule(Mobge.Platformer.Character.Character2D%2CMobge.Platformer.Character.CharacterInput.Button%40%2CMobge.Platformer.Character.Character2D.State%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L121">View Source</a>
+  </span>
+  <a id="Mobge_Microns_LevitateModule_Mobge_Platformer_Character_IStateModule_UpdateModule_" data-uid="Mobge.Microns.LevitateModule.Mobge#Platformer#Character#IStateModule#UpdateModule*"></a>
+  <h4 id="Mobge_Microns_LevitateModule_Mobge_Platformer_Character_IStateModule_UpdateModule_Mobge_Platformer_Character_Character2D_Mobge_Platformer_Character_CharacterInput_Button__Mobge_Platformer_Character_Character2D_State__" data-uid="Mobge.Microns.LevitateModule.Mobge#Platformer#Character#IStateModule#UpdateModule(Mobge.Platformer.Character.Character2D,Mobge.Platformer.Character.CharacterInput.Button@,Mobge.Platformer.Character.Character2D.State@)">IStateModule.UpdateModule(Character2D, CharacterInput.Button, ref Character2D.State)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IStateModule.UpdateModule(Character2D character, in CharacterInput.Button button, ref Character2D.State state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.Character2D.html">Character2D</a></td>
+        <td><span class="parametername">character</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.CharacterInput.Button.html">CharacterInput.Button</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mobge.Platformer.Character.Character2D.State.html">Character2D.State</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_Mobge_Trigger2DListener_OnTriggerEnter2D_Mobge_Trigger2DCallbacks_UnityEngine_Collider2D_.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.Mobge%23Trigger2DListener%23OnTriggerEnter2D(Mobge.Trigger2DCallbacks%2CUnityEngine.Collider2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L158">View Source</a>
+  </span>
+  <a id="Mobge_Microns_LevitateModule_Mobge_Trigger2DListener_OnTriggerEnter2D_" data-uid="Mobge.Microns.LevitateModule.Mobge#Trigger2DListener#OnTriggerEnter2D*"></a>
+  <h4 id="Mobge_Microns_LevitateModule_Mobge_Trigger2DListener_OnTriggerEnter2D_Mobge_Trigger2DCallbacks_UnityEngine_Collider2D_" data-uid="Mobge.Microns.LevitateModule.Mobge#Trigger2DListener#OnTriggerEnter2D(Mobge.Trigger2DCallbacks,UnityEngine.Collider2D)">Trigger2DListener.OnTriggerEnter2D(Trigger2DCallbacks, Collider2D)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Trigger2DListener.OnTriggerEnter2D(Trigger2DCallbacks sender, Collider2D collider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Trigger2DCallbacks.html">Trigger2DCallbacks</a></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Collider2D</span></td>
+        <td><span class="parametername">collider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule_Mobge_Trigger2DListener_OnTriggerExit2D_Mobge_Trigger2DCallbacks_UnityEngine_Collider2D_.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule.Mobge%23Trigger2DListener%23OnTriggerExit2D(Mobge.Trigger2DCallbacks%2CUnityEngine.Collider2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L161">View Source</a>
+  </span>
+  <a id="Mobge_Microns_LevitateModule_Mobge_Trigger2DListener_OnTriggerExit2D_" data-uid="Mobge.Microns.LevitateModule.Mobge#Trigger2DListener#OnTriggerExit2D*"></a>
+  <h4 id="Mobge_Microns_LevitateModule_Mobge_Trigger2DListener_OnTriggerExit2D_Mobge_Trigger2DCallbacks_UnityEngine_Collider2D_" data-uid="Mobge.Microns.LevitateModule.Mobge#Trigger2DListener#OnTriggerExit2D(Mobge.Trigger2DCallbacks,UnityEngine.Collider2D)">Trigger2DListener.OnTriggerExit2D(Trigger2DCallbacks, Collider2D)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Trigger2DListener.OnTriggerExit2D(Trigger2DCallbacks sender, Collider2D collider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mobge.Trigger2DCallbacks.html">Trigger2DCallbacks</a></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Collider2D</span></td>
+        <td><span class="parametername">collider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Mobge.Platformer.Character.IStateModule.html">IStateModule</a>
+  </div>
+  <div>
+      <a class="xref" href="Mobge.Microns.IConnector.html">IConnector</a>
+  </div>
+  <div>
+      <a class="xref" href="Mobge.Trigger2DListener.html">Trigger2DListener</a>
+  </div>
+  <div>
+      <a class="xref" href="Mobge.Microns.IJumpStyle.html">IJumpStyle</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Mobge.UnityExtensions.html#Mobge_UnityExtensions_DestroyObj_UnityEngine_Object_UnityEngine_Object_">UnityExtensions.DestroyObj(Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mobge.UnityExtensions.html#Mobge_UnityExtensions_DestroySelf_UnityEngine_Object_">UnityExtensions.DestroySelf(Object)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//new/master/apiSpec/new?filename=Mobge_Microns_LevitateModule.md&amp;value=---%0Auid%3A%20Mobge.Microns.LevitateModule%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/feyyy/Microns//blob/master/Assets/Microns/Character/Modules/LevitateModule.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Example Unity documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
